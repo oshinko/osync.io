@@ -1,0 +1,13 @@
+<footer>
+    {{ with sort .Site.Menus.footer "Weight" }}
+    <ul>
+        {{ range . }}
+            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+    </ul>
+    {{ end }}
+    <small>
+        (C) {{ .Date.Format "2006" }} {{ .Site.Title }}.
+        Powered by <a href="https://gohugo.io">Hugo</a>.
+    </small>
+</footer>

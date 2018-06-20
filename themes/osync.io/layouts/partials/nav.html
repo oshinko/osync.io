@@ -1,0 +1,11 @@
+{{ $title := .Title }}
+{{ with sort .Site.Menus.nav "Weight" }}
+<nav>
+    <ul>
+        {{ range . }}
+            {{ if eq .Name $title }}<li class="selected">{{ else }}<li>{{ end }}
+                <a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+    </ul>
+</nav>
+{{ end }}

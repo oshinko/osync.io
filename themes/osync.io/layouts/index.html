@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    {{ partial "head" . }}
+    <body>
+        {{ partial "header" . }}
+        {{ partial "nav" . }}
+        <main>
+            {{ $paginator := .Paginate .Data.Pages 5 }}
+            {{ range $paginator.Pages }}
+                {{ partial "list-item" . }}
+            {{ end }}
+            {{ template "_internal/pagination.html" . }}
+        </main>
+        {{ partial "footer" . }}
+    </body>
+</html>
