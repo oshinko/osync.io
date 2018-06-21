@@ -8,19 +8,39 @@ image = "/images/headers/ethereum.png"
 
 スマートコントラクト (DApps) の開発を行うために、イーサリアムの公式 CLI である [Geth](https://github.com/ethereum/go-ethereum) を使用して、プライベートネットワークを構築していきます。
 
-## データディレクトリを作成
+## 開発環境のディレクトリ構成
+
+このような環境を構築します。
 
 ```bash
-mkdir $HOME/eth-dev
+$tree
+.
+├── genesis.json
+└── .ethereum-dev
+   ├── clients
+   |  └── 1
+   └── miner
+```
+
+マイナーとその他のクライアントで分ける理由ですが、 geth コンソール上で開発とマイニングを同時に行うと Ether の送金やコントラクト実行のために消費される Gas コストなどが、同時に得られるマイニング報酬とごっちゃになり、確認しずらくなってしまうのを避けるためです。
+
+## ネットワーク ID を定義
+
+プライベートネットワークの ID を決めます。既知の値は避けてください。
+
+```bash
+NETID=15
 ```
 
 ## Genesis ブロックを定義
 
+始祖となるブロックを定義します。
+
 ```bash
-cat <<EOF> $HOME/eth-dev/genesis.json
+cat <<EOF> genesis.json
 {
   "config": {
-    "chainId": 15
+    "chainId": $NETID
   },
   "nonce": "0x0000000000000042",
   "timestamp": "0x0",
@@ -35,39 +55,100 @@ cat <<EOF> $HOME/eth-dev/genesis.json
 EOF
 ```
 
-## プライベートネットワークを初期化
+## Geth を用意
 
-macOS にインストールされた公式ウォレットの [Mist](https://github.com/ethereum/mist) に含まれる Geth を使います。
+macOS の場合は、公式ウォレットの [Mist](https://github.com/ethereum/mist) に含まれる Geth を使います。
 
 ```bash
-$HOME/Library/Application\ Support/Ethereum\ Wallet/binaries/Geth/unpacked/geth \
-  --datadir $HOME/eth-dev \
-  init $HOME/eth-dev/genesis.json
+geth() { $HOME/Library/Application\ Support/Ethereum\ Wallet/binaries/Geth/unpacked/geth $*; }
 ```
 
-## ノードを起動
+## マイナーを初期化
+
+データディレクトリを決めます。
 
 ```bash
-$HOME/Library/Application\ Support/Ethereum\ Wallet/binaries/Geth/unpacked/geth \
-  --networkid 15 \
-  --nodiscover \
-  --datadir $HOME/eth-dev \
-  --port 30403 \
-  --rpc \
-  console 2>> $HOME/eth-dev/err.log
+DATA=$HOME/.ethereum-dev/miner
+```
+
+genesis.json より初期化します。
+
+```bash
+geth --datadir $DATA init genesis.json
+```
+
+## クライアントを初期化
+
+データディレクトリを決めます。
+
+```bash
+DATA=$HOME/.ethereum-dev/clients/1
+```
+
+genesis.json より初期化します。
+
+```bash
+geth --datadir $DATA init genesis.json
+```
+
+一度起動してマイニング報酬の宛先となるアカウントを作成しておきます。
+
+```bash
+geth --datadir $DATA --networkid $NETID --port 30305 console 2>> $DATA/err.log
 > 
-> personal.newAccount()         # Create an empty password account
-> eth.getBalance(eth.coinbase)  # Nothing
-> eth.blockNumber               # Nothing
-> miner.start()                 # Wait until the block is mined
-> miner.stop()
-> eth.blockNumber               # Check number
+> personal.newAccount('')  // Create an empty password account
+> "0x71efd180a2246663624a3e6f13da97b9315815f3"
+> exit
+```
+
+## マイニングを開始
+
+マイニング報酬の宛先をクライアントが持つアドレス指定して実行後、ログに出力されたノード情報をコピーします。
+
+```bash
+ETHERBASE=0x71efd180a2246663624a3e6f13da97b9315815f3
+
+geth --datadir $DATA --networkid $NETID --identity miner \
+     --port 30304 --lightserv 75 --lightpeers 10 --shh \
+     --mine --minerthreads 1 --etherbase $ETHERBASE \
+     --ipcpath geth.ipc
+...
+INFO [06-21|20:56:52] UDP listener up self=enode://84a278e86445104cb2552369acf31a5e6b74751fd9e57bffcaa8e89e65d63ec30ee560ba6e1ef1c312af0f7859c875b0ce043d066d33542e29a48813b2f9ba54@[::]:30304
+...
+```
+
+## クライアントを起動
+
+マイナーのノード情報を `bootnodes` に指定して起動します。
+
+```bash
+MINERADDR=127.0.0.1
+
+BOOTNODES=enode://84a278e86445104cb2552369acf31a5e6b74751fd9e57bffcaa8e89e65d63ec30ee560ba6e1ef1c312af0f7859c875b0ce043d066d33542e29a48813b2f9ba54@$MINERADDR:30304
+
+geth --datadir $DATA --networkid $NETID --identity client \
+     --port 30305 --bootnodes $BOOTNODES --shh \
+     --rpc --rpcaddr 0.0.0.0 --rpcport 8104 \
+     --ws --wsaddr 0.0.0.0 --wsport 8105 \
+     --ipcpath geth.ipc \
+     console 2>> $DATA/err.log
 > 
-> web3.fromWei(eth.getBalance(eth.coinbase), 'ether')  # Checking
+> eth.blockNumber  // Check number
+> web3.fromWei(eth.getBalance(eth.coinbase), 'ether');
+```
+
+もしクライアントでマイニングをする場合、コンソール上で下記のようにします。
+
+```javascript
+miner.start();
+
+// 採掘できるまでちょっと待つ
+
+miner.stop();
 ```
 
 ## おわりに
 
 今回作成したネットワークは、 MetaMask を介して接続することも可能です。
 
-この手順は、随時更新する予定ですが、何かおかしなところがあれば SNS などでお気軽にご連絡ください。
+この記事について、何か気になるところがあれば、チャットや SNS などでお気軽にご連絡ください。
