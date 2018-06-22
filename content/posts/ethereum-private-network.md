@@ -13,13 +13,13 @@ image = "/images/headers/ethereum.png"
 このような環境を構築します。
 
 ```bash
-$tree
+tree -a
 .
-├── genesis.json
-└── .ethereum-dev
-   ├── clients
-   |  └── 1
-   └── miner
+├── .ethereum-dev
+│   ├── clients
+│   │   └── 1
+│   └── miner
+└── genesis.json
 ```
 
 マイナーとその他のクライアントで分ける理由ですが、 geth コンソール上で開発とマイニングを同時に行うと Ether の送金やコントラクト実行のために消費される Gas コストなどが、同時に得られるマイニング報酬とごっちゃになり、確認しずらくなってしまうのを避けるためです。

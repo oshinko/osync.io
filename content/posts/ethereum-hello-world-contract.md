@@ -113,14 +113,14 @@ solc -o target --bin --abi Greeter.sol
 次のように target というディレクトリに .abi (Application Binary Interface) と .bin が作成されます。
 
 ```bash
-$tree
+tree
 .
 ├── Greeter.sol
 └── target
-   ├── Greeter.abi
-   ├── Greeter.bin
-   ├── Mortal.abi
-   └── Mortal.bin
+    ├── Greeter.abi
+    ├── Greeter.bin
+    ├── Mortal.abi
+    └── Mortal.bin
 ```
 
 実際に Geth コンソールを起動し、コントラクトを作成してみます。Greeter には Mortal が含まれているため、 Greeter を展開するために Mortal を作成する必要はありません。
