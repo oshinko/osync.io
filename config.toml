@@ -32,7 +32,7 @@ enableGitInfo = true
 
   [[menu.footer]]
     name = "Twitter"
-    url = "https://twitter.com/osynco"
+    url = "https://twitter.com/Osynco"
     weight = 3
 
   [[menu.footer]]
@@ -42,7 +42,7 @@ enableGitInfo = true
 
   [[menu.footer]]
     name = "Steam"
-    url = "https://steamcommunity.com/id/osh1nko"
+    url = "https://steamcommunity.com/id/Osh1nko"
     weight = 5
 
 [params]
