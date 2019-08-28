@@ -1,7 +1,7 @@
 +++
 date = "2018-06-19T15:00:00+09:00"
 draft = false
-title = "Gitbot"
+title = "Gitbot"
 tags = ["git", "gitbot", "discord", "slack"]
 image = "/images/headers/gitbot.png"
 +++
