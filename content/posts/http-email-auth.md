@@ -2,7 +2,7 @@
 date = "2018-07-21T22:30:00+09:00"
 draft = false
 title = "HTTP Email Authentication"
-tags = ["http", "email", "auth"]
+tags = ["HTTP", "Email", "Auth"]
 image = "/images/headers/http-email-auth.jpg"
 +++
 

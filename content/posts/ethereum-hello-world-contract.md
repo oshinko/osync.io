@@ -2,7 +2,7 @@
 date = "2018-06-22T16:00:00+09:00"
 draft = false
 title = "Ethereum Hello World Contract"
-tags = ["ethereum", "solidity"]
+tags = ["Ethereum", "Solidity"]
 image = "/images/headers/solidity.png"
 +++
 

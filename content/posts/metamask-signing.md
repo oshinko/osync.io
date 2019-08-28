@@ -2,7 +2,7 @@
 date = "2018-06-19T18:00:00+09:00"
 draft = false
 title = "MetaMask Signing"
-tags = ["metamask", "ethereum"]
+tags = ["MetaMask", "Ethereum"]
 image = "/images/headers/metamask.png"
 +++
 

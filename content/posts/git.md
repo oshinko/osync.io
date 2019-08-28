@@ -2,7 +2,7 @@
 date = "2018-06-15T20:00:00+09:00"
 draft = false
 title = "Git インストール"
-tags = ["git"]
+tags = ["Git"]
 image = "/images/headers/git.png"
 +++
 

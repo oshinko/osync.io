@@ -2,7 +2,7 @@
 date = "2018-08-11T19:00:00+09:00"
 draft = false
 title = "HTTP Ethereum Authentication"
-tags = ["http", "ethereum", "auth"]
+tags = ["HTTP", "Ethereum", "Auth"]
 image = "/images/headers/http-ethereum-auth.jpg"
 +++
 

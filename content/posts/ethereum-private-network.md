@@ -2,7 +2,7 @@
 date = "2018-06-20T22:15:00+09:00"
 draft = false
 title = "Ethereum Private Network"
-tags = ["ethereum", "blockchain"]
+tags = ["Ethereum", "Blockchain"]
 image = "/images/headers/ethereum.png"
 +++
 
