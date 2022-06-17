@@ -98,7 +98,7 @@ Hint は、認証を開始してからの有効期限と、ユーザー任意の
 
 次の疑似コードは、 Hint の作成例です。
 
-```
+```bash
 Secret = "Your secret words"
 Address = "me@domain"
 Password = RANDOM()

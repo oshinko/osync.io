@@ -10,13 +10,13 @@ MetaMask を介したメッセージ署名を行いました。
 
 ## MetaMask を準備
 
-MetaMask は Chrome 拡張機能です。下記からダウンロードください。
+MetaMask は Chrome 拡張機能です。下記からダウンロードください。
 
 [![MetaMask](/images/metamask-dl.png)](https://metamask.io/)
 
 ## HTML を作成
 
-MetaMask が用意した Ethereum web3 API を実行する HTML ファイルを作成します。
+MetaMask が用意した Ethereum web3 API を実行する HTML ファイルを作成します。
 
 ```bash
 cat <<EOF> metamask-signing.html

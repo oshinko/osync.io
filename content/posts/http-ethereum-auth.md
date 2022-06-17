@@ -33,7 +33,7 @@ python -m pip install -U -e git+https://github.com/oshinko/pyhttpauth.git#egg=ht
 [Flask](http://flask.pocoo.org) を使って作っていきます。
 他のお好みのフレームワークでもいいと思います。
 
-```
+```bash
 cat <<EOF> run.py
 from flask import Flask, jsonify, request
 from osnk.httpauth import EthereumAuthentication
@@ -115,7 +115,7 @@ EOF
 
 サーバーを起動します。
 
-```
+```bash
 python run.py
 ```
 
