@@ -18,8 +18,8 @@ MetaMask は Chrome 拡張機能です。下記からダウンロードくださ
 
 MetaMask が用意した Ethereum web3 API を実行する HTML ファイルを作成します。
 
-```bash
-cat <<EOF> metamask-signing.html
+```sh
+cat << EOF > metamask-signing.html
 <!DOCTYPE html>
 <html>
   <head>
@@ -65,7 +65,7 @@ EOF
 
 Web サーバーはなんでもいいのですが、 Python 3 の http.server モジュールを利用するのが楽です。
 
-```bash
+```sh
 python3 -m http.server
 ```
 

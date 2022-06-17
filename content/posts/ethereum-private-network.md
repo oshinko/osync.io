@@ -12,7 +12,7 @@ image = "/images/headers/ethereum.png"
 
 このような環境を構築します。
 
-```bash
+```sh
 tree -a
 .
 ├── .ethereum-dev
@@ -28,7 +28,7 @@ tree -a
 
 プライベートネットワークの ID を決めます。既知の値は避けてください。
 
-```bash
+```sh
 NETID=15
 ```
 
@@ -36,8 +36,8 @@ NETID=15
 
 始祖となるブロックを定義します。
 
-```bash
-cat <<EOF> genesis.json
+```sh
+cat << EOF > genesis.json
 {
   "config": {
     "chainId": $NETID
@@ -59,7 +59,7 @@ EOF
 
 macOS の場合は、公式ウォレットの [Mist](https://github.com/ethereum/mist) に含まれる Geth を使います。
 
-```bash
+```sh
 geth() { $HOME/Library/Application\ Support/Ethereum\ Wallet/binaries/Geth/unpacked/geth $*; }
 ```
 
@@ -67,13 +67,13 @@ geth() { $HOME/Library/Application\ Support/Ethereum\ Wallet/binaries/Geth/unpac
 
 データディレクトリを決めます。
 
-```bash
+```sh
 DATA=$HOME/.ethereum-dev/miner
 ```
 
 genesis.json より初期化します。
 
-```bash
+```sh
 geth --datadir $DATA init genesis.json
 ```
 
@@ -81,19 +81,19 @@ geth --datadir $DATA init genesis.json
 
 データディレクトリを決めます。
 
-```bash
+```sh
 DATA=$HOME/.ethereum-dev/clients/1
 ```
 
 genesis.json より初期化します。
 
-```bash
+```sh
 geth --datadir $DATA init genesis.json
 ```
 
 一度起動してマイニング報酬の宛先となるアカウントを作成しておきます。
 
-```bash
+```sh
 geth --datadir $DATA --networkid $NETID --port 30305 console 2>> $DATA/err.log
 > 
 > personal.newAccount('')  // Create an empty password account
@@ -105,7 +105,7 @@ geth --datadir $DATA --networkid $NETID --port 30305 console 2>> $DATA/err.log
 
 マイニング報酬の宛先をクライアントが持つアドレス指定して実行後、ログに出力されたノード情報をコピーします。
 
-```bash
+```sh
 ETHERBASE=0x71efd180a2246663624a3e6f13da97b9315815f3
 
 geth --datadir $DATA --networkid $NETID --identity miner \
@@ -121,7 +121,7 @@ INFO [06-21|20:56:52] UDP listener up self=enode://84a278e86445104cb2552369acf31
 
 マイナーのノード情報を `bootnodes` に指定して起動します。
 
-```bash
+```sh
 MINERADDR=127.0.0.1
 
 BOOTNODES=enode://84a278e86445104cb2552369acf31a5e6b74751fd9e57bffcaa8e89e65d63ec30ee560ba6e1ef1c312af0f7859c875b0ce043d066d33542e29a48813b2f9ba54@$MINERADDR:30304

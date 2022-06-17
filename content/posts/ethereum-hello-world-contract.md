@@ -16,8 +16,8 @@ image = "/images/headers/solidity.png"
 
 Greeter は、他の誰かに挨拶するためのコントラクトです。予め決めたメッセージで初期化したオブジェクトを、誰かが `greet` 関数を呼び出すことでメッセージを取得できます。
 
-```bash
-cat <<EOF> Greeter.sol
+```sh
+cat << EOF > Greeter.sol
 pragma solidity ^0.4.24;
 
 /* 自己破棄可能なコントラクト */
@@ -73,7 +73,7 @@ Solidity コンパイラの `solc` を使用するため、[ドキュメント](
 
 次のシェルスクリプトは、ドキュメントのリンク先にある、ソースコードからのビルド手順をまとめたものです。
 
-```bash
+```sh
 git clone --recursive https://github.com/ethereum/solidity.git
 cd solidity
 git checkout v0.4.24  # Select from `git tag -l`
@@ -86,7 +86,7 @@ solc  # Show help message
 
 #### Installing Boost on macOS
 
-```bash
+```sh
 curl -OL https://dl.bintray.com/boostorg/release/1.66.0/source/boost_1_66_0.tar.gz
 tar xzf boost_1_66_0.tar.gz
 cd boost_1_66_0
@@ -96,7 +96,7 @@ sudo ./b2 install --prefix=/usr/local/boost
 
 #### Installing Solidity on macOS
 
-```bash
+```sh
 git clone --recursive https://github.com/ethereum/solidity.git
 cd solidity
 git checkout v0.4.24  # Select from `git tag -l`
@@ -106,13 +106,13 @@ solc  # Show help message
 
 `Greeter.sol` をコンパイルします。
 
-```bash
+```sh
 solc -o target --bin --abi Greeter.sol
 ```
 
 次のように target というディレクトリに .abi (Application Binary Interface) と .bin が作成されます。
 
-```bash
+```sh
 tree
 .
 ├── Greeter.sol

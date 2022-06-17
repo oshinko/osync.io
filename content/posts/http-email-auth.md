@@ -18,7 +18,7 @@ Email を利用した HTTP 認証スキームです。
 
 HTTP リクエストと同時に、本文にパスワードを含んだメールが送信されます。
 
-```bash
+```sh
 $ curl -v -d '["me@domain"]' http://localhost:8080/email/auth
 *   Trying 127.0.0.1...
 * TCP_NODELAY set
@@ -46,7 +46,7 @@ $ curl -v -d '["me@domain"]' http://localhost:8080/email/auth
 
 Hint を環境変数に設定するには、次のようなコマンドを実行します。
 
-```bash
+```sh
 HINT=`curl -d '["me@domain"]' http://localhost:8080/email/auth | sed -e 's/^"//' -e 's/"$//'`
 ```
 
@@ -58,7 +58,7 @@ HINT=`curl -d '["me@domain"]' http://localhost:8080/email/auth | sed -e 's/^"//'
 
 `GET /email/token` が、その役割を担う API と仮定します。
 
-```bash
+```sh
 $ ADDR=`echo -n me@domain | base64`
 $ PASS=`echo -n $RECEIVED_PASSWORD | base64`
 $ curl -v -H "Authorization: Email $ADDR $PASS $HINT" http://localhost:8080/email/token
@@ -86,7 +86,7 @@ $ curl -v -H "Authorization: Email $ADDR $PASS $HINT" http://localhost:8080/emai
 
 アクセストークンを環境変数に設定するには、次のようなコマンドを実行します。
 
-```bash
+```sh
 TOKEN=`curl -H "Authorization: Email $ADDR $PASS $HINT" http://localhost:8080/email/token | sed -e 's/^"//' -e 's/"$//'`
 ```
 
@@ -98,7 +98,7 @@ Hint は、認証を開始してからの有効期限と、ユーザー任意の
 
 次の疑似コードは、 Hint の作成例です。
 
-```bash
+```sh
 Secret = "Your secret words"
 Address = "me@domain"
 Password = RANDOM()
@@ -115,7 +115,7 @@ Hint = BASE64(Expires + Payload + Signature)
 
 メール認証によって得られたアクセストークンをサーバーに提示することで、アクセス権を証明します。
 
-```bash
+```sh
 $ curl -v -H "Authorization: Email-Token $TOKEN" http://localhost:8080/locked/contents
 *   Trying 127.0.0.1...
 * TCP_NODELAY set

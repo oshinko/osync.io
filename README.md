@@ -10,12 +10,12 @@ https://github.com/gohugoio/hugo/releases
 
 Running the local development server.
 
-```bash
+```sh
 hugo -t osync.io --cleanDestinationDir server
 ```
 
 ## Deployment
 
-```bash
+```sh
 ./deploy.sh
 ```

@@ -14,7 +14,7 @@ Ethereum アドレスを検証する HTTP 認証スキームです。
 
 仕様はシンプルで、次のようにアドレスと署名を Authorization ヘッダに記述することにより、検証および認証を行います。
 
-```bash
+```sh
 curl -X POST -H "Authorization: Ethereum $ADDR $SIGN" \
      http://localhost:8080/ethereum/addresses
 ```
@@ -25,7 +25,7 @@ curl -X POST -H "Authorization: Ethereum $ADDR $SIGN" \
 
 事前に `osnk.httpauth` と `osnk.validations` をインストールしてください。
 
-```bash
+```sh
 python -m pip install -U -e git+https://github.com/oshinko/pyvalidation.git#egg=validation
 python -m pip install -U -e git+https://github.com/oshinko/pyhttpauth.git#egg=httpauth
 ```
@@ -33,8 +33,8 @@ python -m pip install -U -e git+https://github.com/oshinko/pyhttpauth.git#egg=ht
 [Flask](http://flask.pocoo.org) を使って作っていきます。
 他のお好みのフレームワークでもいいと思います。
 
-```bash
-cat <<EOF> run.py
+```sh
+cat << EOF > run.py
 from flask import Flask, jsonify, request
 from osnk.httpauth import EthereumAuthentication
 from osnk.validations import requires
@@ -115,7 +115,7 @@ EOF
 
 サーバーを起動します。
 
-```bash
+```sh
 python run.py
 ```
 
