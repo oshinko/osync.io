@@ -19,6 +19,7 @@
         <title>{{ .Title }} - {{ .Site.Title }}</title>
     {{ end }}
     <link rel="stylesheet" href="/fonts/FiraCode/fira_code.css">
+    {{ template "_internal/google_analytics.html" . }}
     <style>
         @font-face {
             font-family: flop;

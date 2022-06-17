@@ -2,10 +2,10 @@
 
 hugo -t osync.io --cleanDestinationDir
 cd public
-cat <<EOF> CNAME
+cat << EOF > CNAME
 osync.io
 EOF
-python3 -m http.server
+python -m http.server
 
 echo "Do you want to deploy? [Y/n]"
 read ANSWER
@@ -14,7 +14,7 @@ case $ANSWER in
     "" | "Y" | "y" | "yes" | "Yes" | "YES" )
       echo "Start deployment."
       git init
-      git remote add origin git@github.com:oshinko/osync.io-public.git
+      git remote add origin https://github.com/oshinko/osync.io-public.git
       git add .
       git reset *.DS_Store
       git commit -m 'Deployment commit'

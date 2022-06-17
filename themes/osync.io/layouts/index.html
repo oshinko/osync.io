@@ -5,7 +5,7 @@
         {{ partial "header" . }}
         {{ partial "nav" . }}
         <main>
-            {{ $paginator := .Paginate .Data.Pages 5 }}
+            {{ $paginator := .Paginate .Site.RegularPages 5 }}
             {{ range $paginator.Pages }}
                 {{ partial "list-item" . }}
             {{ end }}
