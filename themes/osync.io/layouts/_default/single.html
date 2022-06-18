@@ -10,7 +10,7 @@
                 {{ if and (ne .Type "page") }}
                     {{ with .GitInfo }}
                         <p class="date">
-                            <time datetime="{{ .AuthorDate.Format "2006-01-02 15:04:05 -0700"}}">
+                            <time datetime="{{ .AuthorDate.Format "2006-01-02 15:04:05 -0700" }}">
                                 Last committed on {{ .AuthorDate.Format "06/01/02 15:04 -0700" }}
                             </time>
                         </p>
