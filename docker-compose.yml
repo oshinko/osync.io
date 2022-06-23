@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+  build:
+    build: https://github.com/gohugoio/hugo.git
+    command: --cleanDestinationDir
+    volumes:
+      - .:/osync.io
+    working_dir: /osync.io
+
+  dev:  # LiveReload not working on Docker Desktop for Windows
+    build: https://github.com/gohugoio/hugo.git
+    command: --cleanDestinationDir server --bind 0.0.0.0 -p ${PORT}
+    ports:
+      - '${PORT}:${PORT}'
+    volumes:
+      - .:/osync.io
+    working_dir: /osync.io

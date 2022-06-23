@@ -14,8 +14,8 @@ Running the local development server.
 hugo -t osync.io --cleanDestinationDir server
 ```
 
-## Deployment
+## Build static pages
 
 ```sh
-./deploy.sh
+hugo -t osync.io --cleanDestinationDir
 ```

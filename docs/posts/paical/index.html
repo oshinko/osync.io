@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="野良プログラマーおしんこのブログ">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@"> 
+    <meta name="twitter:site" content="@">
+    <meta property="og:url" content="http://osync.io/posts/paical/">
+    
+        <meta property="og:title" content="Google カレンダーから稼働表を作成する - Osync I/O"> 
+    
+    <meta property="og:description" content="稼働表を作成する面倒臭さ 私の職業柄、請求書を作成するために「今日何時間働いた」という記録を残すことが多いのですが、これがとても面倒臭いのです">
+    <meta property="og:image" content="http://osync.io/images/headers/paical.png">
+    
+        <title>Google カレンダーから稼働表を作成する - Osync I/O</title>
+    
+    <link rel="stylesheet" href="/fonts/FiraCode/fira_code.css">
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JQCHZM9PGG"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-JQCHZM9PGG', { 'anonymize_ip': false });
+}
+</script>
+
+    <style>
+        @font-face {
+            font-family: flop;
+            src: url(/fonts/flop/FLOPDesignFont.woff2) format("woff2"),
+                 url(/fonts/flop/FLOPDesignFont.woff) format("woff");
+            font-weight: 400;
+        }
+        img {
+            max-width: 100%;
+        }
+        body {
+            margin: 0;
+            font-family: flop, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background-color: #e7f4ff;
+        }
+        a {
+            color: #499bea;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #304999;
+        }
+        pre code {
+            border: 1px solid #999;
+            display: block;
+            padding: 1em;
+            line-height: 1.4em;
+            font-family: 'Fira Code', monospace;
+            overflow: auto;
+        }
+        header {
+            padding: 1em;
+            background: linear-gradient(to top, #499bea 0%, #304999 100%);
+            color: #b6cee2;
+            font-size: 1.2em;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0 0 .4em 0;
+            color: #fff;
+        }
+        header h1 a {
+            color: inherit;
+            text-decoration: none;
+        }
+        header h1 a:hover {
+            color: #b6cee2;
+        }
+        header p {
+            margin: 0;
+            font-size: .8em;
+        }
+        nav {
+            margin: 1em;
+        }
+        @media screen and (min-width: 920px) {
+            nav {
+                width: 912px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        nav li {
+            display: inline;
+            line-height: 1.6;
+            padding-bottom: .4em;
+            border-bottom: 2px solid #fff;
+        }
+        nav li.selected {
+            border-bottom: 2px solid #cc0051;
+        }
+        main {
+            margin: 1em;
+        }
+        @media screen and (min-width: 920px) {
+            main {
+                width: 912px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        article {
+            margin: 1.5em 0;
+            padding: 1em;
+            background-color: #fff;
+        }
+        article h1 {
+            margin: 0 0 .6em 0;
+            font-size: 1.5em;
+        }
+        article h2 {
+            position: relative;
+            padding: .6em 1em;
+            background-color: #61a5e4;
+            border-radius: 7px;
+            color: white;
+            font-size: 1.25em;
+        }
+        article h2:after {
+            position: absolute;
+            content: '';
+            top: 100%;
+            left: 30px;
+            border: 8px solid transparent;
+            border-top: 8px solid #61a5e4;
+            width: 0;
+            height: 0;
+        }
+        article h3 {
+            padding: .25em 0 .25em .6em;
+            border-left: .4em solid #499bea;
+            font-size: 1.125em;
+        }
+        article > ul {
+            margin: 1em 0;
+            padding: 0;
+            list-style: none;
+            font-size: .8em;
+        }
+        article > ul li {
+            display: inline;
+            line-height: 1.6;
+        }
+        article .date {
+            font-size: .8em;
+        }
+        section li {
+            line-height: 1.6;
+        }
+        footer {
+            margin: 1em;
+        }
+        footer ul {
+            margin: 0;
+            padding: 0 0 0;
+            list-style: none;
+            text-align: center;
+        }
+        footer li {
+            display: inline;
+            line-height: 1.6;
+        }
+        footer small {
+            display: block;
+            margin: 1em;
+            text-align: center;
+            color: #666;
+        }
+        .responsive {
+            position: relative;
+            padding-bottom: 75%;
+        }
+        .responsive > * {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 120%;
+        }
+        ul.pagination {
+            margin: 0;
+            padding: 0;
+            font-family: Tahoma, Sans-Serif;
+        }
+        ul.pagination li {
+            display: inline;
+            padding: .2em;
+        }
+    </style>
+</head>
+
+    <body>
+        <header>
+    <h1><a href="/">Osync I/O</a></h1>
+    <p>野良プログラマーおしんこのブログ</p>
+</header>
+
+        
+
+<nav>
+    <ul>
+        
+            <li>
+                <a href="/posts">Posts</a></li>
+        
+            <li>
+                <a href="/tags">Tags</a></li>
+        
+            <li>
+                <a href="/about">About</a></li>
+        
+    </ul>
+</nav>
+
+
+        <main>
+            <article>
+                <h1><a href="/posts/paical/">Google カレンダーから稼働表を作成する</a></h1>
+                
+                    
+                        <p class="date">
+                            <time datetime="2022-06-18 19:31:20 &#43;0900">
+                                Last committed on 22/06/18 19:31 &#43;0900
+                            </time>
+                        </p>
+                    
+                    <p class="date">
+                        <time datetime="2022-06-18T19:30:00Z&#43;0900">
+                            Posted on 22/06/18 19:30 &#43;0900
+                        </time>
+                    </p>
+                
+                
+                    <ul>
+                        
+                            <li><a href="/tags/paical">paical</a></li>
+                        
+                            <li><a href="/tags/google-calendar">google-calendar</a></li>
+                        
+                    </ul>
+                
+                <img src="/images/headers/paical.png">
+                
+                <section><h2 id="稼働表を作成する面倒臭さ">稼働表を作成する面倒臭さ</h2>
+<p>私の職業柄、請求書を作成するために「今日何時間働いた」という記録を残すことが多いのですが、これがとても面倒臭いのです。</p>
+<p>理由は、次のようなものです。</p>
+<ul>
+<li>都度入力する場合、記録を忘れがち</li>
+<li>事前入力する場合、祝日を考慮しないといけない</li>
+<li>場合によっては、スマートデバイスでの入力や閲覧が不可</li>
+</ul>
+<p>他にも、このような課題があったりしますが、今回は対象外です。。</p>
+<ul>
+<li>よく分からないエクセル方眼紙的なフォーマット入力を強制されている</li>
+<li>謎のクラウドサービスの利用を強要されていて辛い</li>
+</ul>
+<p>今回はその解決策として、Google カレンダーを利用する方法をご紹介します。</p>
+<h2 id="google-カレンダーだと何が嬉しいか">Google カレンダーだと何が嬉しいか</h2>
+<p>さて、Google カレンダーを利用すると何が嬉しいでしょう。</p>
+<ul>
+<li>カレンダーに予定を入れる感覚で、稼働時間を記録できる</li>
+<li>PC だけでなく、アプリを介したスマートデバイスでの入力や閲覧が保証されている</li>
+</ul>
+<p>Google カレンダーは、広く使われているサービスですから、入力や閲覧はどのデバイスでも自由にできますね。</p>
+<p>ただ、今回は稼働表に代用したいわけなので、その後の集計 (月単位など) が行えなくてはならないし、祝日の考慮も必要です。</p>
+<p>次に紹介する <a href="https://paical.io/">PaiCal</a> は、これを解決する Web サービスです。</p>
+<h2 id="paical-を使う">PaiCal を使う</h2>
+<p><a href="https://paical.io/">PaiCal</a> の主な機能は、次の通りです。</p>
+<ul>
+<li>Google カレンダーを登録したイベントごとに、馴染みのファイル形式に変換できる</li>
+<li>日本の祝日や独自の休日カレンダー (例えば、会社休など) を選択し、マスクをかけられる</li>
+<li>ファイル形式を指定 (CSV, TSV, JSON, YAML) して、ダウンロードできる</li>
+</ul>
+<p>※「マスクをかけられる」とは、特定のイベントが休日に登録されている場合、変換後のファイルから除外できるということです。</p>
+<p>実際に 2022-06-01 から三日間の稼働をカレンダーに登録して CSV に変換すると、次のようなデータになります。
+(一日に一時間の休憩を含む)</p>
+<pre tabindex="0"><code>date,day,summary,start,end,hours
+2022-06-01,3,稼働,10:00,12:00,2
+2022-06-01,3,稼働,13:00,19:00,6
+2022-06-02,4,稼働,10:00,12:00,2
+2022-06-02,4,稼働,13:00,19:00,6
+2022-06-03,5,稼働,10:00,12:00,2
+2022-06-03,5,稼働,13:00,19:00,6
+</code></pre><h2 id="さいごに">さいごに</h2>
+<p>実はこの PaiCal, 私の会社で開発するサービスでして、常々「なぜ、わざわざエクセルや専用のサービスで管理しないといけないのか。使い慣れたカレンダーでいいじゃないか。」と考えておりまして、開発に至ったものでございます。</p>
+<p>今後も機能を強化していきたいと考えていますので、フィードバック (<a href="https://paical.io/">PaiCal</a> メニューから送信可能) をいただければ幸いです！</p>
+<p>それではまた～！</p>
+</section>
+            </article>
+        </main>
+        <footer>
+    
+    <ul>
+        
+            <li><a href="https://discord.gg/JhgFz8u">Discord</a></li>
+        
+            <li><a href="https://github.com/oshinko">GitHub</a></li>
+        
+            <li><a href="https://twitter.com/Osynco">Twitter</a></li>
+        
+            <li><a href="https://steamcommunity.com/id/Osh1nko">Steam</a></li>
+        
+    </ul>
+    
+    <small>
+        (C) 2022 Osync I/O.
+        Powered by <a href="https://gohugo.io">Hugo</a>.
+    </small>
+</footer>
+
+    </body>
+</html>
