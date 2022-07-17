@@ -3,8 +3,6 @@ baseURL = "http://osync.io"
 hasCJKLanguage = true
 enableGitInfo = true
 googleAnalytics = "G-JQCHZM9PGG"
-publishDir = "docs/"
-theme = "osync.io"
 
 [menu]
 

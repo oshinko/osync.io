@@ -1,0 +1,66 @@
+name: GitHub Pages
+
+env:
+  AUTO_COMMITTER_EMAIL: github-actions[bot]@users.noreply.github.com
+  AUTO_COMMITTER_NAME: github-actions[bot]
+  CNAME: osync.io
+  COMMIT_MESSAGE: Deploy ${{ github.sha }}
+  DIST_DIR: ./public
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  PAGES_BRANCH: gh-pages
+  REPO: https://x-access-toke:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.91.2'
+          # extended: 
+
+      - name: Build
+        run: hugo --destination $DIST_DIR --minify
+
+      - name: Deploy
+        shell: bash -eux {0}
+        run: |
+          if [[ "$DIST_DIR" != /* ]]; then
+            DIST_DIR=$GITHUB_WORKSPACE/$DIST_DIR
+          fi
+          WORKSPACE=$HOME/deploy-${{ github.sha }}
+          mkdir -p $WORKSPACE/repo
+          cd $WORKSPACE/repo
+          if ! git clone $REPO --branch $PAGES_BRANCH --depth 1 --single-branch .; then
+            git clone $REPO --depth 1 --single-branch .
+            git switch --orphan $PAGES_BRANCH
+          fi
+          git rm -r --ignore-unmatch "*"
+          cp -r $DIST_DIR/. .
+          echo $CNAME > ./CNAME
+          git add .
+          git config user.email $AUTO_COMMITTER_EMAIL
+          git config user.name $AUTO_COMMITTER_NAME
+          if git commit -m "$COMMIT_MESSAGE"; then
+            git push origin $PAGES_BRANCH
+          else
+            echo "No changes added to commit"
+          fi
