@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>法人情報検索</title>
+</head>
+<body>
+<h1>法人情報検索</h1>
+
+<!-- <section>
+  <h1>法人番号検索</h1>
+  https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=
+</section> -->
+
+<section>
+  <h1>従業員数検索</h1>
+  <p>日本年金機構の検索システムを利用して、対象企業の従業員数を閲覧します。</p>
+  <form
+    method="POST"
+    action="https://www2.nenkin.go.jp/do/search_section"
+    onsubmit="return f(this)"
+  >
+    <input type="hidden" name="hdnSearchOffice" value="3">
+    <input type="hidden" name="hdnSearchCriteria" value="3">
+    <input type="hidden" name="eventId" value="/search.html">
+    <input type="hidden" name="/search.html" value="">
+    <input
+      type="text"
+      name="txtHoujinNo"
+      value="4011305001653"
+      placeholder="法人番号"
+      required>
+    <button type="submit">検索</button>
+  </form>
+</section>
+
+<!-- <section>
+  <h1>法人プロフィール</h1>
+  https://info.gbiz.go.jp/hojin/ichiran?hojinBango=
+</section> -->
+
+<script>
+function f(form) {
+  return window.confirm(`日本年金機構の検索結果ページ (${form.action}) にジャンプします。よろしいですか？`)
+}
+</script>
+</body>
+</html>
