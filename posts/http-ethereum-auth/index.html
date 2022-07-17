@@ -1,0 +1,163 @@
+<!doctype html><html>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="野良プログラマーおしんこのブログ">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:creator content="@">
+<meta name=twitter:site content="@">
+<meta property="og:url" content="http://osync.io/posts/http-ethereum-auth/">
+<meta property="og:title" content="HTTP Ethereum Authentication - Osync I/O">
+<meta property="og:description" content="Ethereum アドレスを検証する HTTP 認証スキームです。 具体的な実装は、 Python パッケージで確認できます。 使い方 仕様はシンプルで、次のようにアドレスと署名を Authorization ヘッ">
+<meta property="og:image" content="http://osync.io/images/headers/http-ethereum-auth.jpg">
+<title>HTTP Ethereum Authentication - Osync I/O</title>
+<link rel=stylesheet href=/fonts/FiraCode/fira_code.css>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JQCHZM9PGG"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-JQCHZM9PGG',{anonymize_ip:!1})}</script>
+<style>@font-face{font-family:flop;src:url(/fonts/flop/FLOPDesignFont.woff2)format("woff2"),url(/fonts/flop/FLOPDesignFont.woff)format("woff");font-weight:400}img{max-width:100%}body{margin:0;font-family:flop,helvetica neue,Helvetica,Arial,sans-serif;background-color:#e7f4ff}a{color:#499bea;text-decoration:none}a:hover{color:#304999}pre code{border:1px solid #999;display:block;padding:1em;line-height:1.4em;font-family:fira code,monospace;overflow:auto}header{padding:1em;background:linear-gradient(to top,#499bea 0%,#304999 100%);color:#b6cee2;font-size:1.2em;text-align:center}header h1{margin:0 0 .4em;color:#fff}header h1 a{color:inherit;text-decoration:none}header h1 a:hover{color:#b6cee2}header p{margin:0;font-size:.8em}nav{margin:1em}@media screen and (min-width:920px){nav{width:912px;margin-left:auto;margin-right:auto}}nav ul{margin:0;padding:0;list-style:none}nav li{display:inline;line-height:1.6;padding-bottom:.4em;border-bottom:2px solid #fff}nav li.selected{border-bottom:2px solid #cc0051}main{margin:1em}@media screen and (min-width:920px){main{width:912px;margin-left:auto;margin-right:auto}}article{margin:1.5em 0;padding:1em;background-color:#fff}article h1{margin:0 0 .6em;font-size:1.5em}article h2{position:relative;padding:.6em 1em;background-color:#61a5e4;border-radius:7px;color:#fff;font-size:1.25em}article h2:after{position:absolute;content:'';top:100%;left:30px;border:8px solid transparent;border-top:8px solid #61a5e4;width:0;height:0}article h3{padding:.25em 0 .25em .6em;border-left:.4em solid #499bea;font-size:1.125em}article>ul{margin:1em 0;padding:0;list-style:none;font-size:.8em}article>ul li{display:inline;line-height:1.6}article .date{font-size:.8em}section li{line-height:1.6}footer{margin:1em}footer ul{margin:0;padding:0;list-style:none;text-align:center}footer li{display:inline;line-height:1.6}footer small{display:block;margin:1em;text-align:center;color:#666}.responsive{position:relative;padding-bottom:75%}.responsive>*{position:absolute;top:0;left:0;width:100%;height:120%}ul.pagination{margin:0;padding:0;font-family:Tahoma,Sans-Serif}ul.pagination li{display:inline;padding:.2em}</style>
+</head>
+<body>
+<header>
+<h1><a href=/>Osync I/O</a></h1>
+<p>野良プログラマーおしんこのブログ</p>
+</header>
+<nav>
+<ul>
+<li>
+<a href=/posts>Posts</a></li>
+<li>
+<a href=/tags>Tags</a></li>
+<li>
+<a href=/about>About</a></li>
+</ul>
+</nav>
+<main>
+<article>
+<h1><a href=/posts/http-ethereum-auth/>HTTP Ethereum Authentication</a></h1>
+<p class=date>
+<time datetime="2022-06-18 00:24:12 +0900">
+Last committed on 22/06/18 00:24 +0900
+</time>
+</p>
+<p class=date>
+<time datetime=2018-08-11T19:00:00Z+0900>
+Posted on 18/08/11 19:00 +0900
+</time>
+</p>
+<ul>
+<li><a href=/tags/http>http</a></li>
+<li><a href=/tags/ethereum>ethereum</a></li>
+<li><a href=/tags/auth>auth</a></li>
+</ul>
+<img src=/images/headers/http-ethereum-auth.jpg>
+<section><p>Ethereum アドレスを検証する HTTP 認証スキームです。</p>
+<p>具体的な実装は、 <a href=https://github.com/oshinko/pyhttpauth>Python パッケージ</a>で確認できます。</p>
+<h2 id=使い方>使い方</h2>
+<p>仕様はシンプルで、次のようにアドレスと署名を Authorization ヘッダに記述することにより、検証および認証を行います。</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>curl -X POST -H <span style=color:#e6db74>&#34;Authorization: Ethereum </span>$ADDR<span style=color:#e6db74> </span>$SIGN<span style=color:#e6db74>&#34;</span> <span style=color:#ae81ff>\
+</span><span style=color:#ae81ff></span>     http://localhost:8080/ethereum/addresses
+</code></pre></div><h2 id=動作確認>動作確認</h2>
+<p>実際に簡単なサーバーを作っていきます。</p>
+<p>事前に <code>osnk.httpauth</code> と <code>osnk.validations</code> をインストールしてください。</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>python -m pip install -U -e git+https://github.com/oshinko/pyvalidation.git#egg<span style=color:#f92672>=</span>validation
+python -m pip install -U -e git+https://github.com/oshinko/pyhttpauth.git#egg<span style=color:#f92672>=</span>httpauth
+</code></pre></div><p><a href=http://flask.pocoo.org>Flask</a> を使って作っていきます。
+他のお好みのフレームワークでもいいと思います。</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>cat <span style=color:#e6db74>&lt;&lt; EOF &gt; run.py
+</span><span style=color:#e6db74>from flask import Flask, jsonify, request
+</span><span style=color:#e6db74>from osnk.httpauth import EthereumAuthentication
+</span><span style=color:#e6db74>from osnk.validations import requires
+</span><span style=color:#e6db74>
+</span><span style=color:#e6db74>app = Flask(__name__)
+</span><span style=color:#e6db74>eth_auth = EthereumAuthentication()
+</span><span style=color:#e6db74>
+</span><span style=color:#e6db74>
+</span><span style=color:#e6db74>@eth_auth.authorization
+</span><span style=color:#e6db74>def authorization(header):
+</span><span style=color:#e6db74>    return request.headers.get(header)
+</span><span style=color:#e6db74>
+</span><span style=color:#e6db74>
+</span><span style=color:#e6db74>@eth_auth.authenticate
+</span><span style=color:#e6db74>def authenticate(header, scheme):
+</span><span style=color:#e6db74>    return jsonify(error=&#39;Unauthorized&#39;), 401, {header: scheme}
+</span><span style=color:#e6db74>
+</span><span style=color:#e6db74>
+</span><span style=color:#e6db74>@eth_auth.message
+</span><span style=color:#e6db74>def message(address):
+</span><span style=color:#e6db74>    return b&#39;Hello!&#39;
+</span><span style=color:#e6db74>
+</span><span style=color:#e6db74>
+</span><span style=color:#e6db74>@app.route(&#39;/ethereum/addresses&#39;, methods=[&#39;POST&#39;])
+</span><span style=color:#e6db74>@requires(eth_auth)
+</span><span style=color:#e6db74>def post_ethereum_addresses():
+</span><span style=color:#e6db74>    return jsonify(f&#39;0x{eth_auth.address.hex()}&#39;)
+</span><span style=color:#e6db74>
+</span><span style=color:#e6db74>
+</span><span style=color:#e6db74>@app.route(&#39;/&#39;)
+</span><span style=color:#e6db74>def get_client():
+</span><span style=color:#e6db74>    return &#34;&#34;&#34;
+</span><span style=color:#e6db74>&lt;!DOCTYPE html&gt;
+</span><span style=color:#e6db74>&lt;html&gt;
+</span><span style=color:#e6db74>&lt;head&gt;
+</span><span style=color:#e6db74>  &lt;title&gt;Client&lt;/title&gt;
+</span><span style=color:#e6db74>&lt;/head&gt;
+</span><span style=color:#e6db74>&lt;body&gt;
+</span><span style=color:#e6db74>  &lt;script&gt;
+</span><span style=color:#e6db74>    var web3 = new Web3(web3.currentProvider);
+</span><span style=color:#e6db74>    var current = null;
+</span><span style=color:#e6db74>    setInterval(() =&gt; {
+</span><span style=color:#e6db74>      if (web3.eth.defaultAccount !== current) {
+</span><span style=color:#e6db74>        current = web3.eth.defaultAccount;
+</span><span style=color:#e6db74>        var hex = web3.toHex(&#34;Hello!&#34;);
+</span><span style=color:#e6db74>        var from = web3.eth.defaultAccount;
+</span><span style=color:#e6db74>        web3.personal.sign(hex, from, (e, r) =&gt; {
+</span><span style=color:#e6db74>          if (e) {
+</span><span style=color:#e6db74>            var result = document.createTextNode(e.message);
+</span><span style=color:#e6db74>            document.querySelector(&#34;body&#34;).appendChild(result);
+</span><span style=color:#e6db74>            return;
+</span><span style=color:#e6db74>          }
+</span><span style=color:#e6db74>          var req = new XMLHttpRequest();
+</span><span style=color:#e6db74>          req.open(&#34;POST&#34;, &#34;/ethereum/addresses&#34;);
+</span><span style=color:#e6db74>          req.setRequestHeader(&#34;Content-Type&#34;, &#34;application/json&#34;);
+</span><span style=color:#e6db74>          req.setRequestHeader(&#34;Authorization&#34;, \`Ethereum \${from} \${r}\`);
+</span><span style=color:#e6db74>          req.onreadystatechange = () =&gt; {
+</span><span style=color:#e6db74>            if (req.readyState === 4 &amp;&amp; req.status === 200) {
+</span><span style=color:#e6db74>              var address = JSON.parse(req.responseText);
+</span><span style=color:#e6db74>              var result = document.createTextNode(\`Accepted \${address}.\`);
+</span><span style=color:#e6db74>              document.querySelector(&#34;body&#34;).appendChild(result);
+</span><span style=color:#e6db74>            }
+</span><span style=color:#e6db74>          };
+</span><span style=color:#e6db74>          req.send();
+</span><span style=color:#e6db74>        });
+</span><span style=color:#e6db74>      }
+</span><span style=color:#e6db74>    }, 100);
+</span><span style=color:#e6db74>  &lt;/script&gt;
+</span><span style=color:#e6db74>&lt;/body&gt;
+</span><span style=color:#e6db74>&lt;/html&gt;
+</span><span style=color:#e6db74>&#34;&#34;&#34;
+</span><span style=color:#e6db74>
+</span><span style=color:#e6db74>
+</span><span style=color:#e6db74>if __name__ == &#39;__main__&#39;:
+</span><span style=color:#e6db74>    app.run(host=&#39;0.0.0.0&#39;, port=8080, debug=True)
+</span><span style=color:#e6db74>EOF</span>
+</code></pre></div><p>サーバーを起動します。</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>python run.py
+</code></pre></div><p>スクリプト実行後、 <a href=http://localhost:8080>localhost:8080</a> にアクセスすると動作確認ができます。</p>
+<p>以上、 Ethereum Address の所有権の証明をする上での参考になればと思います。</p>
+</section>
+</article>
+</main>
+<footer>
+<ul>
+<li><a href=https://discord.gg/JhgFz8u>Discord</a></li>
+<li><a href=https://github.com/oshinko>GitHub</a></li>
+<li><a href=https://twitter.com/Osynco>Twitter</a></li>
+<li><a href=https://steamcommunity.com/id/Osh1nko>Steam</a></li>
+</ul>
+<small>
+(C) 2022 Osync I/O.
+Powered by <a href=https://gohugo.io>Hugo</a>.
+</small>
+</footer>
+</body>
+</html>
