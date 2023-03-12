@@ -15,7 +15,7 @@ MAX_HEIGHT = 2048
 COMPRESS_QUALITY = 85
 
 
-def f(src_path, dst_dir, size=None):
+def f(src_path, dst_dir):
     src_im = Image.open(src_path)
     dst_path = pathlib.Path(dst_dir) / (pathlib.Path(src_path).stem + '.jpg')
 
@@ -36,9 +36,8 @@ def f(src_path, dst_dir, size=None):
 
 
 src_dir, dst_dir = sys.argv[1:3]
-size = list(map(int, sys.argv[3:5]))
 
 for path in pathlib.Path(src_dir).iterdir():
     if path.suffix not in ('.jpg', '.jpeg'):
         continue
-    f(path, dst_dir, size)
+    f(path, dst_dir)
