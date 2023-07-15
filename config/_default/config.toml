@@ -41,6 +41,11 @@ googleAnalytics = "G-JQCHZM9PGG"
     url = "https://steamcommunity.com/id/Osh1nko"
     weight = 4
 
+  [[menu.footer]]
+    name = "Nostr"
+    url = "https://snort.social/p/npub1xx3kyu57uqukvsxmlhnmafv825pct93455hkn544nd6exlnunxps2psn5q"
+    weight = 5
+
 [params]
   description = "野良プログラマーおしんこのブログ"
   image = "/default.png"
