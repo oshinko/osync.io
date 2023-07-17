@@ -1,6 +1,6 @@
 # Osync I/O
 
-Hugo content for [osync.io](http://osync.io).
+Hugo content for [osync.io](https://osync.io).
 
 ## Installing Hugo
 

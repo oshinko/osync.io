@@ -1,5 +1,5 @@
 title = "Osync I/O"
-baseURL = "http://osync.io"
+baseURL = "https://osync.io"
 hasCJKLanguage = true
 enableGitInfo = true
 googleAnalytics = "G-JQCHZM9PGG"
