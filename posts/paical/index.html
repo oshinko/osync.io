@@ -6,10 +6,10 @@
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:creator content="@">
 <meta name=twitter:site content="@">
-<meta property="og:url" content="http://osync.io/posts/paical/">
+<meta property="og:url" content="https://osync.io/posts/paical/">
 <meta property="og:title" content="Google カレンダーから稼働表を作成する - Osync I/O">
 <meta property="og:description" content="稼働表を作成する面倒臭さ 私の職業柄、請求書を作成するために「今日何時間働いた」という記録を残すことが多いのですが、これがとても面倒臭いのです">
-<meta property="og:image" content="http://osync.io/images/headers/paical.png">
+<meta property="og:image" content="https://osync.io/images/headers/paical.png">
 <title>Google カレンダーから稼働表を作成する - Osync I/O</title>
 <link rel=stylesheet href=/fonts/FiraCode/fira_code.css>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JQCHZM9PGG"></script>
@@ -35,8 +35,8 @@
 <article>
 <h1><a href=/posts/paical/>Google カレンダーから稼働表を作成する</a></h1>
 <p class=date>
-<time datetime="2022-06-18 19:31:20 +0900">
-Last committed on 22/06/18 19:31 +0900
+<time datetime="2023-07-17 14:03:23 +0900">
+Last committed on 23/07/17 14:03 +0900
 </time>
 </p>
 <p class=date>
@@ -82,7 +82,7 @@ Posted on 22/06/18 19:30 +0900
 <p>※「マスクをかけられる」とは、特定のイベントが休日に登録されている場合、変換後のファイルから除外できるということです。</p>
 <p>実際に 2022-06-01 から三日間の稼働をカレンダーに登録して CSV に変換すると、次のようなデータになります。
 (一日に一時間の休憩を含む)</p>
-<pre tabindex=0><code>date,day,summary,start,end,hours
+<pre tabindex=0><code class=language-csv data-lang=csv>date,day,summary,start,end,hours
 2022-06-01,3,稼働,10:00,12:00,2
 2022-06-01,3,稼働,13:00,19:00,6
 2022-06-02,4,稼働,10:00,12:00,2
