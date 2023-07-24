@@ -3,8 +3,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{ or .Description .Site.Params.Description }}">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:creator" content="@{{ .Site.Social.twitter }}"> 
-    <meta name="twitter:site" content="@{{ .Site.Social.twitter }}">
+    <meta name="twitter:creator" content="@{{ .Site.Params.Twitter }}">
+    <meta name="twitter:site" content="@{{ .Site.Params.Twitter }}">
     <meta property="twitter:title" content="{{ .Title }} - {{ .Site.Title }}">
     <meta property="og:url" content="{{ .Permalink }}">
     {{ if eq .Title .Site.Title }}

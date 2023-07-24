@@ -49,3 +49,4 @@ googleAnalytics = "G-JQCHZM9PGG"
 [params]
   description = "野良プログラマーおしんこのブログ"
   image = "/default.png"
+  twitter = "osynco"
