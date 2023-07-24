@@ -7,11 +7,11 @@
     {{ partial "nav" . }}
 
     <main>
-      <div style="display: flex; flex-wrap: wrap; gap: 16px">
+      <div class="article-list">
         {{ $paginator := .Paginate .Site.RegularPages 8 }}
 
         {{ range $paginator.Pages }}
-          <div style="width: 448px">
+          <div class="article-wrapper col2">
             {{ partial "list-item" . }}
           </div>
         {{ end }}
