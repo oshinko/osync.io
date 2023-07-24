@@ -93,14 +93,14 @@ image = "/images/headers/beautiful-nature-20230504.jpg"
 
 ### 健康保険・厚生年金保険事業所関係変更届
 
-1. [事業主の変更や事業所に関する事項の変更（訂正）があったとき](https://www.nenkin.go.jp/service/kounen/todokesho/jigyosho/20150212.html)を開く
+1. 「[事業主の変更や事業所に関する事項の変更（訂正）があったとき](https://www.nenkin.go.jp/service/kounen/todokesho/jigyosho/20150212.html)」を開く
 1. 様式のエクセルファイルをダウンロード
 1. ファイルを開き、情報を記入する
     - [健康保険被保険者整理番号（年金整理番号）とは](https://jobcan-lms.zendesk.com/hc/ja/articles/360000966532)
     - [事業所整理記号と健康保険証「記号」の変換方法](https://gozal.cc/basics/symbol-of-company-for-koseinenkin)
 1. ファイルをクラウドとかに保管する
 1. ファイルを印刷する
-1. [全国の事務センター一覧 (郵送先)](https://www.nenkin.go.jp/service/kounen/todokesho/20150216.html)を参照し、封筒に宛先を書く
+1. [全国の事務センター一覧 (郵送先)](https://www.nenkin.go.jp/service/kounen/todokesho/20150216.html) を参照し、封筒に宛先を書く
 1. 印刷物を封筒に入れ、[切手を貼る](https://www.post.japanpost.jp/send/fee/kokunai/one_two.html)
 1. ポストに投函する
 
