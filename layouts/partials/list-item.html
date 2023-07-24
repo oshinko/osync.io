@@ -9,7 +9,7 @@
     {{ with .Params.tags }}
         <ul>
             {{ range . }}
-                <li><a href="/tags/{{ . | urlize }}">{{ . | urlize }}</a></li>
+                <li><a href="/tags/{{ . | urlize }}">{{ . }}</a></li>
             {{ end }}
         </ul>
     {{ end }}

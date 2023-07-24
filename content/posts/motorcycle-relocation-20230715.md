@@ -2,7 +2,7 @@
 date = "2023-07-15T16:00:00+09:00"
 draft = false
 title = "オートバイ (小型二輪) の引っ越し手続き"
-tags = ["Motorcycle", "SR500"]
+tags = ["Motorcycle", "SR500", "引っ越し"]
 image = "/images/headers/yamaha-sr-1jn-20230126.jpg"
 +++
 

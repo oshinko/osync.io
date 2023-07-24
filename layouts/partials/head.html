@@ -21,6 +21,9 @@
     <link rel="stylesheet" href="/fonts/FiraCode/fira_code.css">
     {{ template "_internal/google_analytics.html" . }}
     <style>
+        :root {
+            --color-muted: #7d8590;
+        }
         @font-face {
             font-family: flop;
             src: url(/fonts/flop/FLOPDesignFont.woff2) format("woff2"),
@@ -192,6 +195,24 @@
         ul.pagination li {
             display: inline;
             padding: .2em;
+        }
+        blockquote {
+            padding-left: 1em;
+            border-left: .25em solid #dfe2e5;
+            color: var(--color-muted);
+            margin: 1em 0;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        table th, table td {
+            padding: 10px;
+            border: 1px solid #dfe2e5;
+            text-align: left;
+        }
+        table th {
+            background-color: #eee;
+            color: #24292e;
         }
     </style>
 </head>
