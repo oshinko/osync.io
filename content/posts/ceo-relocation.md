@@ -19,24 +19,24 @@ image = "/images/headers/beautiful-nature-20230504.jpg"
 - 提出先: 法務局 (例えば、会社の本店が渋谷なら東京法務局渋谷出張所に出す)
 - [手続きについて](https://houmukyoku.moj.go.jp/homu/touki2.html)
 - 電子申請の方法
-  - 「[登記・供託オンライン申請システム 登記ねっと 供託ねっと](https://www.touki-kyoutaku-online.moj.go.jp/)」とかいう馬鹿みたいな名前のサイトでアカウント登録
-    - 「[申請者情報登録](https://www.touki-kyoutaku-online.moj.go.jp/web/top/SC01WL01-RegistShinseisha.do)」からアカウント登録できる
-    - [平日 8:30 - 21:00 まで](https://www.touki-kyoutaku-online.moj.go.jp/condition.html)しか使えない (意味分からん)
-  - [「申請用総合ソフト」のインストール](https://www.touki-kyoutaku-online.moj.go.jp/download.html)
-  - 申請書に情報を記入・作成する
-    - クソヤバ UI のアコーディオンカテゴリツリー
+  1. 「[登記・供託オンライン申請システム 登記ねっと 供託ねっと](https://www.touki-kyoutaku-online.moj.go.jp/)」とかいう馬鹿みたいな名前のサイトでアカウント登録
+      - 「[申請者情報登録](https://www.touki-kyoutaku-online.moj.go.jp/web/top/SC01WL01-RegistShinseisha.do)」からアカウント登録できる
+      - [平日 8:30 - 21:00 まで](https://www.touki-kyoutaku-online.moj.go.jp/condition.html)しか使えない (意味分からん)
+  1. [「申請用総合ソフト」のインストール](https://www.touki-kyoutaku-online.moj.go.jp/download.html)
+  1. 申請書に情報を記入・作成する
+      - クソヤバ UI のアコーディオンカテゴリツリー
 
-      ```txt
-      ├ 不動産登記申請書
-      ├ 商業登記申請書
-      │   └ 登記申請書【署名要】
-      │       └ 登記申請書（会社用）：株式会社，...【署名要】
-      │           └ 色々入力して「株式会社変更登記申請書」様式に辿り着け！
-      ├ ...
-      ```
+        ```txt
+        ├ 不動産登記申請書
+        ├ 商業登記申請書
+        │   └ 登記申請書【署名要】
+        │       └ 登記申請書（会社用）：株式会社，...【署名要】
+        │           └ 色々入力して「株式会社変更登記申請書」様式に辿り着け！
+        ├ ...
+        ```
 
-  - 代表者のマイナンバーカードで申請書を電子署名
-  - 「登録免許税 = 資本金が1億円以内の場合 10,000円」を納付
+  1. 代表者のマイナンバーカードで申請書を電子署名
+  1. 「登録免許税 = 資本金が1億円以内の場合 10,000円」を納付
 
 ## 異動届出書の提出
 
