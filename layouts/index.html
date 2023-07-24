@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html>
-    {{ partial "head" . }}
-    <body>
-        {{ partial "header" . }}
-        {{ partial "nav" . }}
-        <main>
-            {{ $paginator := .Paginate .Site.RegularPages 5 }}
-            {{ range $paginator.Pages }}
-                {{ partial "list-item" . }}
-            {{ end }}
-            {{ template "_internal/pagination.html" . }}
-        </main>
-        {{ partial "footer" . }}
-    </body>
+  {{ partial "head" . }}
+
+  <body>
+    {{ partial "header" . }}
+    {{ partial "nav" . }}
+
+    <main>
+      <div style="display: flex; flex-wrap: wrap; gap: 16px">
+        {{ $paginator := .Paginate .Site.RegularPages 8 }}
+
+        {{ range $paginator.Pages }}
+          <div style="width: 448px">
+            {{ partial "list-item" . }}
+          </div>
+        {{ end }}
+      </div>
+
+      {{ template "_internal/pagination.html" . }}
+    </main>
+
+    {{ partial "footer" . }}
+  </body>
 </html>

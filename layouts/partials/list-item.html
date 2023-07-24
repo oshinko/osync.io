@@ -1,21 +1,36 @@
 <article>
-    <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
-    <p class="date">
-        Posted on 
-        <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z-0700" }}">
-            {{ .Date.Format "06/01/02 15:04 -0700" }}
-        </time>
-    </p>
-    {{ with .Params.tags }}
-        <ul>
-            {{ range . }}
-                <li><a href="/tags/{{ . | urlize }}">{{ . }}</a></li>
-            {{ end }}
-        </ul>
-    {{ end }}
-    {{ with .Params.Image }}<img src="{{ . }}">{{ end }}
-    {{ if or .Description .Summary }}
-        {{ with or .Description .Summary }}<p>{{ . }}</p>{{ end  }}
-        <a href="{{ .RelPermalink }}">Read More&hellip;</a>
-    {{ end }}
+  {{ $link := .RelPermalink }}
+
+  <h1 style="display: -webkit-box; overflow: hidden; -webkit-line-clamp: 2; -webkit-box-orient: vertical; font-size: 1.25em">
+    <a href="{{ $link }}">{{ .Title }}</a>
+  </h1>
+
+  <p class="date">
+    Posted on
+    <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z-0700" }}">
+      {{ .Date.Format "06/01/02 15:04 -0700" }}
+    </time>
+  </p>
+
+  {{ with .Params.tags }}
+    <ul>
+      {{ range . }}
+        <li><a href="/tags/{{ . | urlize }}">{{ . }}</a></li>
+      {{ end }}
+    </ul>
+  {{ end }}
+
+  {{ with .Params.Image }}
+    <a class="fade" href="{{ $link }}">
+      <img src="{{ . }}">
+    </a>
+  {{ end }}
+
+  {{ if or .Description .Summary }}
+    {{ with or .Description .Summary }}
+      <p style="display: -webkit-box; overflow: hidden; -webkit-line-clamp: 2; -webkit-box-orient: vertical; font-size: .75em">
+        {{ . }}
+      </p>
+    {{ end  }}
+  {{ end }}
 </article>

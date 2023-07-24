@@ -23,7 +23,11 @@
     {{ template "_internal/google_analytics.html" . }}
     <style>
         :root {
+            --color-link: #499bea;
+            --color-link-hover: #304999;
             --color-muted: #7d8590;
+            --header-grad-start: var(--color-link);
+            --header-grad-end: var(--color-link-hover)
         }
         @font-face {
             font-family: flop;
@@ -40,11 +44,11 @@
             background-color: #e7f4ff;
         }
         a {
-            color: #499bea;
+            color: var(--color-link);
             text-decoration: none;
         }
         a:hover {
-            color: #304999;
+            color: var(--color-link-hover);
         }
         pre code {
             border: 1px solid #999;
@@ -56,7 +60,7 @@
         }
         header {
             padding: 1em;
-            background: linear-gradient(to top, #499bea 0%, #304999 100%);
+            background: linear-gradient(to top, var(--header-grad-start) 0%, var(--header-grad-end) 100%);
             color: #b6cee2;
             font-size: 1.2em;
             text-align: center;
@@ -111,7 +115,7 @@
             }
         }
         article {
-            margin: 1.5em 0;
+            margin: 0 0;
             padding: 1em;
             background-color: #fff;
         }
@@ -139,7 +143,7 @@
         }
         article h3 {
             padding: .25em 0 .25em .6em;
-            border-left: .4em solid #499bea;
+            border-left: .4em solid var(--color-link);
             font-size: 1.125em;
         }
         article > ul {
@@ -214,6 +218,14 @@
         table th {
             background-color: #eee;
             color: #24292e;
+        }
+
+        .fade {
+        transition: opacity .2s ease-in-out;
+        }
+
+        .fade:hover {
+        opacity: .5;
         }
     </style>
 </head>
