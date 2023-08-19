@@ -8,18 +8,22 @@
             <article>
                 <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
                 {{ if and (ne .Type "page") }}
+                    <div class="date">
                     {{ with .GitInfo }}
-                        <p class="date">
-                            <time datetime="{{ .AuthorDate.Format "2006-01-02 15:04:05 -0700" }}">
-                                Last committed on {{ .AuthorDate.Format "06/01/02 15:04 -0700" }}
+                        <div>
+                            <div>Last committed</div>
+                            <time datetime="{{ .AuthorDate.Format "2006-01-02T15:04:05Z-0700" }}">
+                                {{ .AuthorDate.Format "06/01/02 15:04" }}
                             </time>
-                        </p>
+                        </div>
                     {{ end }}
-                    <p class="date">
-                        <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z-0700" }}">
-                            Posted on {{ .Date.Format "06/01/02 15:04 -0700" }}
-                        </time>
-                    </p>
+                        <div>
+                            <div>Posted</div>
+                            <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z-0700" }}">
+                                {{ .Date.Format "06/01/02 15:04" }}
+                            </time>
+                        </div>
+                    </div>
                 {{ end }}
                 {{ with .Params.tags }}
                     <ul>

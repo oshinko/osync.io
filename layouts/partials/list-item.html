@@ -5,12 +5,14 @@
     <a href="{{ $link }}">{{ .Title }}</a>
   </h1>
 
-  <p class="date">
-    Posted on
-    <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z-0700" }}">
-      {{ .Date.Format "06/01/02 15:04 -0700" }}
-    </time>
-  </p>
+  <div class="date">
+    <div>
+      <div>Posted</div>
+      <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z-0700" }}">
+        {{ .Date.Format "06/01/02 15:04" }}
+      </time>
+    </div>
+  </div>
 
   {{ with .Params.tags }}
     <ul>

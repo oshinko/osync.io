@@ -19,13 +19,17 @@
   {{ else }}
     <title>{{ .Title }} - {{ .Site.Title }}</title>
   {{ end }}
-  <link rel="stylesheet" href="/fonts/FiraCode/fira_code.css">
   {{ template "_internal/google_analytics.html" . }}
   <style>
     :root {
       --color-link: #499bea;
       --color-link-hover: #304999;
       --color-muted: #7d8590;
+      --font-base: -apple-system, "BlinkMacSystemFont",
+                   "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo,
+                   sans-serif, "Segoe UI Emoji";
+      --font-code: "SFMono-Regular", Consolas, "Liberation Mono", Menlo,
+                   monospace, "Segoe UI Emoji";
       --header-grad-start: var(--color-link);
       --header-grad-end: var(--color-link-hover)
     }
@@ -40,7 +44,7 @@
     }
     body {
       margin: 0;
-      font-family: flop, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: var(--font-base);
       background-color: #e7f4ff;
     }
     a {
@@ -55,7 +59,7 @@
       display: block;
       padding: 1em;
       line-height: 1.4em;
-      font-family: 'Fira Code', monospace;
+      font-family: var(--font-code);
       overflow: auto;
     }
     header {
@@ -68,6 +72,7 @@
     header h1 {
       margin: 0 0 .4em 0;
       color: #fff;
+      font-family: flop;
     }
     header h1 a {
       color: inherit;
@@ -164,7 +169,7 @@
       font-size: 1.125em;
     }
     article > ul {
-      margin: 1em 0;
+      margin: .5em 0;
       padding: 0;
       list-style: none;
       font-size: .8em;
@@ -174,7 +179,19 @@
       line-height: 1.6;
     }
     article .date {
+      display: flex;
+      column-gap: 1em;
+      row-gap: .5em;
+      flex-wrap: wrap;
+      margin: 0;
       font-size: .8em;
+    }
+    article .date > * {
+      display: flex;
+      gap: .25em;
+    }
+    article .date > * > :first-child:after {
+      content: ":";
     }
     section li {
       line-height: 1.6;
