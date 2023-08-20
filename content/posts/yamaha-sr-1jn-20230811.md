@@ -44,7 +44,7 @@ image: "/images/headers/yamaha-sr-1jn-20230811.jpg"
 
 ![image](/images/yamaha-sr-1jn-202308201010.jpg)
 
-↑このリングが↓こうなるはずだった。
+↑このリングが↓のように穴の壁面に突っ張って固定できるはずだった。そのスペースが作れなかったのです。
 
 ![image](/images/yamaha-sr-1jn-202308201009.jpg)
 
