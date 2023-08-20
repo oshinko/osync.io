@@ -17,7 +17,7 @@ COMPRESS_QUALITY = 85
 
 def f(src_path, dst_dir):
     src_im = Image.open(src_path)
-    dst_path = pathlib.Path(dst_dir) / (pathlib.Path(src_path).stem + '.jpg')
+    dst_path = dst_dir / (pathlib.Path(src_path).stem + '.jpg')
 
     # Exif を削除してから圧縮コピーを保存
     with Image.new(src_im.mode, src_im.size) as dst_im:
@@ -36,6 +36,9 @@ def f(src_path, dst_dir):
 
 
 src_dir, dst_dir = sys.argv[1:3]
+
+dst_dir = pathlib.Path(dst_dir)
+dst_dir.mkdir(exist_ok=True, parents=True)
 
 for path in pathlib.Path(src_dir).iterdir():
     if path.suffix not in ('.jpg', '.jpeg'):
