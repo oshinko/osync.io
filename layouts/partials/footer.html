@@ -1,9 +1,15 @@
 <footer>
     {{ with sort .Site.Menus.footer "Weight" }}
     <ul>
-        {{ range . }}
-            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-        {{ end }}
+        <li>
+            {{ range . }}
+                {{ if eq .Name "Mastodon" }}
+                    <a rel="me" href="{{ .URL }}">{{ .Name }}</a>
+                {{ else }}
+                    <a href="{{ .URL }}">{{ .Name }}</a>
+                {{ end }}
+            {{ end }}
+        </li>
     </ul>
     {{ end }}
     <small>

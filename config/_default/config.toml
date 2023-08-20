@@ -32,13 +32,13 @@ googleAnalytics = "G-JQCHZM9PGG"
     weight = 2
 
   [[menu.footer]]
-    name = "Twitter"
-    url = "https://twitter.com/Osynco"
+    name = "Steam"
+    url = "https://steamcommunity.com/id/Osh1nko"
     weight = 3
 
   [[menu.footer]]
-    name = "Steam"
-    url = "https://steamcommunity.com/id/Osh1nko"
+    name = "Mastodon"
+    url = "https://pawoo.net/@osnk"
     weight = 4
 
   [[menu.footer]]
