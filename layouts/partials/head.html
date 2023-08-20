@@ -33,6 +33,11 @@
       --header-grad-start: var(--color-link);
       --header-grad-end: var(--color-link-hover)
     }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
     @font-face {
       font-family: flop;
       src: url(/fonts/flop/FLOPDesignFont.woff2) format("woff2"),
@@ -109,12 +114,14 @@
     nav li.selected {
       border-bottom: 2px solid #cc0051;
     }
-    main {
-      margin: 1em;
+    @media screen and (min-width: 480px) {
+      main {
+        margin: 1em;
+      }
     }
     @media screen and (min-width: 920px) {
       main {
-        width: 912px;
+        width: 920px;
         margin-left: auto;
         margin-right: auto;
       }
