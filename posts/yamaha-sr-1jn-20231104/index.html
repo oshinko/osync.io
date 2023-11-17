@@ -1,0 +1,394 @@
+<!doctype html><html>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="野良プログラマーおしんこのブログ">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:creator content="@osynco">
+<meta name=twitter:site content="@osynco">
+<meta property="twitter:title" content="SR500 VM キャブレターオーバーホール - Osync I/O">
+<meta property="og:url" content="https://osync.io/posts/yamaha-sr-1jn-20231104/">
+<meta property="og:title" content="SR500 VM キャブレターオーバーホール - Osync I/O">
+<meta property="og:description" content="作業の背景 真冬にチョークを全開に引いてキックした時や、久しぶりにリザーブタンクに切り替えた時に、 たまにキャブレター内部のガソリンがオーバーフ">
+<meta property="og:image" content="https://osync.io/images/headers/yamaha-sr-1jn-20231104.jpg">
+<title>SR500 VM キャブレターオーバーホール - Osync I/O</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JQCHZM9PGG"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-JQCHZM9PGG',{anonymize_ip:!1})}</script>
+<style>:root{--color-link:#499bea;--color-link-hover:#304999;--color-muted:#7d8590;--font-base:-apple-system, "BlinkMacSystemFont",
+                   "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo,
+                   sans-serif, "Segoe UI Emoji";--font-code:"SFMono-Regular", Consolas, "Liberation Mono", Menlo,
+                   monospace, "Segoe UI Emoji";--header-grad-start:var(--color-link);--header-grad-end:var(--color-link-hover)}*,*::before,*::after{box-sizing:border-box}@font-face{font-family:flop;src:url(/fonts/flop/FLOPDesignFont.woff2)format("woff2"),url(/fonts/flop/FLOPDesignFont.woff)format("woff");font-weight:400}img{max-width:100%}body{margin:0;font-family:var(--font-base);background-color:#e7f4ff}a{color:var(--color-link);text-decoration:none}a:hover{color:var(--color-link-hover)}pre code{border:1px solid #999;display:block;padding:1em;line-height:1.4em;font-family:var(--font-code);overflow:auto}header{padding:1em;background:linear-gradient(to top,var(--header-grad-start) 0%,var(--header-grad-end) 100%);color:#b6cee2;font-size:1.2em;text-align:center}header h1{margin:0 0 .4em;color:#fff;font-family:flop}header h1 a{color:inherit;text-decoration:none}header h1 a:hover{color:#b6cee2}header p{margin:0;font-size:.8em}nav{margin:1em}@media screen and (min-width:920px){nav{width:912px;margin-left:auto;margin-right:auto}}nav ul{margin:0;padding:0;list-style:none}nav li{display:inline;line-height:1.6;padding-bottom:.4em;border-bottom:2px solid #fff}nav li.selected{border-bottom:2px solid #cc0051}@media screen and (min-width:480px){main{margin:1em}}@media screen and (min-width:920px){main{width:920px;margin-left:auto;margin-right:auto}}.article-list{display:flex;flex-direction:column;gap:16px}@media screen and (min-width:920px){.article-list{flex-direction:row;flex-wrap:wrap}.article-wrapper.col2{width:448px}.article-wrapper.col4{width:216px}}article{margin:0;padding:1em;background-color:#fff}article h1{margin:0 0 .6em;font-size:1.5em}article h2{position:relative;padding:.6em 1em;background-color:#61a5e4;border-radius:7px;color:#fff;font-size:1.25em}article h2:after{position:absolute;content:'';top:100%;left:30px;border:8px solid transparent;border-top:8px solid #61a5e4;width:0;height:0}article h3{padding:.25em 0 .25em .6em;border-left:.4em solid var(--color-link);font-size:1.125em}article>ul{margin:.5em 0;padding:0;list-style:none;font-size:.8em}article>ul li{display:inline;line-height:1.6}article .date{display:flex;column-gap:1em;row-gap:.5em;flex-wrap:wrap;margin:0;font-size:.8em}article .date>*{display:flex;gap:.25em}article .date>*>:first-child:after{content:":"}section li{line-height:1.6}footer{margin:1em}footer ul{margin:0;padding:0;list-style:none;text-align:center}footer li{display:inline;line-height:1.6}footer small{display:block;margin:1em;text-align:center;color:#666}.responsive{position:relative;padding-bottom:75%}.responsive>*{position:absolute;top:0;left:0;width:100%;height:120%}ul.pagination{margin:1em 0;padding:0;font-family:Tahoma,Sans-Serif}ul.pagination li{display:inline;padding:.2em}blockquote{padding-left:1em;border-left:.25em solid #dfe2e5;color:var(--color-muted);margin:1em 0}table{border-collapse:collapse}table th,table td{padding:10px;border:1px solid #dfe2e5;text-align:left}table th{background-color:#eee;color:#24292e}.fade{transition:opacity .2s ease-in-out}.fade:hover{opacity:.5}</style>
+</head>
+<body>
+<header>
+<h1><a href=/>Osync I/O</a></h1>
+<p>野良プログラマーおしんこのブログ</p>
+</header>
+<nav>
+<ul>
+<li>
+<a href=/posts>Posts</a></li>
+<li>
+<a href=/tags>Tags</a></li>
+<li>
+<a href=/about>About</a></li>
+</ul>
+</nav>
+<main>
+<article>
+<h1><a href=/posts/yamaha-sr-1jn-20231104/>SR500 VM キャブレターオーバーホール</a></h1>
+<div class=date>
+<div>
+<div>Last committed</div>
+<time datetime=2023-11-17T18:40:00Z+0900>
+23/11/17 18:40
+</time>
+</div>
+<div>
+<div>Posted</div>
+<time datetime=2023-11-04T19:00:00Z+0900>
+23/11/04 19:00
+</time>
+</div>
+</div>
+<ul>
+<li><a href=/tags/motorcycle>Motorcycle</a></li>
+<li><a href=/tags/sr500>SR500</a></li>
+</ul>
+<img src=/images/headers/yamaha-sr-1jn-20231104.jpg>
+<section><h2 id=作業の背景>作業の背景</h2>
+<p>真冬にチョークを全開に引いてキックした時や、久しぶりにリザーブタンクに切り替えた時に、
+たまにキャブレター内部のガソリンがオーバーフローしてしまうことがあったので、
+分解して中身を確認するため、キャブレターをオーバーホールすることにした。</p>
+<h2 id=バイクの概要>バイクの概要</h2>
+<p>年式とキャブレターの種類:</p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>機種コード番号</td>
+<td>1JN (通称 2 型)</td>
+</tr>
+<tr>
+<td>発売年月</td>
+<td>1985/4</td>
+</tr>
+<tr>
+<td>タンク容量</td>
+<td>14L</td>
+</tr>
+<tr>
+<td>キャブレター</td>
+<td>ミクニ VM34SS 3X4-00 (強制開閉式, 加速ポンプ付き)</td>
+</tr>
+</tbody>
+</table>
+<p>過去の投稿:</p>
+<ul>
+<li><a href=/posts/yamaha-sr-1jn-20230126>YAMAHA SR500 2 型 (1JN, VM キャブ)</a></li>
+<li><a href=/posts/yamaha-sr-1jn-20230811>SR500 タコメーターケーブルのダークマターとその代償</a></li>
+</ul>
+<h2 id=準備>準備</h2>
+<p>消耗部品の交換の可能性を考慮し、<a href="https://keyster.jp/?pid=133630343">キースター燃調キット</a>を購入。</p>
+<p>私の SR はキャブやエアクリ含めてほぼノーマルであり、もちろん純正部品が好ましいが、
+<a href=https://www.yamaha-motor.co.jp/parts-search/>ヤマハ公式のパーツカタログ</a>を確認するとミクニキャブレターの純正部品は生産終了している物が多いので、ひとまず社外品を購入。</p>
+<p>その他、キャブの取り外し方法やオーバーホール手順をネットで予習。</p>
+<p>ざっくり必要なものは次の通り:</p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>目的</th>
+<th>備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href=https://www.ysgear.co.jp/Products/Detail/top/cat/04/item/QQSCLTAL2J30>サービスマニュアル (QQSCLTAL2J30)</a></td>
+<td>全て</td>
+<td>あるに越したことない</td>
+</tr>
+<tr>
+<td>工具類</td>
+<td>全て</td>
+<td>車載工具だけでは流石に厳しい</td>
+</tr>
+<tr>
+<td>交換部品</td>
+<td>修復</td>
+<td>消耗部品の交換用。ヤマハパーツカタログに在庫がなければ、社外リペアキットに頼る</td>
+</tr>
+<tr>
+<td>ケミカルクリーナー</td>
+<td>清掃</td>
+<td>キャブクリーナーやパーツクリーナー</td>
+</tr>
+<tr>
+<td>ピンポンチ (1.5 mm & 2 ~ 3 mm)</td>
+<td>分解</td>
+<td>フロートピン (フロートを固定するピン) を打ち抜く (打ち込む) ため。ピンを抜かないとフロートが外せない → フロートを外さないとフロートバルブが外せない。ニッパーで抜いて金槌で叩き込む手法もあるが、ピンポンチの方が簡単だし、部品を傷めず安心</td>
+</tr>
+<tr>
+<td>ノギス</td>
+<td>簡易油面の計測</td>
+<td>バーニアメモリのあるものか、デジタルノギス</td>
+</tr>
+<tr>
+<td>油面ゲージ</td>
+<td>実油面の計測</td>
+<td>純正品番: 90890-01312. 自作でも OK</td>
+</tr>
+</tbody>
+</table>
+<h3 id=ヤマハパーツカタログの補足>ヤマハパーツカタログの補足</h3>
+<p><a href=https://www.yamaha-motor.co.jp/parts-search/>ヤマハ公式のパーツカタログ</a>の PC 版は、エラーページが出て閲覧できない場合がある。サイト内の問題のあるキャッシュをクリアすればエラーは解消され、正常に閲覧することができるが、問題のあるキャッシュをピンポイントでクリアするのは知識を要する。かといって普段使っているブラウザのキャッシュを一斉に消すのも抵抗があるだろう。その場合は、シークレットモードなどフレッシュな状態のブラウザを起ち上げて閲覧するか、スマホアプリ版を使うことをお勧めする。</p>
+<h2 id=取り外し>取り外し</h2>
+<p>純正エアクリーナーボックスが取り外しの難易度を格段に上げている。
+エアクリボックスは、基本的にはリアタイヤを外さないと外せない模様。
+もちろん今回はリアタイヤを外す気はない。</p>
+<p>キャブ取り外しの要点をまとめたので、次の手順を参考のこと:</p>
+<ol>
+<li>シートを外す</li>
+<li>タンクを外す
+<ol>
+<li>負圧式燃料コックを ON にする</li>
+<li>キャブにドレンホースをセット</li>
+<li>キャブのドレンボルトを緩め、フロートチャンバー内のガソリンを計量カップなどに排出</li>
+<li>キャブと繋がっている負圧ホースを外す</li>
+<li>キャブと繋がっている燃料ホースを外し、ホース内のガソリンを計量カップなどに排出</li>
+<li>排出したガソリンをタンクに戻す</li>
+<li>シート側 (車体上部) のボルトを緩めて外す</li>
+<li>タンクを外す</li>
+</ol>
+</li>
+<li>リアフェンダーの黒いインナー (マッドガード) を外す
+<ul>
+<li>ボルト 2 本で留まっている</li>
+<li>配線が結束されていたりなどで完全に外せない場合、タイヤ側に寄せておく</li>
+</ul>
+</li>
+<li>エアクリボックスのシート側 (車体上部の) の 2 つのネジを外す
+<ul>
+<li>これでエアクリボックスを後ろ・斜めにずらせるようになる</li>
+</ul>
+</li>
+<li>車体の右側に座る</li>
+<li>エアクリボックスとキャブを繋ぐジョイントのホースクランプを 2 つとも完全に外す</li>
+<li>インマニのホースクランプを完全に外す
+<ul>
+<li>インマニ = インレット (インテーク) マニホールド = キャブとエンジンを繋ぐジョイント</li>
+</ul>
+</li>
+<li>エアクリボックスとキャブを繋ぐジョイントを外す (柔らかいので歪めつつ)</li>
+<li>インマニからキャブを頑張って外す (グリグリやりながら)</li>
+<li>フレームなどに擦らないようキャブを抜き取る</li>
+</ol>
+<h2 id=分解>分解</h2>
+<h3 id=パイロットスクリューの戻し回数の確認>パイロットスクリューの戻し回数の確認</h3>
+<p>分解する前に、パイロットスクリューの戻し回数を次の手順で確認する:</p>
+<ol>
+<li>マイナスドライバーなどをスクリューの溝に当てる</li>
+<li>これ以上締まらないところまで何回転したかをメモ</li>
+</ol>
+<p>慣れないうちは、締める直前にスマホで動画撮影を開始しておくと安全。</p>
+<h3 id=写真撮影推奨の項目>写真撮影推奨の項目</h3>
+<p>後の組み立て作業を安心して行うため、写真撮影を推奨したい項目は次の通り:</p>
+<ul>
+<li>各ポンプのダイヤフラムとスプリングのペア (3 種類)</li>
+<li>ジェットニードルを抑える樹脂付きのスプリングの向き</li>
+</ul>
+<p>取り外した直後の写真を収めておくと安全。
+ここで挙げた項目以外も写真に収めておくとさらに安心だろう。</p>
+<h3 id=分解作業の記録>分解作業の記録</h3>
+<p>パイロットスクリューの戻し回数は、基準値の 2 回転 (SR400 は 1/2 回転) であった。</p>
+<p>その他そんなに気をつけるところはないが、ネジ・ボルト類の固着に注意。この度もチョークレバーを固定するボルトなど、数点固着があったので、キャブを抑える当て木 + 抑えるサポート役が必要だった。フロートピンも固くて抜けなかったため、<a href=/images/yamaha-sr-1jn-202310271543.jpg>ピンポンチ (1.5 mm & 2 mm) を購入し、1.5 mm で打ち抜いた</a>。2 mm の方は、組み立て時の打ち込み用として想定。</p>
+<p>内部はとても綺麗で、トップカバーとフロートチャンバーのガスケットが茶色に変色しているくらい。</p>
+<p>あと妙な話だが、<strong>なぜかパイロットスクリューの O リングがなかった</strong>。
+古い型のバイクだが、勝手に消失するとは考えにくい。もしかしたら以前の所有者時代にキャブを分解した際、なくしたのか・・・？</p>
+<h2 id=清掃と部品の交換>清掃と部品の交換</h2>
+<p>ケミカルクリーナーを吹き付けて各部を清掃。ネジ・ボルト類も清掃。樹脂類に当てないように注意。
+取り外さなかった樹脂類は、サランラップやセロハンテープなどを巻きつけてマスクしてから吹き付ける。</p>
+<p>追加・交換した部品は次の通り:</p>
+<table>
+<thead>
+<tr>
+<th>部品</th>
+<th>品番</th>
+<th>交換前</th>
+<th>交換後</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>トップカバーのガスケット</td>
+<td>交換</td>
+<td>純正</td>
+<td>キースター</td>
+</tr>
+<tr>
+<td>フロートチャンバーのガスケット</td>
+<td>交換</td>
+<td>純正</td>
+<td>キースター</td>
+</tr>
+<tr>
+<td>パイロットスクリューの O リング</td>
+<td>追加</td>
+<td>なし</td>
+<td>キースター</td>
+</tr>
+<tr>
+<td>フロートバルブ</td>
+<td>交換</td>
+<td>純正</td>
+<td>キースター</td>
+</tr>
+</tbody>
+</table>
+<p>ガソリンのオーバーフローに関係しているであろうフロートバルブを確認すると、O リングが少しへたっているようにみえたので交換。</p>
+<h2 id=組み立て>組み立て</h2>
+<p>部品は重複がなく、そんなに慎重になることはないが、ジェットニードルを抑える樹脂付きのスプリングの向きと、各ダイヤフラムとスプリングのペアがよく分からなくなりがちなので注意。</p>
+<p>あとは、パイロットスクリューへの組付け順は次の通り:</p>
+<ol>
+<li>スプリング</li>
+<li>ワッシャー</li>
+<li>O リング</li>
+</ol>
+<p>この順番は、サービスマニュアルやパーツカタログのイラスト図と同じである。</p>
+<h2 id=取り付け>取り付け</h2>
+<p>取り付けは、取り外し手順の逆順で行う。</p>
+<h2 id=エンジン始動>エンジン始動</h2>
+<p>意気揚々とキックするもエンジンがかからない・・・。いくら蹴ってもエンジンがかからない。
+何度もキックしていると、インマニ (エンジンとキャブの間) 付近から炸裂音が鳴ることがあり近所迷惑。</p>
+<p>チョークを全部引いたり、パイロットスクリューを締めても緩めてもダメ・・・。</p>
+<p>まず火が付かないし、燃料が薄いのか濃いのかなどもよく分からない。
+プラグはかぶりがちだった。</p>
+<h3 id=試行錯誤>試行錯誤</h3>
+<p>いくらキックしてもかからないので、色々試してみる:</p>
+<ol>
+<li>一度だけかかりそうになり、一瞬のうちにアクセルをひねって維持しようとするも即停止</li>
+<li>スパークプラグ乾燥 → 火花チェック → キック → ダメ</li>
+<li>キー OFF → デコンプレバー握りアクセル全開でキック 10 回 → キー ON キック → ダメ</li>
+<li>実油面を基準値 (4.5±1 mm) に合わせ 3 mm から 5 mm に (フロートアームで調整) してもダメ
+<ul>
+<li>調整後の簡易油面: 右 24.4 mm, 左 25.4 mm
+<ul>
+<li>この左右は、キャブ取り付けて乗車後、上から見た時の方向</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>パイロットスクリューの O リングを外しても (試しに元に戻しても) ダメ</li>
+<li>パイロットジェットを純正の 20 から社外の 26 に変えてもダメ</li>
+</ol>
+<h3 id=バイク屋に修理を委託>バイク屋に修理を委託</h3>
+<p>一週間粘ったが、最後の手段で祈りの連続キックした日の午後、バイク屋に修理に出した・・・。<br>
+無念の委託・・・、果たしてエンジンかかるのだろうか、おとなしく吉報を待つ。</p>
+<p>その翌日、エンジンがかかったとの連絡があり、キック 2 発でかかり、手元に戻ってきた (笑)</p>
+<p>作業内容の写しは次の通り:</p>
+<ul>
+<li>エンジン掛からず 各部点検
+<ul>
+<li>プラグスパーク点検→OK</li>
+<li>圧縮圧力測定→OK (基準値以内)</li>
+<li>負圧コック作動点検→OK</li>
+</ul>
+</li>
+<li>キャブレター分解点検
+<ul>
+<li>P/J社外品26→純正20に交換</li>
+<li><strong>P/SのOリング2重→除去</strong></li>
+<li>簡易油面25mm→23.5mmに調整 (計測下面を間違えていると思われます)</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>P/J社外品26→純正20に交換</p>
+</blockquote>
+<p>これは、エンジン始動しないので致し方なく交換したもの。それでもかからずという状況だった。</p>
+<blockquote>
+<p>P/SのOリング2重→除去</p>
+</blockquote>
+<p>マジかよ！元々入っていたはずのパイロットスクリューの O リングは、挿入穴の中の方に入っていたらしい・・・。
+2 重になっていたなんて・・・、全く気付かず、なんてこった・・・。
+でも待てよ、一度 O リングを一つ除去して試していたな・・・、ということはこれが原因とは言えない・・・？</p>
+<blockquote>
+<p>簡易油面25mm→23.5mmに調整</p>
+</blockquote>
+<p>簡易油面を 25 mm から 23 mm に調整したということで実油面は上がっているはず。つまり、よりガソリンが入る (溜まる) ようになっているはずである。実際に実油面を計測したところ 3 mm (委託前は 5 mm) だった。あれ？これも試したよな・・・。</p>
+<h3 id=原因>原因</h3>
+<p>正直、これといった原因はよく分からない (バイク屋の主人も同様の感想だった)。</p>
+<p>ただし、原因は特定できなくとも、前述の三点を組み合わせたケースはテストしていないし、実際にエンジンはかかったので、大いに関係はあるだろう。</p>
+<p>あと、帰宅後、低すぎるアイドリング回転数を調整するために、スロットルストップスクリュー (アイドリングアジャスター) をグリグリやっていたら緩んでしまったらしく、いくらキックしてもエンジンがかからない状態になってしまい焦ったのだが、スクリューを締め、さらにそのボタン (ウォームエンジンスターターノブ) を押し、最初よりスロットルバルブが開くようにするとかかるようになった。</p>
+<p>これはつまり、スロットルバルブをある程度開けることでベンチュリー部分を広げ (キャブの中を通る空気の通り道を広げ) エンジンへの空気の流入量を増やさないとかかりにくかった、ということである。</p>
+<p>このようにスロットルバルブを開けると空気が入ってくる:</p>
+<p><img src=/images/yamaha-sr-1jn-202310261824.jpg alt=インレット側から見たスロットルバルブの様子></p>
+<p>エンジンが暖まっている時の再始動であったため、燃料が濃すぎるために起こった現象かもしれないが、この辺りも注目しておく必要がありそうだ。</p>
+<h2 id=その後>その後</h2>
+<p>どうも燃調が薄いようで、始動・アイドリング～低速時のマフラーからのアフターファイヤーがパンパンパスパスと気になる。
+(ノーマルマフラーだし、耳をつんざく炸裂音とかではない)</p>
+<p>チョークを半分くらい引いて走ると黙るので、燃調が薄いのが分かる。
+11 月も半ばなので、季節的なものもあるだろうが、とりあえずパイロットスクリューの戻し回数を 2 -> 2.5 回転に緩めてみる。</p>
+<p>しばらくそれで走るが、あまり効果なし。</p>
+<p>二次エアが原因かなと思い、エアクリ～キャブ～インマニを繋ぐ 3 つのホースクランプを確認すると、割と緩めだった。
+これを増し締めすると改善した。</p>
+<h2 id=今後に向けて>今後に向けて</h2>
+<p>「キャブの設定を一切弄らなければエンジンはかかる」はずなので、より意識していきたい。</p>
+<p>この記録が残っていれば、次回以降も役に立つはずだが、改めて注意点を整理しておく:</p>
+<ul>
+<li>キャブを外す前に実油面を確認しておく</li>
+<li>キャブを外した後、スロットルストップスクリューの高さを測っておく</li>
+<li>分解する前後で各部品を確認しておく (整備履歴を確認し、前回の種類・点数と比較)</li>
+<li>基本的には、各部品は純正部品、設定値は基準値のままで良い</li>
+</ul>
+<p>取り付け後、エンジン始動の際、次の点に気を付ける:</p>
+<ul>
+<li>パイロットスクリューの戻し回数が間違っていないか</li>
+<li>実油面が大きく変動していないか</li>
+</ul>
+<p>もしうまく始動しない場合、次のことを試したい:</p>
+<ul>
+<li>スロットルバルブを開閉して空気の量を調節</li>
+<li>チョークの引き加減で燃料の濃さを調節</li>
+<li>スパークプラグは問題ないか確認</li>
+</ul>
+<p>私のバイクの場合、チョークで燃料を濃くするより、スロットルバルブの開閉具合で空気の量を調節する方が、スムーズにかかるケースが多い。季節や地域などによる気温差も関係するかもしれない。</p>
+<h2 id=付録>付録</h2>
+<h3 id=2j3キャブウォームエンジンスタータノブの使い方httpsoverflowhatenablogcomentry20191010175627><a href=https://overflow.hatenablog.com/entry/2019/10/10/175627>2J3キャブ　ウォームエンジンスタータノブの使い方</a></h3>
+<blockquote>
+<p>ウォームエンジンスターターを「ON」にし、グリップを閉じ側に回転させ、ウォームエンジンスターターが「OFF」になることを確認して下さい。</p>
+</blockquote>
+<p>リンク先にある通り、アクセルを閉める方向にグイッとやると OFF になるらしい。そうなんだ、たしかに人の指の力で戻すのは固すぎるよね。</p>
+<h3 id=純正の消耗部品リスト>純正の消耗部品リスト</h3>
+<p>TODO 以下を表にする。</p>
+<ul>
+<li>ガスケットx2</li>
+<li>パイロットスクリューのOリング</li>
+<li>フロートバルブのOリング</li>
+<li>&mldr; # リペア目的で社外品を買う前に、とにかく一度パーツカタログをチェックすべし</li>
+</ul>
+</section>
+</article>
+</main>
+<footer>
+<ul>
+<li>
+<a href=https://discord.gg/JhgFz8u>Discord</a>
+<a href=https://github.com/oshinko>GitHub</a>
+<a href=https://steamcommunity.com/id/Osh1nko>Steam</a>
+<a rel=me href=https://pawoo.net/@osnk>Mastodon</a>
+<a href=https://snort.social/p/npub1xx3kyu57uqukvsxmlhnmafv825pct93455hkn544nd6exlnunxps2psn5q>Nostr</a>
+</li>
+</ul>
+<small>
+(C) 2023 Osync I/O.
+Powered by <a href=https://gohugo.io>Hugo</a>.
+</small>
+</footer>
+</body>
+</html>
