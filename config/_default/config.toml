@@ -32,19 +32,14 @@ googleAnalytics = "G-JQCHZM9PGG"
     weight = 2
 
   [[menu.footer]]
-    name = "Steam"
-    url = "https://steamcommunity.com/id/Osh1nko"
+    name = "Bluesky"
+    url = "https://bsky.app/profile/osync.io"
     weight = 3
-
-  [[menu.footer]]
-    name = "Mastodon"
-    url = "https://pawoo.net/@osnk"
-    weight = 4
 
   [[menu.footer]]
     name = "Nostr"
     url = "https://snort.social/p/npub1xx3kyu57uqukvsxmlhnmafv825pct93455hkn544nd6exlnunxps2psn5q"
-    weight = 5
+    weight = 4
 
 [params]
   description = "野良プログラマーおしんこのブログ"
