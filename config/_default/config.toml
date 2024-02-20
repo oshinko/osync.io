@@ -4,6 +4,11 @@ hasCJKLanguage = true
 enableGitInfo = true
 googleAnalytics = "G-JQCHZM9PGG"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [menu]
 
   [[menu.nav]]
