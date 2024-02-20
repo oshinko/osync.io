@@ -1,0 +1,219 @@
+<!doctype html><html>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="野良プログラマーおしんこのブログ">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:creator content="@osynco">
+<meta name=twitter:site content="@osynco">
+<meta property="twitter:title" content="原付バイクの市区町村への登録・ナンバープレート取得手順 - Osync I/O">
+<meta property="og:url" content="https://osync.io/posts/motorcycle-registration-20240217/">
+<meta property="og:title" content="原付バイクの市区町村への登録・ナンバープレート取得手順 - Osync I/O">
+<meta property="og:description" content="背景 この度、新しいバイク (HONDA APE100) を購入。販売店と連携した車両の市区町村への登録とナンバープレートの取得手続き、その手順をメモしておく。 オークショ">
+<meta property="og:image" content="https://osync.io/images/headers/mortorcycle-registration-20240217.jpg">
+<title>原付バイクの市区町村への登録・ナンバープレート取得手順 - Osync I/O</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JQCHZM9PGG"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-JQCHZM9PGG',{anonymize_ip:!1})}</script>
+<style>:root{--color-link:#499bea;--color-link-hover:#304999;--color-muted:#7d8590;--font-base:-apple-system, "BlinkMacSystemFont",
+                   "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo,
+                   sans-serif, "Segoe UI Emoji";--font-code:"SFMono-Regular", Consolas, "Liberation Mono", Menlo,
+                   monospace, "Segoe UI Emoji";--header-grad-start:var(--color-link);--header-grad-end:var(--color-link-hover)}*,*::before,*::after{box-sizing:border-box}@font-face{font-family:flop;src:url(/fonts/flop/FLOPDesignFont.woff2)format("woff2"),url(/fonts/flop/FLOPDesignFont.woff)format("woff");font-weight:400}img{max-width:100%}body{margin:0;font-family:var(--font-base);background-color:#e7f4ff}a{color:var(--color-link);text-decoration:none}a:hover{color:var(--color-link-hover)}pre code{border:1px solid #999;display:block;padding:1em;line-height:1.4em;font-family:var(--font-code);overflow:auto}header{padding:1em;background:linear-gradient(to top,var(--header-grad-start) 0%,var(--header-grad-end) 100%);color:#b6cee2;font-size:1.2em;text-align:center}header h1{margin:0 0 .4em;color:#fff;font-family:flop}header h1 a{color:inherit;text-decoration:none}header h1 a:hover{color:#b6cee2}header p{margin:0;font-size:.8em}nav{margin:1em}@media screen and (min-width:920px){nav{width:912px;margin-left:auto;margin-right:auto}}nav ul{margin:0;padding:0;list-style:none}nav li{display:inline;line-height:1.6;padding-bottom:.4em;border-bottom:2px solid #fff}nav li.selected{border-bottom:2px solid #cc0051}@media screen and (min-width:480px){main{margin:1em}}@media screen and (min-width:920px){main{width:920px;margin-left:auto;margin-right:auto}}.article-list{display:flex;flex-direction:column;gap:16px}@media screen and (min-width:920px){.article-list{flex-direction:row;flex-wrap:wrap}.article-wrapper.col2{width:448px}.article-wrapper.col4{width:216px}}article{margin:0;padding:1em;background-color:#fff}article h1{margin:0 0 .6em;font-size:1.5em}article h2{position:relative;padding:.6em 1em;background-color:#61a5e4;border-radius:7px;color:#fff;font-size:1.25em}article h2:after{position:absolute;content:'';top:100%;left:30px;border:8px solid transparent;border-top:8px solid #61a5e4;width:0;height:0}article h3{padding:.25em 0 .25em .6em;border-left:.4em solid var(--color-link);font-size:1.125em}article>ul{margin:.5em 0;padding:0;list-style:none;font-size:.8em}article>ul li{display:inline;line-height:1.6}article .date{display:flex;column-gap:1em;row-gap:.5em;flex-wrap:wrap;margin:0;font-size:.8em}article .date>*{display:flex;gap:.25em}article .date>*>:first-child:after{content:":"}section li{line-height:1.6}footer{margin:1em}footer ul{margin:0;padding:0;list-style:none;text-align:center}footer li{display:inline;line-height:1.6}footer small{display:block;margin:1em;text-align:center;color:#666}.responsive{position:relative;padding-bottom:75%}.responsive>*{position:absolute;top:0;left:0;width:100%;height:120%}ul.pagination{margin:1em 0;padding:0;font-family:Tahoma,Sans-Serif}ul.pagination li{display:inline;padding:.2em}blockquote{padding-left:1em;border-left:.25em solid #dfe2e5;color:var(--color-muted);margin:1em 0}table{border-collapse:collapse}table th,table td{padding:10px;border:1px solid #dfe2e5;text-align:left}table th{background-color:#eee;color:#24292e}.fade{transition:opacity .2s ease-in-out}.fade:hover{opacity:.5}</style>
+</head>
+<body>
+<header>
+<h1><a href=/>Osync I/O</a></h1>
+<p>野良プログラマーおしんこのブログ</p>
+</header>
+<nav>
+<ul>
+<li>
+<a href=/posts>Posts</a></li>
+<li>
+<a href=/tags>Tags</a></li>
+<li>
+<a href=/about>About</a></li>
+</ul>
+</nav>
+<main>
+<article>
+<h1><a href=/posts/motorcycle-registration-20240217/>原付バイクの市区町村への登録・ナンバープレート取得手順</a></h1>
+<div class=date>
+<div>
+<div>Last committed</div>
+<time datetime=2024-02-20T15:33:56Z+0900>
+24/02/20 15:33
+</time>
+</div>
+<div>
+<div>Posted</div>
+<time datetime=2024-02-17T16:00:00Z+0900>
+24/02/17 16:00
+</time>
+</div>
+</div>
+<ul>
+<li><a href=/tags/motorcycle>Motorcycle</a></li>
+<li><a href=/tags/ape100>APE100</a></li>
+<li><a href=/tags/%E3%83%8A%E3%83%B3%E3%83%90%E3%83%BC%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88>ナンバープレート</a></li>
+</ul>
+<img src=/images/headers/mortorcycle-registration-20240217.jpg>
+<section><h2 id=背景>背景</h2>
+<p>この度、新しいバイク (HONDA APE100) を購入。販売店と連携した車両の市区町村への登録とナンバープレートの取得手続き、その手順をメモしておく。</p>
+<p>オークションなどで仕入れた場合も似たような手続きになるので、参考になれば幸い。</p>
+<h3 id=事前知識>事前知識</h3>
+<ul>
+<li>原付バイク (125cc 以下) と小型特殊自動車の登録先は「運輸支局 (陸運局)」ではなく「市区町村」</li>
+<li>役所で車両を登録後「ナンバープレート」と「標識交付証明書」が手に入る</li>
+<li>具体的な登録手順は市区町村役所によって異なる</li>
+</ul>
+<p><a href=https://www.city.nishitokyo.lg.jp/kurasi/zeikin/keizidosya/tourokunituite.html>東京都西東京市での登録手順が丁寧に書かれており参考になる</a>ので、以降は西東京市を例にとり進めていく。</p>
+<h2 id=手順>手順</h2>
+<h3 id=販売店から貰うもの>販売店から貰うもの</h3>
+<h4 id=販売証明書>販売証明書</h4>
+<p>メーカーや車台番号などが書かれている紙切れ一枚。</p>
+<p>それとは別に総務省のサイトに置かれている「<a href=https://www.soumu.go.jp/main_content/000888095.pdf>譲渡証明書 (販売証明書)</a>」がテンプレートとして有名？</p>
+<p>以下、その記入例:</p>
+<p><a href=/images/mortorcycle-registration-hanbaishomeisho.jpg><img src=/images/mortorcycle-registration-hanbaishomeisho.jpg alt="譲渡証明書 (販売証明書)" width=480></a></p>
+<p>登録先の市区町村によっては、<a href=https://www.city.nishitokyo.lg.jp/kurasi/zeikin/keizidosya/tourokunituite.html>個人事業主から購入した場合、販売証明書に古物商許可番号の記載が必要</a>だったりするので注意。</p>
+<p>大抵の市区町村はそんなにうるさくないし、販売店で購入する場合、お店側が確認してくれるので大丈夫だと思うが、オークションなどでの取引の際は気を付けるべし。</p>
+<h3 id=役所に持っていくもの>役所に持っていくもの</h3>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>販売証明書</td>
+<td>登録先の市区町村が求める情報が全て記載されているもの</td>
+</tr>
+<tr>
+<td>本人確認書類</td>
+<td>運転免許証, マイナンバーカード, etc.</td>
+</tr>
+<tr>
+<td>印鑑</td>
+<td>最近は不要なことが多い</td>
+</tr>
+<tr>
+<td>標識交付申請書</td>
+<td>役所に置いてあるし、事前に印刷可能</td>
+</tr>
+</tbody>
+</table>
+<h4 id=標識交付申請書>標識交付申請書</h4>
+<p>様式とその記入例:</p>
+<p><a href=/images/mortorcycle-registration-hyoshikikofu.jpg><img src=/images/mortorcycle-registration-hyoshikikofu.jpg alt=標識交付申請書 width=400></a>
+<a href=/images/mortorcycle-registration-hyoshikikofuex.jpg><img src=/images/mortorcycle-registration-hyoshikikofuex.jpg alt="標識交付申請書 (記入例)" width=400></a></p>
+<p><a href=https://www.city.nishitokyo.lg.jp/kurasi/sinseisyo/itiran/gendoukitukishinkoku/gentuki.html>このページ</a>の「<a href=https://www.city.nishitokyo.lg.jp/kurasi/sinseisyo/itiran/gendoukitukishinkoku/gentuki.files/R5shinki.pdf>軽自動車税（種別割）申告（報告）書兼標識交付申請書</a>」からダウンロードできる。記入例は「<a href=https://www.city.nishitokyo.lg.jp/kurasi/sinseisyo/itiran/gendoukitukishinkoku/gentuki.files/R5shinki_kinyu.pdf>軽自動車税（種別割）申告（報告）書兼標識交付申請書 記入例</a>」にある。</p>
+<h3 id=役所から貰うもの>役所から貰うもの</h3>
+<ul>
+<li>ナンバープレート</li>
+<li>標識交付証明書</li>
+</ul>
+<h3 id=その後の流れ>その後の流れ</h3>
+<ol>
+<li>役所から貰った「ナンバープレート」と「標識交付証明書」を販売店に郵送する</li>
+<li>「ナンバープレート」と「標識交付証明書」の情報をもとに販売店が自賠責保険への加入手続きを行う</li>
+<li>後日、納車時に「ナンバープレート」装着済みの車両と一緒に「標識交付証明書」を受け取る</li>
+</ol>
+<h3 id=備考>備考</h3>
+<ul>
+<li>自分で自賠責保険の手続きをする場合、必要事項をメモするなどしてコンビニなどで手続をする</li>
+<li>とにかく、これら登録の手続きは、居住地の市区町村役所のルールに従うことになる</li>
+<li>大体、役所のサイトに詳しく書いてある</li>
+<li>それぞれの市区町村役所のルールは厳しかったり緩かったりする</li>
+</ul>
+<h2 id=付録>付録</h2>
+<h3 id=販売ではなく譲渡の場合-ナンバープレート返却済>販売ではなく譲渡の場合 (ナンバープレート返却済)</h3>
+<table>
+<thead>
+<tr>
+<th>必要なもの</th>
+<th>備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>廃車申告受付書</td>
+<td>所謂「廃車証明書」のこと。譲渡証明欄があればそこに必要事項を記入</td>
+</tr>
+<tr>
+<td>譲渡証明書</td>
+<td>廃車申告受付書に譲渡証明欄があり、必要事項が記入されていれば不要？</td>
+</tr>
+<tr>
+<td>本人確認書類</td>
+<td>運転免許証, マイナンバーカード, etc.</td>
+</tr>
+<tr>
+<td>印鑑</td>
+<td>最近は不要なことが多い</td>
+</tr>
+<tr>
+<td>標識交付申請書</td>
+<td>役所に置いてあるし、事前に印刷可能</td>
+</tr>
+</tbody>
+</table>
+<h3 id=販売ではなく譲渡の場合-ナンバープレート未返却>販売ではなく譲渡の場合 (ナンバープレート未返却)</h3>
+<table>
+<thead>
+<tr>
+<th>必要なもの</th>
+<th>備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ナンバープレート</td>
+<td>未返却のナンバープレート</td>
+</tr>
+<tr>
+<td>標識交付証明書</td>
+<td>ナンバープレート取得 (車両登録) 時に一緒に貰った書類</td>
+</tr>
+<tr>
+<td>譲渡証明書</td>
+<td>市区町村役所指定のものがあればそれを使う</td>
+</tr>
+<tr>
+<td>本人確認書類</td>
+<td>運転免許証, マイナンバーカード, etc.</td>
+</tr>
+<tr>
+<td>印鑑</td>
+<td>最近は不要なことが多い</td>
+</tr>
+<tr>
+<td>標識交付申請書</td>
+<td>役所に置いてあるし、事前に印刷可能</td>
+</tr>
+</tbody>
+</table>
+<h3 id=メモ>メモ</h3>
+<ul>
+<li><a href=https://www.city.nishitokyo.lg.jp/kurasi/sinseisyo/itiran/gendoukitukishinkoku/gentuki.html>西東京市の標識交付申請書や譲渡証明書ダウンロード先</a></li>
+<li><a href=https://www.city.edogawa.tokyo.jp/e013/qa/kurashi/zekin/keijisosha6.html>「譲渡証明書」は同じ市区町村内での譲渡でのみ使える場合がある</a></li>
+</ul>
+</section>
+</article>
+</main>
+<footer>
+<ul>
+<li>
+<a href=https://discord.gg/JhgFz8u>Discord</a>
+<a href=https://github.com/oshinko>GitHub</a>
+<a href=https://bsky.app/profile/osync.io>Bluesky</a>
+<a href=https://snort.social/p/npub1xx3kyu57uqukvsxmlhnmafv825pct93455hkn544nd6exlnunxps2psn5q>Nostr</a>
+</li>
+</ul>
+<small>
+(C) 2024 Osync I/O.
+Powered by <a href=https://gohugo.io>Hugo</a>.
+</small>
+</footer>
+</body>
+</html>
