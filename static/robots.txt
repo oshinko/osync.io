@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://osync.io/sitemap.xml

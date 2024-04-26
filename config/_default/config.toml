@@ -2,6 +2,7 @@ title = "Osync I/O"
 baseURL = "https://osync.io"
 hasCJKLanguage = true
 enableGitInfo = true
+enableRobotsTXT = false
 googleAnalytics = "G-JQCHZM9PGG"
 
 [markup]
