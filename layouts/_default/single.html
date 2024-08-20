@@ -36,6 +36,32 @@
                 {{ with .Description }}<p>{{ . }}</p>{{ end }}
                 <section>{{ .Content }}</section>
             </article>
+
+            <script>
+              var submittedMessage = false;
+              function handleMessageSubmit(event) {
+                event.target.querySelector('input[type="hidden"]').value = location.href;
+                const permit = confirm('メッセージを送信します。よろしいですか？');
+                event.target.querySelector('button').disabled = permit;
+                event.target.querySelector('textarea').readOnly = permit;
+                submittedMessage = permit;
+                return permit;
+              }
+            </script>
+            <div style="margin-top: 1em;">
+              <form
+                action="https://docs.google.com/forms/d/e/1FAIpQLSdNRP2vN3NEer3hwIrNEFIAf2dfNSzcwnd42tQYhkruGa7K_A/formResponse"
+                method="POST"
+                onsubmit="return handleMessageSubmit(event)"
+                target="hidden"
+                style="display: flex; flex-direction: column; gap: .75em;"
+              >
+                <input type="hidden" name="entry.1054445216">
+                <textarea name="entry.1359947595" placeholder="このページに関するご指摘・ご意見などを送信下さい。" rows="10" cols="40" maxlength="400" required style="padding: 1em;"></textarea>
+                <button style="width: max-content; padding: .4em 1.5em;">送信</button>
+              </form>
+              <iframe name="hidden" style="display: none" onload="if (submittedMessage) alert('ご協力ありがとうございます。メッセージを送信しました。')"></iframe>
+            </div>
         </main>
         {{ partial "footer" . }}
     </body>
