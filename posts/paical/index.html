@@ -102,6 +102,15 @@
 <p>それではまた～！</p>
 </section>
 </article>
+<script>var submittedMessage=!1;function handleMessageSubmit(b){b.target.querySelector('input[type="hidden"]').value=location.href;const a=confirm('メッセージを送信します。よろしいですか？');return b.target.querySelector('button').disabled=a,b.target.querySelector('textarea').readOnly=a,submittedMessage=a,a}</script>
+<div style=margin-top:1em>
+<form action=https://docs.google.com/forms/d/e/1FAIpQLSdNRP2vN3NEer3hwIrNEFIAf2dfNSzcwnd42tQYhkruGa7K_A/formResponse method=post onsubmit="return handleMessageSubmit(event)" target=hidden style=display:flex;flex-direction:column;gap:.75em>
+<input type=hidden name=entry.1054445216>
+<textarea name=entry.1359947595 placeholder=このページに関するご指摘・ご意見などを送信下さい。 rows=10 cols=40 maxlength=400 required style=padding:1em></textarea>
+<button style="width:max-content;padding:.4em 1.5em">送信</button>
+</form>
+<iframe name=hidden style=display:none onload="submittedMessage&&alert('ご協力ありがとうございます。メッセージを送信しました。')"></iframe>
+</div>
 </main>
 <footer>
 <ul>
