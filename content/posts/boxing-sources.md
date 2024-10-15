@@ -20,16 +20,23 @@ Pound for pound (P4P, PFP) rankings.
 
 - [The Ring Ratings](https://www.ringtv.com/ratings/)
 - [The Ring Ratings (History)](https://en.wikipedia.org/wiki/List_of_The_Ring_pound_for_pound_rankings)
+- [おしんこ P4P ランキング (国内)](https://osync.io/posts/boxing-p4p-jp/)
 
 ## 採点関連
 
 - [基礎知識 - JBC](https://jbc.or.jp/basic/)
 - [Ford Scoring - BoxRec](https://boxrec.com/wiki/index.php/Ford_Scoring)
 
-## 情報源一覧
+## サイト一覧
 
-- [JBC](https://jbc.or.jp/ranking/)
-- [The Ring](https://www.ringtv.com/)
-- [BoxRec](https://boxrec.com/)
-- [BoxingScene](https://www.boxingscene.com/)
-- [ESPN](https://www.espn.com/boxing/)
+Website                                                       | 備考
+--------------------------------------------------------------|--------------------
+[BoxRec](https://boxrec.com/)                                 | データベース
+[Boxing News](https://boxingnews.jp/)                         | 日メディア
+[BoxingScene](https://www.boxingscene.com/)                   | 米メディア
+[COMPUBOX](https://beta.compuboxdata.com/)                    | 試合のスタッツが見れる
+[ESPN](https://www.espn.com/boxing/)                          | 米スポーツ専門ケーブルテレビ局
+[Fightnews.com](https://fightnews.com/)                       | 米メディア
+[JBC](https://jbc.or.jp/ranking/)                             | 日本ボクシングコミッション
+[The Ring](https://www.ringtv.com/)                           | 米ボクシング誌
+[ボクシングマガジン](https://www.bbm-japan.com/category/boxing) | 日ボクシング誌
