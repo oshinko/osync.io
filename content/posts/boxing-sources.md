@@ -10,26 +10,32 @@ image: "/images/headers/boxing.jpg"
 
 ## ランキング
 
-- [日本ランキング](https://jbc.or.jp/ranking/)
-- [世界ランキング](https://www.boxingscene.com/rankings)
-- [BoxRec Ratings](https://boxrec.com/en/ratings)
+項目|説明
+--|--
+[日本ランキング](https://jbc.or.jp/ranking/)|JBC が出している日本ランキング (毎月更新)
+[世界ランキング](https://www.boxingscene.com/rankings)|各団体のランキングを取りまとめている
+[BoxRec レーティング](https://boxrec.com/en/ratings)|世界 & P4P ランキング。イロレーティングで自動算出してるっぽい
 
 ## パウンド・フォー・パウンド・ランキング
 
-Pound for pound (P4P, PFP) rankings.
+Pound for pound (P4P, PFP) rankings:
 
-- [The Ring Ratings](https://www.ringtv.com/ratings/)
-- [The Ring Ratings (History)](https://en.wikipedia.org/wiki/List_of_The_Ring_pound_for_pound_rankings)
-- [おしんこ P4P ランキング (国内)](/posts/boxing-p4p-jp/)
+項目|説明
+--|--
+[The Ring Ratings](https://www.ringtv.com/ratings/)|リング誌のレーティング
+[The Ring Ratings 履歴](https://en.wikipedia.org/wiki/List_of_The_Ring_pound_for_pound_rankings)|リング誌のレーティング履歴
+[おしんこ P4P ランキング (国内)](/posts/boxing-p4p-jp/)|世界 & P4P ランキング。イロレーティングで自動算出してるっぽい
 
-## 採点関連
+## 予備知識
 
-- [基礎知識 - JBC](https://jbc.or.jp/basic/)
-- [Ford Scoring - BoxRec](https://boxrec.com/wiki/index.php/Ford_Scoring)
+- [基礎知識](https://jbc.or.jp/basic/)
+- [ボクシングスタイルと技術](https://en.wikipedia.org/wiki/Boxing_styles_and_technique)
+- [Ford Scoring](https://boxrec.com/wiki/index.php/Ford_Scoring)
+- [Ford Scoring についての討論](https://boxrec.com/forum/viewtopic.php?t=260205)
 
 ## サイト一覧
 
-Website                                                       | 備考
+項目                                                           | 説明
 --------------------------------------------------------------|--------------------
 [BoxRec](https://boxrec.com/)                                 | データベース
 [Boxing News](https://boxingnews.jp/)                         | 日メディア
