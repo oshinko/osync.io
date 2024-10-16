@@ -24,7 +24,7 @@ Pound for pound (P4P, PFP) rankings:
 --|--
 [The Ring Ratings](https://www.ringtv.com/ratings/)|リング誌のレーティング
 [The Ring Ratings 履歴](https://en.wikipedia.org/wiki/List_of_The_Ring_pound_for_pound_rankings)|リング誌のレーティング履歴
-[おしんこ P4P ランキング (国内)](/posts/boxing-p4p-jp/)|世界 & P4P ランキング。イロレーティングで自動算出してるっぽい
+[おしんこ P4P 日本ランキング](/posts/boxing-p4p-jp/)|私が勝手に作ってる日本ランキング
 
 ## 予備知識
 
