@@ -33,12 +33,12 @@ image: "/images/headers/boxing.jpg"
 21|[比嘉 大吾](https://boxrec.com/en/box-pro/691593)|バンタム|-|-
 22|[尾川 堅一](https://boxrec.com/en/box-pro/535757)|S.フェザー|-|-
 23|[那須川 天心](https://boxrec.com/en/box-pro/853210)|バンタム|-|-
-24|[桑原 拓](https://boxrec.com/en/box-pro/)|フライ|-|-
+24|[桑原 拓](https://boxrec.com/en/box-pro/836764)|フライ|-|-
 25|[阿部 麗也](https://boxrec.com/en/box-pro/654234)|フェザー|-|-
-26|[亀田 和毅](https://boxrec.com/en/box-pro/)|フェザー|-|-
+26|[亀田 和毅](https://boxrec.com/en/box-pro/472942)|フェザー|-|-
 27|[京口 紘人](https://boxrec.com/en/box-pro/752878)|フライ|-|-
-28|[重岡 優大](https://boxrec.com/en/box-pro/)|ミニマム|-|-
-29|[増田 陸](https://boxrec.com/en/box-pro/)|バンタム|11/01|宇津見 義広 (日本 9 位)
+28|[重岡 優大](https://boxrec.com/en/box-pro/900843)|ミニマム|-|-
+29|[増田 陸](https://boxrec.com/en/box-pro/1096530)|バンタム|11/01|宇津見 義広 (日本 9 位)
 30|[谷口 将隆](https://boxrec.com/en/box-pro/747308)|L.フライ|-|-
 31|[栗原 慶太](https://boxrec.com/en/box-pro/568329)|バンタム|-|-
 32|[松本 圭佑](https://boxrec.com/en/box-pro/944445)|フェザー|-|-
