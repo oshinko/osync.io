@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="複数の基礎控除額を選択し、年間所得における手取り額を計算します。">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@osynco">
+<meta name="twitter:site" content="@osynco">
+<meta property="twitter:title" content="年収の壁シミュレータ - Osync I/O">
+<meta property="og:url" content="https://osync.io/docs/income-barrier-simulator.html">
+<meta property="og:title" content="年収の壁シミュレータ - Osync I/O">
+<meta property="og:description" content="複数の基礎控除額を選択し、年間所得における手取り額を計算します。">
+<meta property="og:image" content="https://osync.io/images/headers/jp-20240411.jpg">
+
+<title>年収の壁シミュレータ - Osync I/O</title>
+<style>
+h1 {
+  margin: 0 0 1rem 0;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.options {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: white;
+  margin-bottom: 1em;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: .25em;
+    max-width: 18em;
+
+    > div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    select {
+      width: 8em;
+    }
+  }
+}
+
+table {
+  position: relative;
+  border-collapse: collapse;
+
+  th {
+    position: sticky;
+    top: 191px;
+    z-index: 1;
+    background-color: skyblue;
+  }
+
+  th:nth-child(2) {
+    width: 8em;
+  }
+
+  td {
+    text-align: right;
+  }
+
+  th, td {
+    padding: .5em;
+    border: 1px solid black;
+  }
+
+  :is(th, td):nth-child(4), :is(th, td):nth-child(7) {
+    display: none;
+  }
+
+  th:nth-child(4), th:nth-child(7) {
+    background: silver;
+  }
+}
+</style>
+</head>
+<body>
+<h1>年収の壁シミュレータ</h1>
+
+<div class="options">
+  <div>
+    <div>
+      <h2>基礎控除 (最低)</h2>
+      <div>
+        <select name="min-basic-deduction" onchange="calc()">
+          <option>¥480,000</option>
+          <option>¥1,230,000</option>
+        </select>
+      </div>
+    </div>
+
+    <div>
+      <h2>給与所得控除 (最低)</h2>
+      <div>
+        <select name="min-income-deduction" onchange="calc()">
+          <option>¥550,000</option>
+        </select>
+      </div>
+    </div>
+
+    <div>
+      <h2>年収の壁</h2>
+      <div id="income-barrier">
+        ¥1,030,000
+      </div>
+    </div>
+
+    <div>
+      <h2>年収を指定</h2>
+      <input name="income" type="number" value="" placeholder="確認したい年収を入力"
+        onfocus="numberUnformat(event)" onblur="yenFormatAndCalc(event)">
+    </div>
+
+    <div>
+      <div>被扶養</div>
+      <input type="checkbox">
+    </div>
+
+    <div>
+      <div>さらに列を表示</div>
+      <input name="show-more-columns" type="checkbox" onchange="initColumns()"> 
+    </div>
+  </div>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>年収</th>
+      <th>基礎控除</th>
+      <th>給与所得控除</th>
+      <th>所得 (月額)</th>
+      <th>健康保険</th>
+      <th>厚生年金</th>
+      <th>課税所得</th>
+      <th>所得税</th>
+      <th>手取り</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+
+<div style="margin-top: 1em"><a href="/">ホームに戻る</a></div>
+
+<script>
+const API_ENDPOINT = 'https://renjaku.github.io/opendata2';
+
+async function get(resource) {
+  const resp = await fetch(API_ENDPOINT + resource);
+  return await resp.json();
+}
+
+async function getPensionInfo(date) {
+  const tables = await get('/social-insurances/pension/remuneration-tables.json');
+  const { id } = tables.find(({ start, end }) =>
+    new Date(start) <= date && (!end || new Date(end) > date));
+  const table = await get(`/social-insurances/pension/remuneration-tables/${id}.json`);
+  const type = await get('/social-insurances/pension/types/general.json');
+  const revision = type.revisions.find(({ start, end }) =>
+    new Date(start) <= date && (!end || new Date(end) > date));
+  return { table, revision };
+}
+
+const numberFormat = new Intl.NumberFormat();
+
+function numberUnformat({ target }) {
+  target.value = target.value.replace(/[¥,]/g, '');
+  target.type = 'number';
+}
+
+function yenFormat({ target }) {
+  target.type = 'text';
+  if (target.value) target.value = '¥' + numberFormat.format(target.value);
+}
+
+function yenFormatAndCalc({ target }) {
+  yenFormat({ target });
+  calc();
+}
+
+function appendYenCell(row, value) {
+  const cell = document.createElement('td');
+  cell.textContent = '¥' + numberFormat.format(value);
+  row.append(cell);
+}
+
+// 現在日時を得る
+const dateStr = location.hash.replace(/^#/, '');
+const date = dateStr ? new Date(dateStr) : new Date();
+
+// 厚生年金情報を取得
+let pensionInfo;
+getPensionInfo(date).then(info => {
+  pensionInfo = info;
+  calc();
+});
+
+async function calc() {
+  let minIncome = 100_000;
+  let maxIncome = 100_000_000;
+  const inputIncome = document.querySelector('input[name="income"]');
+  if (inputIncome.value)
+    maxIncome = minIncome = Number(inputIncome.value.replace(/[¥,]/g, ''));
+
+  function *f() {
+    let income = minIncome;
+    while (income <= maxIncome) {
+      yield income;
+      income += Math.pow(10, income.toString().length - 1) / 10;
+    }
+  }
+
+  const minBasicDeduction = Number(
+    document.querySelector('select[name="min-basic-deduction"]')
+      .value.replace(/[¥,]/g, '')
+  );
+
+  const minIncomeDeduction = Number(
+    document.querySelector('select[name="min-income-deduction"]')
+      .value.replace(/[¥,]/g, '')
+  );
+
+  document.querySelector('#income-barrier').textContent =
+    '¥' + numberFormat.format(minBasicDeduction + minIncomeDeduction);
+
+  const tbody = document.querySelector('tbody');
+  for (const row of tbody.querySelectorAll('tr')) row.remove();  // データ行を全て削除
+
+  for (const income of f()) {
+    const row = document.createElement('tr');
+    tbody.append(row);
+
+    // 所得
+    appendYenCell(row, income);
+
+    // 基礎控除
+    const basicDeduction =
+      income <= 24_000_000 ?
+        minBasicDeduction :
+        income <= 24_500_000 ?
+          320_000 :
+          income <= 25_000_000 ?
+            160_000 :
+            0;
+    appendYenCell(row, basicDeduction);
+
+    // 給与所得控除
+    const incomeDeduction =
+      income <= 1_625_000 ?
+        minIncomeDeduction :
+        income <= 1_800_000 ?
+          income * 0.4 - 100_000 :
+          income <= 3_600_000 ?
+            income * 0.3 + 80_000 :
+            income <= 6_600_000 ?
+              income * 0.2 + 440_000 :
+              income <= 8_500_000 ?
+                income * 0.1 + 1_100_000 :
+                1_950_000;
+    appendYenCell(row, incomeDeduction);
+
+    // 所得 (月額)
+    const monthlyIncome = Math.floor(income / 12);
+    appendYenCell(row, monthlyIncome);
+
+    // 健康保険
+    const health = 0;
+    appendYenCell(row, health);
+
+    // 厚生年金
+    const pentionGrade = pensionInfo.table.find(({ start, end }) => start <= monthlyIncome && (monthlyIncome < end || !end));
+    const monthlyPension = pentionGrade.remuneration * pensionInfo.revision.rate * pensionInfo.revision.contributionRate;
+    const pension = monthlyPension * 12;
+    appendYenCell(row, pension);
+
+    // 課税所得
+    const taxableIncome = Math.floor(Math.max(
+      income - basicDeduction - incomeDeduction - health - pension,
+      0
+    ) / 1000) * 1000;
+    appendYenCell(row, taxableIncome);
+
+    // 所得税
+    const [incomeTaxRate, incomeTaxDeduction] =
+      taxableIncome < 1_000 ?
+        [0, 0] :
+        taxableIncome <= 1_949_000 ?
+          [0.05, 0] :
+          taxableIncome <= 3_299_000 ?
+            [0.10, 97_500] :
+            taxableIncome <= 6_949_000 ?
+              [0.20, 427_500] :
+              taxableIncome <= 8_999_000 ?
+                [0.23, 636_000] :
+                taxableIncome <= 17_999_000 ?
+                  [0.33, 1_536_000] :
+                  taxableIncome <= 39_999_000 ?
+                    [0.40, 2_796_000] :
+                    [0.45, 4_796_000];
+      const incomeTax = taxableIncome * incomeTaxRate - incomeTaxDeduction
+      appendYenCell(row, incomeTax);
+
+      // 手取り
+      appendYenCell(row, income - health - pension - incomeTax);
+  }
+
+  initColumns();
+}
+
+function initColumns() {
+  const checked = document.querySelector('input[name="show-more-columns"]').checked;
+  document
+    .querySelectorAll(':is(th, td):nth-child(4), :is(th, td):nth-child(7)')
+    .forEach(e => e.style.display = checked ? 'table-cell' : 'none');
+}
+</script>
+
+</body>
+</html>
