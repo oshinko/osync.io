@@ -11,7 +11,7 @@ Hugo content for [osync.io](https://osync.io).
 Running the local development server.
 
 ```sh
-hugo --cleanDestinationDir server
+hugo --cleanDestinationDir server --bind 0.0.0.0
 ```
 
 ## Build static pages
