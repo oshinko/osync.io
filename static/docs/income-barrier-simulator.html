@@ -19,6 +19,39 @@
 
 <title>年収の壁シミュレータ - Osync I/O</title>
 <style>
+:root {
+  --theme-color: #000;
+}
+
+html {
+  font-family:
+    'Source Sans Pro',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--theme-color);
+}
+
 h1 {
   margin: 0 0 1rem 0;
 }
@@ -27,6 +60,11 @@ h2 {
   margin: 0;
   font-size: 1em;
   font-weight: normal;
+}
+
+i {
+  font-size: .75em;
+  font-style: normal;
 }
 
 .options {
@@ -58,14 +96,14 @@ table {
   position: relative;
   border-collapse: collapse;
 
-  th {
+  thead {
     position: sticky;
-    top: 191px;
+    top: 163px;
     z-index: 1;
     background-color: skyblue;
   }
 
-  th:nth-child(2) {
+  th:nth-child(5) {
     width: 8em;
   }
 
@@ -78,11 +116,11 @@ table {
     border: 1px solid black;
   }
 
-  :is(th, td):nth-child(4), :is(th, td):nth-child(7) {
+  :is(th, td):nth-child(2), :is(th, td):nth-child(4), :is(th, td):nth-child(8) {
     display: none;
   }
 
-  th:nth-child(4), th:nth-child(7) {
+  th:nth-child(2), th:is(th, td):nth-child(4), th:nth-child(8) {
     background: silver;
   }
 }
@@ -141,12 +179,22 @@ table {
   <thead>
     <tr>
       <th>年収</th>
-      <th>基礎控除</th>
+      <th>
+        月収<br>
+        <i>年収 / 12ヶ月</i>
+      </th>
       <th>給与所得控除</th>
-      <th>所得 (月額)</th>
+      <th>
+        合計所得<br>
+        <i>年収 - 給与所得控除</i>
+      </th>
+      <th>基礎控除</th>
       <th>健康保険</th>
       <th>厚生年金</th>
-      <th>課税所得</th>
+      <th>
+        課税所得<br>
+        <i>合計所得 - 社会保険</i>
+      </th>
       <th>所得税</th>
       <th>手取り</th>
     </tr>
@@ -217,7 +265,7 @@ async function calc() {
   if (inputIncome.value)
     maxIncome = minIncome = Number(inputIncome.value.replace(/[¥,]/g, ''));
 
-  function *f() {
+  function *incomes() {
     let income = minIncome;
     while (income <= maxIncome) {
       yield income;
@@ -241,23 +289,16 @@ async function calc() {
   const tbody = document.querySelector('tbody');
   for (const row of tbody.querySelectorAll('tr')) row.remove();  // データ行を全て削除
 
-  for (const income of f()) {
+  for (const income of incomes()) {
     const row = document.createElement('tr');
     tbody.append(row);
 
-    // 所得
+    // 年収
     appendYenCell(row, income);
 
-    // 基礎控除
-    const basicDeduction =
-      income <= 24_000_000 ?
-        minBasicDeduction :
-        income <= 24_500_000 ?
-          320_000 :
-          income <= 25_000_000 ?
-            160_000 :
-            0;
-    appendYenCell(row, basicDeduction);
+    // 月収
+    const monthlyIncome = Math.floor(income / 12);
+    appendYenCell(row, monthlyIncome);
 
     // 給与所得控除
     const incomeDeduction =
@@ -274,9 +315,20 @@ async function calc() {
                 1_950_000;
     appendYenCell(row, incomeDeduction);
 
-    // 所得 (月額)
-    const monthlyIncome = Math.floor(income / 12);
-    appendYenCell(row, monthlyIncome);
+    // 合計所得
+    const totalIncome = Math.max(income - incomeDeduction, 0);
+    appendYenCell(row, totalIncome);
+
+    // 基礎控除
+    const basicDeduction =
+      income <= 24_000_000 ?
+        minBasicDeduction :
+        income <= 24_500_000 ?
+          320_000 :
+          income <= 25_000_000 ?
+            160_000 :
+            0;
+    appendYenCell(row, basicDeduction);
 
     // 健康保険
     const health = 0;
@@ -290,7 +342,7 @@ async function calc() {
 
     // 課税所得
     const taxableIncome = Math.floor(Math.max(
-      income - basicDeduction - incomeDeduction - health - pension,
+      totalIncome - basicDeduction - health - pension,
       0
     ) / 1000) * 1000;
     appendYenCell(row, taxableIncome);
@@ -325,7 +377,7 @@ async function calc() {
 function initColumns() {
   const checked = document.querySelector('input[name="show-more-columns"]').checked;
   document
-    .querySelectorAll(':is(th, td):nth-child(4), :is(th, td):nth-child(7)')
+    .querySelectorAll(':is(th, td):nth-child(2), :is(th, td):nth-child(4), :is(th, td):nth-child(8)')
     .forEach(e => e.style.display = checked ? 'table-cell' : 'none');
 }
 </script>
