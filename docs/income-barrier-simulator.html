@@ -217,37 +217,33 @@ async function get(resource) {
   return await resp.json();
 }
 
-async function getPensionInfo(date) {
+async function getPensionInsuranceInfo(date) {
   const tables = await get('/social-insurances/pension/remuneration-tables.json');
   const { id } = tables.find(({ start, end }) =>
-    new Date(start) <= date && (!end || new Date(end) > date));
+    new Date(start) <= date && (date < new Date(end) || !end));
   const table = await get(`/social-insurances/pension/remuneration-tables/${id}.json`);
-  const type = await get('/social-insurances/pension/types/general.json');
-  const revision = type.revisions.find(({ start, end }) =>
-    new Date(start) <= date && (!end || new Date(end) > date));
+  const division = await get('/social-insurances/pension/types/general.json');
+  const revision = division.revisions.find(({ start, end }) =>
+    new Date(start) <= date && (date < new Date(end) || !end));
   return { table, revision };
 }
 
-async function getHealthInfo(date) {
+async function getHealthInsuranceInfo(date) {
   const tables = await get('/social-insurances/health/remuneration-tables.json');
   const { id } = tables.find(({ start, end }) =>
-    new Date(start) <= date && (!end || new Date(end) > date));
+    new Date(start) <= date && (date < new Date(end) || !end));
   const table = await get(`/social-insurances/health/remuneration-tables/${id}.json`);
-  const type = await get('/social-insurances/health/organizations/kyoukaikenpo-tokyo.json');  // 協会けんぽ東京都
-  const revision = type.revisions.find(({ start, end }) =>
-    new Date(start) <= date && (!end || new Date(end) > date));
+  const division = await get('/social-insurances/health/organizations/kyoukaikenpo-tokyo.json');  // 協会けんぽ東京都
+  const revision = division.revisions.find(({ start, end }) =>
+    new Date(start) <= date && (date < new Date(end) || !end));
   return { table, revision };
 }
 
 function roundHalfEven(value) {
   const rounded = Math.round(value);
   const decimalPart = value % 1;
-  // 小数部分がちょうど0.5の場合
-  if (decimalPart === 0.5 || decimalPart === -0.5) {
-    // 整数部分が偶数なら切り捨て、奇数なら切り上げ
+  if (decimalPart === 0.5 || decimalPart === -0.5)
     return rounded % 2 === 0 ? rounded : rounded + Math.sign(value - rounded);
-  }
-  // 通常の四捨五入
   return rounded;
 }
 
@@ -279,11 +275,11 @@ const dateStr = location.hash.replace(/^#/, '');
 const date = dateStr ? new Date(dateStr) : new Date();
 
 // 社会保険情報を取得
-let healthInfo, pensionInfo;
-getHealthInfo(date).then(info => {
-  healthInfo = info;
-  getPensionInfo(date).then(info => {
-    pensionInfo = info;
+let healthInsuranceInfo, pensionInsuranceInfo;
+getHealthInsuranceInfo(date).then(info => {
+  healthInsuranceInfo = info;
+  getPensionInsuranceInfo(date).then(info => {
+    pensionInsuranceInfo = info;
     calc();
   });
 });
@@ -363,13 +359,13 @@ async function calc({ dependent } = {}) {
     let [health, pension] = [0, 0];
     if (!dependent && income >= SOCIAL_INSURANCE_BOARDER || income >= NO_DEPENDENT_BOARDER) {
       // 健康保険
-      const healthGrade = healthInfo.table.find(({ start, end }) => start <= monthlyIncome && (monthlyIncome < end || !end));
-      const monthlyHealth = roundHalfEven(healthGrade.remuneration * healthInfo.revision.rate * healthInfo.revision.contributionRate);
+      const healthGrade = healthInsuranceInfo.table.find(({ start, end }) => start <= monthlyIncome && (monthlyIncome < end || !end));
+      const monthlyHealth = roundHalfEven(healthGrade.remuneration * healthInsuranceInfo.revision.rate * healthInsuranceInfo.revision.contributionRate);
       health = monthlyHealth * 12;
 
       // 厚生年金
-      const pensionGrade = pensionInfo.table.find(({ start, end }) => start <= monthlyIncome && (monthlyIncome < end || !end));
-      const monthlyPension = roundHalfEven(pensionGrade.remuneration * pensionInfo.revision.rate * pensionInfo.revision.contributionRate);
+      const pensionGrade = pensionInsuranceInfo.table.find(({ start, end }) => start <= monthlyIncome && (monthlyIncome < end || !end));
+      const monthlyPension = roundHalfEven(pensionGrade.remuneration * pensionInsuranceInfo.revision.rate * pensionInsuranceInfo.revision.contributionRate);
       pension = monthlyPension * 12;
     }
     appendYenCell(row, health);
