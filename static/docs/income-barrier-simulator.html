@@ -165,7 +165,12 @@ table {
 
     <div>
       <div>被扶養</div>
-      <input name="dependent" type="checkbox" onchange="calc({ dependent: event.target.checked })">
+      <input name="dependent" type="checkbox" onchange="calc()">
+    </div>
+
+    <div>
+      <div>週 20 時間以上勤務<br><i>(106万円の壁撤廃以後)</i></div>
+      <input name="force-pension-deduction" type="checkbox" onchange="calc()">
     </div>
 
     <div>
@@ -284,7 +289,7 @@ getHealthInsuranceInfo(date).then(info => {
   });
 });
 
-async function calc({ dependent } = {}) {
+async function calc() {
   let minIncome = DEFAULT_MIN_INCOME;
   let maxIncome = DEFAULT_MAX_INCOME;
   const inputIncome = document.querySelector('input[name="income"]');
@@ -311,6 +316,9 @@ async function calc({ dependent } = {}) {
 
   document.querySelector('#income-barrier').textContent =
     '¥' + numberFormat.format(minBasicDeduction + minIncomeDeduction);
+
+  const dependent = document.querySelector('input[name="dependent"]').checked;
+  const forcePensionDeduction = document.querySelector('input[name="force-pension-deduction"]').checked;
 
   const tbody = document.querySelector('tbody');
   for (const row of tbody.querySelectorAll('tr')) row.remove();  // データ行を全て削除
@@ -362,7 +370,8 @@ async function calc({ dependent } = {}) {
       const healthGrade = healthInsuranceInfo.table.find(({ start, end }) => start <= monthlyIncome && (monthlyIncome < end || !end));
       const monthlyHealth = roundHalfEven(healthGrade.remuneration * healthInsuranceInfo.revision.rate * healthInsuranceInfo.revision.contributionRate);
       health = monthlyHealth * 12;
-
+    }
+    if (forcePensionDeduction || income >= NO_DEPENDENT_BOARDER) {
       // 厚生年金
       const pensionGrade = pensionInsuranceInfo.table.find(({ start, end }) => start <= monthlyIncome && (monthlyIncome < end || !end));
       const monthlyPension = roundHalfEven(pensionGrade.remuneration * pensionInsuranceInfo.revision.rate * pensionInsuranceInfo.revision.contributionRate);
