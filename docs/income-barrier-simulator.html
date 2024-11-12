@@ -112,13 +112,13 @@ table {
     border: 1px solid black;
   }
 
-  :is(th, td):nth-child(2), :is(th, td):nth-child(4), :is(th, td):nth-child(9) {
-    display: none;
-  }
-
-  th:nth-child(2), th:is(th, td):nth-child(4), th:nth-child(9) {
+  th.extra {
     background: silver;
   }
+}
+
+.hidden {
+  display: none;
 }
 </style>
 </head>
@@ -130,9 +130,9 @@ table {
     <div>
       <h2>基礎控除 (最低)</h2>
       <div>
-        <select name="min-basic-deduction" onchange="calc()">
-          <option>¥480,000</option>
-          <option>¥1,230,000</option>
+        <select name="min-basic-deduction" onchange="updateHash({ 'min-basic-deduction':  event.target.value })">
+          <option value="480000">¥480,000</option>
+          <option value="1230000">¥1,230,000</option>
         </select>
       </div>
     </div>
@@ -140,8 +140,8 @@ table {
     <div>
       <h2>給与所得控除 (最低)</h2>
       <div>
-        <select name="min-income-deduction" onchange="calc()">
-          <option>¥550,000</option>
+        <select name="min-income-deduction" onchange="updateHash({ 'min-income-deduction':  event.target.value })">
+          <option value="550000">¥550,000</option>
         </select>
       </div>
     </div>
@@ -156,27 +156,27 @@ table {
     <div>
       <h2>年収を指定</h2>
       <input name="income" type="number" value="" placeholder="確認したい年収を入力"
-        onfocus="numberUnformat(event)" onblur="yenFormatAndCalc(event)">
+        onfocus="numberUnformat(event)" onblur="yenFormatAndUpdateHash(event.target, { income: event.target.value })">
     </div>
 
     <div>
       <div>40～64歳<br><i>(介護保険料が引かれる)</i></div>
-      <input name="care-deduction" type="checkbox" onchange="calc()">
+      <input name="care-deduction" type="checkbox" onchange="updateHash({ 'care-deduction':  event.target.checked })">
     </div>
 
     <div>
       <div>被扶養</div>
-      <input name="dependent" type="checkbox" onchange="calc()">
+      <input name="dependent" type="checkbox" onchange="updateHash({ dependent: event.target.checked })">
     </div>
 
     <div>
       <div>週 20 時間以上勤務<br><i>(106万円の壁撤廃以後)</i></div>
-      <input name="force-pension-deduction" type="checkbox" onchange="calc()">
+      <input name="force-pension-deduction" type="checkbox" onchange="updateHash({ 'force-pension-deduction': event.target.checked })">
     </div>
 
     <div>
       <div>さらに列を表示</div>
-      <input name="show-more-columns" type="checkbox" onchange="initColumns()"> 
+      <input name="show-more-columns" type="checkbox" onchange="updateHash({ 'show-more-columns': event.target.checked })">
     </div>
   </div>
 </div>
@@ -185,12 +185,12 @@ table {
   <thead>
     <tr>
       <th>年収</th>
-      <th>
+      <th class="extra hidden">
         月収<br>
         <i>年収 / 12ヶ月</i>
       </th>
       <th>給与所得控除</th>
-      <th>
+      <th class="extra hidden">
         合計所得<br>
         <i>年収 - 給与所得控除</i>
       </th>
@@ -198,7 +198,7 @@ table {
       <th>健康保険</th>
       <th>介護保険</th>
       <th>厚生年金</th>
-      <th>
+      <th class="extra hidden">
         課税所得<br>
         <i>合計所得 - 基礎控除 - 社会保険</i>
       </th>
@@ -218,6 +218,27 @@ const DEFAULT_MIN_INCOME = 100_000;
 const DEFAULT_MAX_INCOME = 100_000_000;
 const SOCIAL_INSURANCE_BOARDER = 1_060_000;
 const NO_DEPENDENT_BOARDER = 1_300_000;
+
+function parseHashParams(hash) {
+  const params = new URLSearchParams(hash.replace(/^#+/, ''))
+  const result = {};
+  for (const [key, value] of params.entries()) {
+    const n = Number(value);
+    result[key] = value === '' ?
+      true :
+      Number.isNaN(n) ?
+        value :
+        n;
+  }
+  return result;
+}
+
+function stringifyHashParams(params) {
+  const searchParams = new URLSearchParams();
+  for (const [key, value] of Object.entries(params))
+    if (value !== false) searchParams.append(key, value === true ? '' : value);
+  return '#' + searchParams.toString().replace(/=$/g, '').replace(/=&/g, '&');
+}
 
 async function get(resource) {
   const resp = await fetch(API_ENDPOINT + resource);
@@ -261,24 +282,69 @@ function numberUnformat({ target }) {
   target.type = 'number';
 }
 
-function yenFormat({ target }) {
-  target.type = 'text';
-  if (target.value) target.value = '¥' + numberFormat.format(target.value);
+function yenFormat(input) {
+  input.type = 'text';
+  if (input.value) input.value = '¥' + numberFormat.format(input.value);
 }
 
-function yenFormatAndCalc({ target }) {
-  yenFormat({ target });
-  calc();
+function updateHash(patch) {
+  const params = parseHashParams(location.hash);
+  location.hash = stringifyHashParams({ ...params, ...patch });
 }
 
-function appendYenCell(row, value) {
+function yenFormatAndUpdateHash(input, patch) {
+  yenFormat(input);
+  updateHash(patch);
+}
+
+function appendYenCell(row, value, classes) {
   const cell = document.createElement('td');
   cell.textContent = '¥' + numberFormat.format(value);
+  if (classes) classes.forEach(x => cell.classList.add(x));
   row.append(cell);
 }
 
+function initInputs() {
+  const {
+    'min-basic-deduction': minBasicDeduction,
+    'min-income-deduction': minIncomeDeduction,
+    income,
+    'care-deduction': careDeduction,
+    dependent,
+    'force-pension-deduction': forcePensionDeduction,
+    'show-more-columns': showMoreColumns
+  } = parseHashParams(location.hash);
+
+  if (income !== undefined) {
+    const inputIncome = document.querySelector('input[name="income"]');
+    inputIncome.value = income;
+    yenFormat(inputIncome);
+  }
+
+  if (minBasicDeduction)
+    document.querySelector('select[name="min-basic-deduction"]').value =
+      minBasicDeduction;
+
+  if (minIncomeDeduction)
+    document.querySelector('select[name="min-income-deduction"]').value =
+      minIncomeDeduction;
+
+  if (careDeduction)
+    document.querySelector('input[name="care-deduction"]').checked =
+      careDeduction;
+
+  if (dependent)
+    document.querySelector('input[name="dependent"]').checked = dependent;
+
+  if (forcePensionDeduction)
+    document.querySelector('input[name="force-pension-deduction"]').checked = forcePensionDeduction;
+
+  if (showMoreColumns)
+    document.querySelector('input[name="show-more-columns"]').checked = showMoreColumns;
+}
+
 // 現在日時を得る
-const dateStr = location.hash.replace(/^#/, '');
+const { date: dateStr } = parseHashParams(location.hash);
 const date = dateStr ? new Date(dateStr) : new Date();
 
 // 社会保険情報を取得
@@ -287,16 +353,52 @@ getHealthInsuranceInfo(date).then(info => {
   healthInsuranceInfo = info;
   getPensionInsuranceInfo(date).then(info => {
     pensionInsuranceInfo = info;
+    initInputs();
     calc();
   });
 });
 
+// パラメータが更新されたら計算
+window.onhashchange = () => {
+  initInputs();
+  calc();
+};
+
+function getSettings() {
+  const {
+    'min-basic-deduction': minBasicDeduction,
+    'min-income-deduction': minIncomeDeduction,
+    income,
+    'care-deduction': careDeduction,
+    dependent,
+    'force-pension-deduction': forcePensionDeduction,
+    'show-more-columns': showMoreColumns
+  } = parseHashParams(location.hash);
+  return {
+    minBasicDeduction: minBasicDeduction ?? Number(document.querySelector('select[name="min-basic-deduction"]').value),
+    minIncomeDeduction: minIncomeDeduction ?? Number(document.querySelector('select[name="min-income-deduction"]').value),
+    income,
+    careDeduction: careDeduction ?? document.querySelector('input[name="care-deduction"]').checked,
+    dependent: dependent ?? document.querySelector('input[name="dependent"]').checked,
+    forcePensionDeduction: forcePensionDeduction ?? document.querySelector('input[name="force-pension-deduction"]').checked,
+    showMoreColumns: showMoreColumns ?? document.querySelector('input[name="show-more-columns"]').checked
+  };
+}
+
 async function calc() {
+  const {
+    minBasicDeduction,
+    minIncomeDeduction,
+    income,
+    careDeduction,
+    dependent,
+    forcePensionDeduction,
+    showMoreColumns
+  } = getSettings();
+
   let minIncome = DEFAULT_MIN_INCOME;
   let maxIncome = DEFAULT_MAX_INCOME;
-  const inputIncome = document.querySelector('input[name="income"]');
-  if (inputIncome.value)
-    maxIncome = minIncome = Number(inputIncome.value.replace(/[¥,]/g, ''));
+  if (income) maxIncome = minIncome = Number(income);
 
   function *incomes() {
     let income = minIncome;
@@ -306,22 +408,8 @@ async function calc() {
     }
   }
 
-  const minBasicDeduction = Number(
-    document.querySelector('select[name="min-basic-deduction"]')
-      .value.replace(/[¥,]/g, '')
-  );
-
-  const minIncomeDeduction = Number(
-    document.querySelector('select[name="min-income-deduction"]')
-      .value.replace(/[¥,]/g, '')
-  );
-
   document.querySelector('#income-barrier').textContent =
     '¥' + numberFormat.format(minBasicDeduction + minIncomeDeduction);
-
-  const careDeduction = document.querySelector('input[name="care-deduction"]').checked;
-  const dependent = document.querySelector('input[name="dependent"]').checked;
-  const forcePensionDeduction = document.querySelector('input[name="force-pension-deduction"]').checked;
 
   const tbody = document.querySelector('tbody');
   for (const row of tbody.querySelectorAll('tr')) row.remove();  // データ行を全て削除
@@ -335,7 +423,7 @@ async function calc() {
 
     // 月収
     const monthlyIncome = Math.floor(income / 12);
-    appendYenCell(row, monthlyIncome);
+    appendYenCell(row, monthlyIncome, ['extra', 'hidden']);
 
     // 給与所得控除
     const incomeDeduction =
@@ -354,7 +442,7 @@ async function calc() {
 
     // 合計所得
     const totalIncome = Math.max(income - incomeDeduction, 0);
-    appendYenCell(row, totalIncome);
+    appendYenCell(row, totalIncome, ['extra', 'hidden']);
 
     // 基礎控除
     const basicDeduction =
@@ -395,7 +483,7 @@ async function calc() {
       totalIncome - basicDeduction - health - care - pension,
       0
     ) / 1000) * 1000;
-    appendYenCell(row, taxableIncome);
+    appendYenCell(row, taxableIncome, ['extra', 'hidden'])
 
     // 所得税
     const [incomeTaxRate, incomeTaxDeduction] =
@@ -421,14 +509,10 @@ async function calc() {
       appendYenCell(row, income - health - pension - incomeTax);
   }
 
-  initColumns();
-}
-
-function initColumns() {
-  const checked = document.querySelector('input[name="show-more-columns"]').checked;
-  document
-    .querySelectorAll(':is(th, td):nth-child(2), :is(th, td):nth-child(4), :is(th, td):nth-child(9)')
-    .forEach(e => e.style.display = checked ? 'table-cell' : 'none');
+  for (const elem of document.querySelectorAll('.extra')) {
+    if (showMoreColumns) elem.classList = [...elem.classList].filter(x => x !== 'hidden');
+    else elem.classList.add('hidden');
+  }
 }
 </script>
 
