@@ -14,17 +14,17 @@ googleAnalytics = "G-JQCHZM9PGG"
 
   [[menu.nav]]
     name = "Posts"
-    url = "/posts"
+    url = "/posts/"
     weight = 1
 
   [[menu.nav]]
     name = "Tags"
-    url = "/tags"
+    url = "/tags/"
     weight = 2
 
   [[menu.nav]]
     name = "About"
-    url = "/about"
+    url = "/about/"
     weight = 3
 
   [[menu.footer]]
