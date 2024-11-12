@@ -68,10 +68,6 @@ i {
 }
 
 .options {
-  position: sticky;
-  top: 0;
-  z-index: 2;
-  background-color: white;
   margin-bottom: 1em;
 
   > div {
@@ -98,8 +94,8 @@ table {
 
   thead {
     position: sticky;
-    top: 212px;
-    z-index: 1;
+    top: 0;
+    z-index: 0;
     background-color: skyblue;
   }
 
@@ -116,11 +112,11 @@ table {
     border: 1px solid black;
   }
 
-  :is(th, td):nth-child(2), :is(th, td):nth-child(4), :is(th, td):nth-child(8) {
+  :is(th, td):nth-child(2), :is(th, td):nth-child(4), :is(th, td):nth-child(9) {
     display: none;
   }
 
-  th:nth-child(2), th:is(th, td):nth-child(4), th:nth-child(8) {
+  th:nth-child(2), th:is(th, td):nth-child(4), th:nth-child(9) {
     background: silver;
   }
 }
@@ -164,6 +160,11 @@ table {
     </div>
 
     <div>
+      <div>40～64歳<br><i>(介護保険料が引かれる)</i></div>
+      <input name="care-deduction" type="checkbox" onchange="calc()">
+    </div>
+
+    <div>
       <div>被扶養</div>
       <input name="dependent" type="checkbox" onchange="calc()">
     </div>
@@ -195,10 +196,11 @@ table {
       </th>
       <th>基礎控除</th>
       <th>健康保険</th>
+      <th>介護保険</th>
       <th>厚生年金</th>
       <th>
         課税所得<br>
-        <i>合計所得 - 社会保険</i>
+        <i>合計所得 - 基礎控除 - 社会保険</i>
       </th>
       <th>所得税</th>
       <th>手取り</th>
@@ -317,6 +319,7 @@ async function calc() {
   document.querySelector('#income-barrier').textContent =
     '¥' + numberFormat.format(minBasicDeduction + minIncomeDeduction);
 
+  const careDeduction = document.querySelector('input[name="care-deduction"]').checked;
   const dependent = document.querySelector('input[name="dependent"]').checked;
   const forcePensionDeduction = document.querySelector('input[name="force-pension-deduction"]').checked;
 
@@ -364,12 +367,18 @@ async function calc() {
             0;
     appendYenCell(row, basicDeduction);
 
-    let [health, pension] = [0, 0];
+    let [health, care, pension] = [0, 0, 0];
     if (!dependent && income >= SOCIAL_INSURANCE_BOARDER || income >= NO_DEPENDENT_BOARDER) {
       // 健康保険
       const healthGrade = healthInsuranceInfo.table.find(({ start, end }) => start <= monthlyIncome && (monthlyIncome < end || !end));
       const monthlyHealth = roundHalfEven(healthGrade.remuneration * healthInsuranceInfo.revision.rate * healthInsuranceInfo.revision.contributionRate);
       health = monthlyHealth * 12;
+
+      if (careDeduction) {
+        // 介護保険
+        const monthlyCare = roundHalfEven(healthGrade.remuneration * healthInsuranceInfo.revision.careRate * healthInsuranceInfo.revision.contributionRate);
+        care = monthlyCare * 12;
+      }
     }
     if (forcePensionDeduction || income >= NO_DEPENDENT_BOARDER) {
       // 厚生年金
@@ -378,11 +387,12 @@ async function calc() {
       pension = monthlyPension * 12;
     }
     appendYenCell(row, health);
+    appendYenCell(row, care);
     appendYenCell(row, pension);
 
     // 課税所得
     const taxableIncome = Math.floor(Math.max(
-      totalIncome - basicDeduction - health - pension,
+      totalIncome - basicDeduction - health - care - pension,
       0
     ) / 1000) * 1000;
     appendYenCell(row, taxableIncome);
@@ -417,7 +427,7 @@ async function calc() {
 function initColumns() {
   const checked = document.querySelector('input[name="show-more-columns"]').checked;
   document
-    .querySelectorAll(':is(th, td):nth-child(2), :is(th, td):nth-child(4), :is(th, td):nth-child(8)')
+    .querySelectorAll(':is(th, td):nth-child(2), :is(th, td):nth-child(4), :is(th, td):nth-child(9)')
     .forEach(e => e.style.display = checked ? 'table-cell' : 'none');
 }
 </script>
