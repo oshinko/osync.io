@@ -22,8 +22,8 @@ image: "/images/headers/boxing.jpg"
 10|[田中 恒成](https://boxrec.com/en/box-pro/666339)|S.フライ|-|-
 11|[吉野 修一郎](https://boxrec.com/en/box-pro/737760)|ライト|-|-
 12|[矢吹 正道](https://boxrec.com/en/box-pro/752510)|L.フライ|-|-
-13|[西田 凌佑](https://boxrec.com/en/box-pro/898844)|バンタム|-|-
-14|[武居 由樹](https://boxrec.com/en/box-pro/990774)|バンタム|12/23|？
+13|[西田 凌佑](https://boxrec.com/en/box-pro/898844)|バンタム|12/14|Anuchai Donsua (IBF 14 位)
+14|[武居 由樹](https://boxrec.com/en/box-pro/990774)|バンタム|12/23|Yuttapong Tongdee (WBA 12 位, WBO 10 位)
 15|[A オラスクアガ](https://boxrec.com/en/box-pro/904246)|フライ|-|-
 16|[重岡 銀次朗](https://boxrec.com/en/box-pro/846108)|ミニマム|-|-
 17|[井上 岳志](https://boxrec.com/en/box-pro/694941)|S.ウェルター|-|-
@@ -36,26 +36,26 @@ image: "/images/headers/boxing.jpg"
 24|[桑原 拓](https://boxrec.com/en/box-pro/836764)|フライ|-|-
 25|[阿部 麗也](https://boxrec.com/en/box-pro/654234)|フェザー|-|-
 26|[亀田 和毅](https://boxrec.com/en/box-pro/472942)|フェザー|-|-
-27|[京口 紘人](https://boxrec.com/en/box-pro/752878)|フライ|-|-
-28|[重岡 優大](https://boxrec.com/en/box-pro/900843)|ミニマム|-|-
-29|[増田 陸](https://boxrec.com/en/box-pro/1096530)|バンタム|11/01|宇津見 義広 (日本 9 位)
+27|[増田 陸](https://boxrec.com/en/box-pro/1096530)|バンタム|-|-
+28|[京口 紘人](https://boxrec.com/en/box-pro/752878)|フライ|-|-
+29|[重岡 優大](https://boxrec.com/en/box-pro/900843)|ミニマム|-|-
 30|[谷口 将隆](https://boxrec.com/en/box-pro/747308)|L.フライ|-|-
 31|[栗原 慶太](https://boxrec.com/en/box-pro/568329)|バンタム|-|-
 32|[松本 圭佑](https://boxrec.com/en/box-pro/944445)|フェザー|-|-
 33|[堤 駿斗](https://boxrec.com/en/box-pro/863092)|フェザー|-|-
-34|[三代 大訓](https://boxrec.com/en/box-pro/794104)|ライト|12/06|丸田 陽七太 (日本 4 位)
+34|[三代 大訓](https://boxrec.com/en/box-pro/794104)|ライト|12/06|丸田 陽七太 (日本 3 位)
 35|[永田 大士](https://boxrec.com/en/box-pro/694940)|S.ライト|-|-
 36|[保田 克也](https://boxrec.com/en/box-pro/808904)|ライト|11/20|宇津木 秀 (OPBF 王者)
 37|[宇津木 秀](https://boxrec.com/en/box-pro/829717)|ライト|11/20|保田 克也 (WBO-AP 王者)
 38|[中嶋 一輝](https://boxrec.com/en/box-pro/799358)|S.バンタム|12/11|辰吉 寿以輝 (日本 10 位)
-39|[小國 以載](https://boxrec.com/en/box-pro/518213)|S.バンタム|-|-
-40|[鈴木 雅弘](https://boxrec.com/en/box-pro/846560)|ライト|-|-
-41|[下町 俊貴](https://boxrec.com/en/box-pro/740239)|S.バンタム|12/23|平野 岬 (日本 13 位)
-42|[村田 昴](https://boxrec.com/en/box-pro/893147)|S.バンタム|-|-
-43|[前田 稔輝](https://boxrec.com/en/box-pro/876238)|フェザー|12/07|Ren Yamabe
-44|[波田 大和](https://boxrec.com/en/box-pro/731145)|S.フェザー|11/01|Presco Carcosia
+39|[波田 大和](https://boxrec.com/en/box-pro/731145)|S.フェザー|-|-
+40|[小國 以載](https://boxrec.com/en/box-pro/518213)|S.バンタム|-|-
+41|[鈴木 雅弘](https://boxrec.com/en/box-pro/846560)|ライト|-|-
+42|[下町 俊貴](https://boxrec.com/en/box-pro/740239)|S.バンタム|12/23|平野 岬 (日本 13 位)
+43|[村田 昴](https://boxrec.com/en/box-pro/893147)|S.バンタム|-|-
+44|[前田 稔輝](https://boxrec.com/en/box-pro/876238)|フェザー|12/07|Ren Yamabe
 45|[坂 晃典](https://boxrec.com/en/box-pro/605717)|S.フェザー|-|-
 46|[仲里 周磨](https://boxrec.com/en/box-pro/716694)|ライト|11/20|Cristiano Aoqui
-47|[今永 虎雅](https://boxrec.com/en/box-pro/889835)|ライト|11/24|齊藤陽二
-48|[横山 葵海](https://boxrec.com/en/box-pro/1182099)|S.フライ|-|-
+47|[今永 虎雅](https://boxrec.com/en/box-pro/889835)|ライト|11/24|齊藤陽二 (日本 4 位)
+48|[横山 葵海](https://boxrec.com/en/box-pro/1182099)|S.フライ|12/20|Denmark Quibido
 49|[坂井 優太](https://boxrec.com/en/box-pro/1130028)|バンタム|-|-
