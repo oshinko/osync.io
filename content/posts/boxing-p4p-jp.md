@@ -23,7 +23,7 @@ image: "/images/headers/boxing.jpg"
 11|[吉野 修一郎](https://boxrec.com/en/box-pro/737760)|ライト|-|-
 12|[矢吹 正道](https://boxrec.com/en/box-pro/752510)|L.フライ|-|-
 13|[西田 凌佑](https://boxrec.com/en/box-pro/898844)|バンタム|-|-
-14|[武居 由樹](https://boxrec.com/en/box-pro/990774)|バンタム|01/23|Yuttapong Tongdee (WBA 12 位, WBO 10 位)
+14|[武居 由樹](https://boxrec.com/en/box-pro/990774)|バンタム|-|-
 15|[A オラスクアガ](https://boxrec.com/en/box-pro/904246)|フライ|-|-
 16|[重岡 銀次朗](https://boxrec.com/en/box-pro/846108)|ミニマム|-|-
 17|[井上 岳志](https://boxrec.com/en/box-pro/694941)|S.ウェルター|-|-
