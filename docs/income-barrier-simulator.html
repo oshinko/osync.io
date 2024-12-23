@@ -133,6 +133,7 @@ table {
       <div>
         <select name="min-basic-deduction" onchange="updateHash({ 'min-basic-deduction':  event.target.value })">
           <option value="480000">¥480,000</option>
+          <option value="580000">¥580,000</option>
           <option value="1230000">¥1,230,000</option>
         </select>
       </div>
@@ -143,6 +144,7 @@ table {
       <div>
         <select name="min-income-deduction" onchange="updateHash({ 'min-income-deduction':  event.target.value })">
           <option value="550000">¥550,000</option>
+          <option value="650000">¥650,000</option>
         </select>
       </div>
     </div>
@@ -204,6 +206,7 @@ table {
         <i>合計所得 - 基礎控除 - 社会保険</i>
       </th>
       <th>所得税</th>
+      <th>住民税</th>
       <th>手取り</th>
     </tr>
   </thead>
@@ -503,11 +506,31 @@ async function calc() {
                   taxableIncome <= 39_999_000 ?
                     [0.40, 2_796_000] :
                     [0.45, 4_796_000];
-      const incomeTax = taxableIncome * incomeTaxRate - incomeTaxDeduction
-      appendYenCell(row, incomeTax);
+    const incomeTax = taxableIncome * incomeTaxRate - incomeTaxDeduction
+    appendYenCell(row, incomeTax);
 
-      // 手取り
-      appendYenCell(row, income - health - pension - incomeTax);
+    // 住民税
+    let residentTax = 0;
+    if (totalIncome > 450_000) {
+      const residentTaxBasicDeduction =
+        totalIncome <= 24_000_000 ?
+          430_000 :
+          totalIncome <= 24_500_000 ?
+            290_000 :
+            totalIncome <= 25_000_000 ?
+            150_000 :
+            0;
+      const residentTaxableIncome = Math.floor(Math.max(
+        totalIncome - health - care - pension - residentTaxBasicDeduction,
+        0
+      ) / 1000) * 1000;
+      const shotokuwarigaku = residentTaxableIncome * (0.06 + 0.04);
+      residentTax = shotokuwarigaku + 3_000 + 1_000 + 1_000;
+    }
+    appendYenCell(row, residentTax);
+
+    // 手取り
+    appendYenCell(row, income - health - pension - incomeTax - residentTax);
   }
 
   for (const elem of document.querySelectorAll('.extra')) {
