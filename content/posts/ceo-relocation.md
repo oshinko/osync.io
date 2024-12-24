@@ -2,7 +2,7 @@
 date = "2023-07-24T09:00:00+09:00"
 draft = false
 title = "代表取締役の引っ越し手続き"
-tags = ["法人", "引っ越し"]
+tags = ["法人", "引っ越し", "eLTAX"]
 image = "/images/headers/beautiful-nature-20230504.jpg"
 +++
 
