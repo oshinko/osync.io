@@ -48,6 +48,6 @@ googleAnalytics = "G-JQCHZM9PGG"
     weight = 4
 
 [params]
-  description = "野良プログラマーおしんこのブログ"
+  description = "おしんこのブログ"
   image = "/default.png"
   twitter = "osynco"

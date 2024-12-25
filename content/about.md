@@ -4,9 +4,7 @@ draft = false
 title = "About"
 +++
 
-このサイトは、野良プログラマー「おしんこ」が、運営しているブログです。
+このサイトは、私「おしんこ」が運営しているブログです。
+おしんこはポンコツプログラマーの一種であり、東京の寂れた小田舎に生息しています。
 
-## 何で作られてるの？
-
-[Hugo](https://gohugo.io) というサイトジェネレーターで作られています。
-このサイトのテーマを含む全てのソースコードは [GitHub](https://github.com/oshinko/osync.io) で確認できます。
+このブログは、[Hugo](https://gohugo.io) というサイトジェネレーターで作成しており、[GitHub](https://github.com/oshinko/osync.io) でソースコードが確認できます。その内 Node.js に移行したいなと考えているけど、時間が無くてできません。貧乏暇なしですね。[トホホ...](https://www.tohoho-web.com/)
