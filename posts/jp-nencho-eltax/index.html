@@ -1,0 +1,192 @@
+<!doctype html><html>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="野良プログラマーおしんこのブログ">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:creator content="@osynco">
+<meta name=twitter:site content="@osynco">
+<meta property="twitter:title" content="年末調整の提出書類を電子申請 (eLTAX) する - Osync I/O">
+<meta property="og:url" content="https://osync.io/posts/jp-nencho-eltax/">
+<meta property="og:title" content="年末調整の提出書類を電子申請 (eLTAX) する - Osync I/O">
+<meta property="og:description" content="会社は、翌年 1/31 までに「給与支払報告書」や「源泉徴収票」「法定調書合計表」といった年末調整の成果物となる書類を、 従業員が住む市町村や国税に提出">
+<meta property="og:image" content="https://osync.io/images/headers/jp-nencho-eltax.png">
+<title>年末調整の提出書類を電子申請 (eLTAX) する - Osync I/O</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JQCHZM9PGG"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-JQCHZM9PGG',{anonymize_ip:!1})}</script>
+<style>:root{--color-link:#499bea;--color-link-hover:#304999;--color-muted:#7d8590;--font-base:-apple-system, "BlinkMacSystemFont",
+                   "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo,
+                   sans-serif, "Segoe UI Emoji";--font-code:"SFMono-Regular", Consolas, "Liberation Mono", Menlo,
+                   monospace, "Segoe UI Emoji";--header-grad-start:var(--color-link);--header-grad-end:var(--color-link-hover)}*,*::before,*::after{box-sizing:border-box}@font-face{font-family:flop;src:url(/fonts/flop/FLOPDesignFont.woff2)format("woff2"),url(/fonts/flop/FLOPDesignFont.woff)format("woff");font-weight:400}img{max-width:100%}body{margin:0;font-family:var(--font-base);background-color:#e7f4ff}a{color:var(--color-link);text-decoration:none}a:hover{color:var(--color-link-hover)}code{padding:.2em .4em;border-radius:6px;background-color:#818b981f;font-size:85%;font-family:var(--font-code)}pre code{border:1px solid #999;display:block;padding:1em;line-height:1.45em;overflow:auto;background-color:inherit;border-radius:0}header{padding:1em;background:linear-gradient(to top,var(--header-grad-start) 0%,var(--header-grad-end) 100%);color:#b6cee2;font-size:1.2em;text-align:center}header h1{margin:0 0 .4em;color:#fff;font-family:flop}header h1 a{color:inherit;text-decoration:none}header h1 a:hover{color:#b6cee2}header p{margin:0;font-size:.8em}nav{margin:1em}@media screen and (min-width:920px){nav{width:912px;margin-left:auto;margin-right:auto}}nav ul{margin:0;padding:0;list-style:none}nav li{display:inline;line-height:1.6;padding-bottom:.4em;border-bottom:2px solid #fff}nav li.selected{border-bottom:2px solid #cc0051}@media screen and (min-width:480px){main{margin:1em}}@media screen and (min-width:920px){main{width:920px;margin-left:auto;margin-right:auto}}.article-list{display:flex;flex-direction:column;gap:16px}@media screen and (min-width:920px){.article-list{flex-direction:row;flex-wrap:wrap}.article-wrapper.col2{width:448px}.article-wrapper.col4{width:216px}}article{margin:0;padding:1em;background-color:#fff}article h1{margin:0 0 .6em;font-size:1.5em}article h2{position:relative;padding:.6em 1em;background-color:#61a5e4;border-radius:7px;color:#fff;font-size:1.25em}article h2:after{position:absolute;content:'';top:100%;left:30px;border:8px solid transparent;border-top:8px solid #61a5e4;width:0;height:0}article h3{padding:.25em 0 .25em .6em;border-left:.4em solid var(--color-link);font-size:1.125em}article>ul{margin:.5em 0;padding:0;list-style:none;font-size:.8em}article>ul li{display:inline;line-height:1.6}article .date{display:flex;column-gap:1em;row-gap:.5em;flex-wrap:wrap;margin:0;font-size:.8em}article .date>*{display:flex;gap:.25em}article .date>*>:first-child:after{content:":"}section li{line-height:1.6}footer{margin:1em}footer ul{margin:0;padding:0;list-style:none;text-align:center}footer li{display:inline;line-height:1.6}footer small{display:block;margin:1em;text-align:center;color:#666}.responsive{position:relative;padding-bottom:75%}.responsive>*{position:absolute;top:0;left:0;width:100%;height:120%}ul.pagination{margin:1em 0;padding:0;font-family:Tahoma,Sans-Serif}ul.pagination li{display:inline;padding:.2em}blockquote{padding-left:1em;border-left:.25em solid #dfe2e5;color:var(--color-muted);margin:1em 0}table{border-collapse:collapse}table th,table td{padding:10px;border:1px solid #dfe2e5;text-align:left}table th{background-color:#eee;color:#24292e}.fade{transition:opacity .2s ease-in-out}.fade:hover{opacity:.5}</style>
+</head>
+<body>
+<header>
+<h1><a href=/>Osync I/O</a></h1>
+<p>野良プログラマーおしんこのブログ</p>
+</header>
+<nav>
+<ul>
+<li>
+<a href=/posts/>Posts</a></li>
+<li>
+<a href=/tags/>Tags</a></li>
+<li>
+<a href=/about/>About</a></li>
+</ul>
+</nav>
+<main>
+<article>
+<h1><a href=/posts/jp-nencho-eltax/>年末調整の提出書類を電子申請 (eLTAX) する</a></h1>
+<div class=date>
+<div>
+<div>Last committed</div>
+<time datetime=2024-12-25T15:42:59Z+0900>
+24/12/25 15:42
+</time>
+</div>
+<div>
+<div>Posted</div>
+<time datetime=2024-12-25T03:00:00Z+0900>
+24/12/25 03:00
+</time>
+</div>
+</div>
+<ul>
+<li><a href=/tags/%E6%97%A5%E6%9C%AC/>日本</a></li>
+<li><a href=/tags/%E5%B9%B4%E6%9C%AB%E8%AA%BF%E6%95%B4/>年末調整</a></li>
+<li><a href=/tags/eltax/>eLTAX</a></li>
+<li><a href=/tags/e-tax/>e-Tax</a></li>
+</ul>
+<img src=/images/headers/jp-nencho-eltax.png>
+<section><p>会社は、翌年 1/31 までに「給与支払報告書」や「源泉徴収票」「法定調書合計表」といった年末調整の成果物となる書類を、
+従業員が住む市町村や国税に提出しなければなりません。</p>
+<p>郵送や e-Tax & eLTAX でも提出できますが、<a href=https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hotei/eltax.htm>eLTAX だけで完結する</a>方法があるので紹介します。</p>
+<h2 id=ここで紹介すること>ここで紹介すること</h2>
+<ul>
+<li><a href=https://www.eltax.lta.go.jp/eltax/software/>PCdesk (DL 版)</a> による eLTAX で「給与支払報告書」や「源泉徴収票」「法定調書合計表」の提出手順</li>
+<li>各書類のソースとなる <a href=https://www.eltax.lta.go.jp/news/09390>統一CSVレイアウト CSV ファイル（以下、統一CSV）</a>の作成例</li>
+<li>各書類の提出前に PCdesk で統一CSVから従業員へ配布用の源泉徴収票を印刷、PDF 保存する方法</li>
+</ul>
+<h2 id=wip-統一csv-を作成>WIP 統一CSV を作成</h2>
+<p>最初に <a href=https://www.eltax.lta.go.jp/news/09390>eLTAX 公式ページから統一CSVレイアウト仕様書をダウンロード</a>します。これは、作業に困ったときに仕様を参照する用途です。</p>
+<p>統一CSV サンプルをダウンロード (FIXME あとでリンクを貼る) したら、エクセルで開きます。
+別のエディタで開く際は文字コードを UTF-8 などに変換する必要があるかもしれません。
+ちなみに PCdesk に投入する際、文字コードは UTF-8 でも問題ないことを確認しています。</p>
+<p>仕様書に従って、統一CSV サンプルを貴社向けに編集して下さい。
+ヘッダ行は PCdesk への投入時は不要です（あるとエラーになります）。
+一時的に一番上に二行挿入し、以下をコピペすれば作業しやすくなるでしょう。</p>
+<pre tabindex=0><code class=language-tsv data-lang=tsv>1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	21	22	23	24	25	26	27	28	29	30	31	32	33	34	35	36	37	38	39	40	41	42	43	44	45	46	47	48	49	50	51	52	53	54	55	56	57	58	59	60	61	62	63	64	65	66	67	68	69	70	71	72	73	74	75	76	77	78	79	80	81	82	83	84	85	86	87	88	89	90	91	92	93	94	95	96	97	98	99	100	101	102	103	104	105	106	107	108	109	110	111	112	113	114	115	116	117	118	119	120	121	122	123	124	125	126	127	128	129	130	131	132	133	134	135	136	137	138	139	140	141	142	143	144
+法定資料の種類	整理番号１	本支店等区分番号	提出義務者の住所（居所）又は所在地	提出義務者の氏名又は名称	提出義務者の電話番号	整理番号２	提出者の住所（居所）又は所在地	提出者の氏名又は名称	提出区分（訂正表示）	年分	支払を受ける者－住所又は居所	支払を受ける者－国外住所表示	支払を受ける者－氏名	支払を受ける者－役職名	種別	支払金額	未払金額	給与所得控除後の給与等の金額（調整控除後）	所得控除の額の合計額	源泉徴収税額	未徴収税額	（源泉）控除対象配偶者の有無	老人控除対象配偶者	配偶者（特別）控除の額	控除対象扶養親族の数－特定－主	控除対象扶養親族の数－特定－従	控除対象扶養親族の数－老人－主	控除対象扶養親族の数－老人－上の内訳	控除対象扶養親族の数－老人－従	控除対象扶養親族の数－その他－主	控除対象扶養親族の数－その他－従	障害者の数－特別障害者	障害者の数－上の内訳	障害者の数－その他	社会保険料等の金額	上の内訳	生命保険料の控除額	地震保険料の控除額	住宅借入金等特別控除等の額	旧個人年金保険料の金額	配偶者の合計所得	旧長期損害保険料の金額	受給者の生年月日－元号	受給者の生年月日－年	受給者の生年月日－月	受給者の生年月日－日	夫あり	未成年者	乙欄適用	本人が－特別障害者	本人が－その他の障害者	老年者	寡婦	寡夫	勤労学生	死亡退職	災害者	外国人	中途就・退職－中途就職・退職の区分	中途就・退職－年	中途就・退職－月	中途就・退職－日	他の支払者－住所（居所）又は所在地	他の支払者－国外住所表示	他の支払者－氏名又は名称	他の支払者－給与等の金額	他の支払者－徴収した金額	他の支払者－控除した社会保険料の金額	災害者に係る徴収猶予税額	他の支払者のもとを退職した年月日－年	他の支払者のもとを退職した年月日－月	他の支払者のもとを退職した年月日－日	住宅借入金等特別控除等適用家屋居住年月日(1回目)－年	住宅借入金等特別控除等適用家屋居住年月日(1回目)－月	住宅借入金等特別控除等適用家屋居住年月日(1回目)－日	住宅借入金等特別控除適用数	住宅借入金等特別控除可能額	住宅借入金等特別控除区分(1回目)	住宅借入金等の額(1回目)	住宅借入金等特別控除等適用家屋居住年月日(2回目)－年	住宅借入金等特別控除等適用家屋居住年月日(2回目)－月	住宅借入金等特別控除等適用家屋居住年月日(2回目)－日	住宅借入金等特別控除区分(2回目)	住宅借入金等の額(2回目)	摘要	新生命保険料の金額	旧生命保険料の金額	介護医療保険料の金額	新個人年金保険料の金額	16歳未満扶養親族の数	国民年金保険料等の金額	非居住者である親族の数	提出義務者の個人番号又は法人番号	支払を受ける者の個人番号	（源泉・特別）控除対象配偶者－フリガナ	（源泉・特別）控除対象配偶者－氏名	（源泉・特別）控除対象配偶者－区分	（源泉・特別）控除対象配偶者－個人番号	控除対象扶養親族(1)－フリガナ	控除対象扶養親族(1)－氏名	控除対象扶養親族(1)－区分	控除対象扶養親族(1)－個人番号	控除対象扶養親族(2)－フリガナ	控除対象扶養親族(2)－氏名	控除対象扶養親族(2)－区分	控除対象扶養親族(2)－個人番号	控除対象扶養親族(3)－フリガナ	控除対象扶養親族(3)－氏名	控除対象扶養親族(3)－区分	控除対象扶養親族(3)－個人番号	控除対象扶養親族(4)－フリガナ	控除対象扶養親族(4)－氏名	控除対象扶養親族(4)－区分	控除対象扶養親族(4)－個人番号	16歳未満の扶養親族(1)－フリガナ	16歳未満の扶養親族(1)－氏名	16歳未満の扶養親族(1)－区分	16歳未満の扶養親族(1)－個人番号	16歳未満の扶養親族(2)－フリガナ	16歳未満の扶養親族(2)－氏名	16歳未満の扶養親族(2)－区分	16歳未満の扶養親族(2)－個人番号	16歳未満の扶養親族(3)－フリガナ	16歳未満の扶養親族(3)－氏名	16歳未満の扶養親族(3)－区分	16歳未満の扶養親族(3)－個人番号	16歳未満の扶養親族(4)－フリガナ	16歳未満の扶養親族(4)－氏名	16歳未満の扶養親族(4)－区分	16歳未満の扶養親族(4)－個人番号	5人目以降の控除対象扶養親族の個人番号	5人目以降の16歳未満の扶養親族の個人番号	普通徴収	青色専従者	条約免除	支払を受ける者のフリガナ	受給者番号	提出先市町村コード	指定番号	基礎控除の額	所得金額調整控除額	ひとり親	作成区分
+</code></pre><p>項目（カラム）別の補足:</p>
+<table>
+<thead>
+<tr>
+<th>No.</th>
+<th>項目</th>
+<th>補足</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>17</td>
+<td>支払金額</td>
+<td>社会保険料に算入される支払金額の全額</td>
+</tr>
+<tr>
+<td>19</td>
+<td>給与所得控除後の給与等の金額（調整控除後）</td>
+<td>年末調整計算シートから転記</td>
+</tr>
+<tr>
+<td>20</td>
+<td>所得控除の額の合計額</td>
+<td>年末調整計算シートの「所得控除額の合計額」から転記</td>
+</tr>
+<tr>
+<td>21</td>
+<td>源泉徴収税額</td>
+<td>年末調整計算シートの「年調年税額」から転記（年調済の額）</td>
+</tr>
+<tr>
+<td>36</td>
+<td>社会保険料等の金額</td>
+<td>年末調整計算シートの「社会保険料控除額」の中の「給与等からの控除分」から転記</td>
+</tr>
+<tr>
+<td>38</td>
+<td>生命保険料の控除額</td>
+<td>給与所得者の保険料控除申告書の「生命保険料控除額」を転記</td>
+</tr>
+<tr>
+<td>87</td>
+<td>新生命保険料の金額</td>
+<td>給与所得者の保険料控除申告書から転記。他の同種の金額（No.87 ~ 90）を合算して「生命保険料の控除額」と同額になれば OK</td>
+</tr>
+<tr>
+<td>88</td>
+<td>旧生命保険料の金額</td>
+<td>同上</td>
+</tr>
+<tr>
+<td>89</td>
+<td>介護医療保険料の金額</td>
+<td>同上</td>
+</tr>
+<tr>
+<td>90</td>
+<td>新個人年金保険料の金額</td>
+<td>同上</td>
+</tr>
+<tr>
+<td>138</td>
+<td>受給者番号</td>
+<td>会社で規定する（社内でのみ重複のない）従業員番号でよいが、仕様書を見ると英字や一般的な半角記号は使えないとあるため、本サイトでは数字のみで構成される番号を推奨</td>
+</tr>
+</tbody>
+</table>
+<h2 id=wip-従業員へ配布用の源泉徴収票を印刷pdf-保存>WIP 従業員へ配布用の源泉徴収票を印刷、PDF 保存</h2>
+<p>TODO 具体的な説明だけでなく、画面遷移図をここに貼る</p>
+<ol>
+<li>
+<p>PCdesk より、源泉徴収票の「印刷」ボタンを押下
+(これにより、マクロエクセルが起動する) <br>
+<img src=/images/jp-nencho-eltax.1.png alt=源泉徴収票の印刷></p>
+</li>
+<li>
+<p>起動したマクロエクセルの「ファイル取り込み」ボタンを押下</p>
+</li>
+<li>
+<p>統一CSV を開き、「印刷」ボタンを押下（この後、印刷ウィンドウが起動し、PDF 保存も可能）
+<img src=/images/jp-nencho-eltax.2.png alt=源泉徴収票></p>
+</li>
+</ol>
+<h2 id=wip-書類を提出>WIP 書類を提出</h2>
+<p>TODO 具体的な説明だけでなく、画面遷移図をここに貼る</p>
+</section>
+</article>
+<script>var submittedMessage=!1;function handleMessageSubmit(b){b.target.querySelector('input[type="hidden"]').value=location.href;const a=confirm('メッセージを送信します。よろしいですか？');return b.target.querySelector('button').disabled=a,b.target.querySelector('textarea').readOnly=a,submittedMessage=a,a}</script>
+<div style=margin-top:1em>
+<form action=https://docs.google.com/forms/d/e/1FAIpQLSdNRP2vN3NEer3hwIrNEFIAf2dfNSzcwnd42tQYhkruGa7K_A/formResponse method=post onsubmit="return handleMessageSubmit(event)" target=hidden style=display:flex;flex-direction:column;gap:.75em>
+<input type=hidden name=entry.1054445216>
+<textarea name=entry.1359947595 placeholder=このページに関するご指摘・ご意見などを送信下さい。 rows=10 cols=40 maxlength=400 required style=padding:1em></textarea>
+<button style="width:max-content;padding:.4em 1.5em">送信</button>
+</form>
+<iframe name=hidden style=display:none onload="submittedMessage&&alert('ご協力ありがとうございます。メッセージを送信しました。')"></iframe>
+</div>
+</main>
+<footer>
+<ul>
+<li>
+<a href=https://discord.gg/JhgFz8u>Discord</a>
+<a href=https://github.com/oshinko>GitHub</a>
+<a href=https://bsky.app/profile/osync.io>Bluesky</a>
+<a href=https://snort.social/p/npub1xx3kyu57uqukvsxmlhnmafv825pct93455hkn544nd6exlnunxps2psn5q>Nostr</a>
+</li>
+</ul>
+<small>
+(C) 2024 Osync I/O.
+Powered by <a href=https://gohugo.io>Hugo</a>.
+</small>
+</footer>
+</body>
+</html>
