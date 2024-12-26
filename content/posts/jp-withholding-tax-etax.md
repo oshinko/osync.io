@@ -19,4 +19,4 @@ image: /images/headers/jp-nencho-eltax.png
 
 ![x](/images/jp-withholding-tax-etax.png)
 
-この後は、画面に従い手続きを進めて下さい。
+この後は e-Tax 画面に従い手続きを進めて下さい。
