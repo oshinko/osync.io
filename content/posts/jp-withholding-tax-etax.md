@@ -17,6 +17,7 @@ image: /images/headers/jp-nencho-eltax.png
 
 画面遷移は次の図の通りです。
 
-![x](/images/jp-withholding-tax-etax.png)
+![e-Tax 画面遷移](/images/jp-withholding-tax-etax.png)
 
 この後は e-Tax 画面に従い手続きを進めて下さい。
+最終的に、インターネットバンキング (Pay-easy) やクレジットカードでの納付が可能です。
