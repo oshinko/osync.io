@@ -11,13 +11,13 @@ image: "/images/headers/boxing.jpg"
 順位|選手|階級|次戦|相手
 ---|---|---|---|---
 1|[井上 尚弥](https://boxrec.com/en/box-pro/628407)|S.バンタム|01/23|サム・グッドマン (WBC 6 位, IBF 1 位, WBO 1 位)
-2|[中谷 潤人](https://boxrec.com/en/box-pro/718508)|バンタム|-|-
+2|[中谷 潤人](https://boxrec.com/en/box-pro/718508)|バンタム|02/23|David Cuellar Contreras (WBC 6 位)
 3|[寺地 拳四朗](https://boxrec.com/en/box-pro/692967)|フライ|-|-
 4|[井岡 一翔](https://boxrec.com/en/box-pro/483786)|S.フライ|12/30|Fernando Martinez
 5|[平岡 アンディ](https://boxrec.com/en/box-pro/672119)|S.ライト|-|-
 6|[井上 拓真](https://boxrec.com/en/box-pro/667667)|バンタム|-|-
 7|[阿久井 政悟](https://boxrec.com/en/box-pro/685429)|フライ|-|-
-8|[堤 聖也](https://boxrec.com/en/box-pro/829718)|バンタム|-|-
+8|[堤 聖也](https://boxrec.com/en/box-pro/829718)|バンタム|02/23|比嘉 大吾 (IBF 9 位, WBA 7 位, WBC 12 位, WBO 3 位)
 9|[力石 政法](https://boxrec.com/en/box-pro/806436)|S.フェザー|-|-
 10|[田中 恒成](https://boxrec.com/en/box-pro/666339)|S.フライ|-|-
 11|[吉野 修一郎](https://boxrec.com/en/box-pro/737760)|ライト|-|-
@@ -30,9 +30,9 @@ image: "/images/headers/boxing.jpg"
 18|[健文 トーレス](https://boxrec.com/en/box-pro/233323)|S.フライ, バンタム|-|-
 19|[岩田 翔吉](https://boxrec.com/en/box-pro/853769)|L.フライ|-|-
 20|[佐々木 尽](https://boxrec.com/en/box-pro/847229)|ウェルター|01/23|坂井 祥紀 (日本 4 位)
-21|[比嘉 大吾](https://boxrec.com/en/box-pro/691593)|バンタム|-|-
+21|[比嘉 大吾](https://boxrec.com/en/box-pro/691593)|バンタム|02/23|堤 聖也 (WBA 王者)
 22|[尾川 堅一](https://boxrec.com/en/box-pro/535757)|S.フェザー|-|-
-23|[那須川 天心](https://boxrec.com/en/box-pro/853210)|バンタム|-|-
+23|[那須川 天心](https://boxrec.com/en/box-pro/853210)|バンタム|02/23|Jason Moloney (IBF 6 位, WBC 5 位, WBO 6 位)
 24|[桑原 拓](https://boxrec.com/en/box-pro/836764)|フライ|-|-
 25|[亀田 和毅](https://boxrec.com/en/box-pro/472942)|フェザー|-|-
 26|[増田 陸](https://boxrec.com/en/box-pro/1096530)|バンタム|-|-
@@ -43,7 +43,7 @@ image: "/images/headers/boxing.jpg"
 31|[谷口 将隆](https://boxrec.com/en/box-pro/747308)|L.フライ|-|-
 32|[三代 大訓](https://boxrec.com/en/box-pro/794104)|ライト|-|-
 33|[栗原 慶太](https://boxrec.com/en/box-pro/568329)|バンタム|-|-
-34|[堤 駿斗](https://boxrec.com/en/box-pro/863092)|フェザー|12/30|Rene Alvarado
+34|[堤 駿斗](https://boxrec.com/en/box-pro/863092)|S.フェザー|12/30|Rene Alvarado
 35|[中嶋 一輝](https://boxrec.com/en/box-pro/799358)|S.バンタム|-|-
 36|[松本 圭佑](https://boxrec.com/en/box-pro/944445)|フェザー|-|-
 37|[永田 大士](https://boxrec.com/en/box-pro/694940)|S.ライト|-|-
