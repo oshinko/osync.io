@@ -20,9 +20,9 @@ image: "/images/headers/boxing.jpg"
 8|[堤 聖也](https://boxrec.com/en/box-pro/829718)|バンタム|2/23|比嘉 大吾 (IBF 9 位, WBA 7 位, WBC 12 位, WBO 3 位)
 9|[力石 政法](https://boxrec.com/en/box-pro/806436)|S.フェザー|-|-
 10|[田中 恒成](https://boxrec.com/en/box-pro/666339)|S.フライ|-|-
-11|[吉野 修一郎](https://boxrec.com/en/box-pro/737760)|ライト|-|-
-12|[矢吹 正道](https://boxrec.com/en/box-pro/752510)|L.フライ|-|-
-13|[西田 凌佑](https://boxrec.com/en/box-pro/898844)|バンタム|-|-
+11|[西田 凌佑](https://boxrec.com/en/box-pro/898844)|バンタム|-|-
+12|[吉野 修一郎](https://boxrec.com/en/box-pro/737760)|ライト|-|-
+13|[矢吹 正道](https://boxrec.com/en/box-pro/752510)|L.フライ|-|-
 14|[武居 由樹](https://boxrec.com/en/box-pro/990774)|バンタム|-|-
 15|[A オラスクアガ](https://boxrec.com/en/box-pro/904246)|フライ|-|-
 16|[重岡 銀次朗](https://boxrec.com/en/box-pro/846108)|ミニマム|-|-
@@ -31,7 +31,7 @@ image: "/images/headers/boxing.jpg"
 19|[佐々木 尽](https://boxrec.com/en/box-pro/847229)|ウェルター|1/23|坂井 祥紀 (日本 4 位)
 20|[比嘉 大吾](https://boxrec.com/en/box-pro/691593)|バンタム|2/23|堤 聖也 (WBA 王者)
 21|[尾川 堅一](https://boxrec.com/en/box-pro/535757)|S.フェザー|-|-
-22|[那須川 天心](https://boxrec.com/en/box-pro/853210)|バンタム|2/23|Jason Moloney (IBF 6 位, WBC 5 位, WBO 6 位)
+22|[那須川 天心](https://boxrec.com/en/box-pro/853210)|バンタム|2/23|ジェイソン・モロニー (IBF 6 位, WBC 5 位, WBO 6 位)
 23|[堤 駿斗](https://boxrec.com/en/box-pro/863092)|S.フェザー|-|-
 24|[桑原 拓](https://boxrec.com/en/box-pro/836764)|フライ|-|-
 25|[亀田 和毅](https://boxrec.com/en/box-pro/472942)|フェザー|-|-
