@@ -9,13 +9,20 @@ image: /images/headers/jp-nencho-eltax.png
 会社は、翌年 1/31 までに「給与支払報告書」や「源泉徴収票」「法定調書合計表」といった年末調整の成果物となる書類を、
 従業員が住む市町村や国税に提出しなければなりません。
 
-郵送や e-Tax & eLTAX でも提出できますが、[eLTAX だけで完結する](https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hotei/eltax.htm)方法があるので紹介します。
+郵送や e-Tax + eLTAX でも提出できますが、[eLTAX だけで完結する](https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hotei/eltax.htm)方法があるので紹介します。
 
 ## ここで紹介すること
 
-- [PCdesk (DL 版)](https://www.eltax.lta.go.jp/eltax/software/) による eLTAX で「給与支払報告書」や「源泉徴収票」「法定調書合計表」の提出手順
+- [PCdesk (DL 版)](https://www.eltax.lta.go.jp/eltax/software/) による eLTAX で「給与支払報告書」「源泉徴収票」「法定調書合計表」を提出する手順
 - 各書類のソースとなる [統一CSVレイアウト CSV ファイル（以下、統一CSV）](https://www.eltax.lta.go.jp/news/09390)の作成例
 - 各書類の提出前に PCdesk で統一CSVから従業員へ配布用の源泉徴収票を印刷、PDF 保存する方法
+
+## 必要な機材・環境
+
+要件 | 理由
+-|-
+Windows PC | PCdesk (DL 版) を動かすため
+[マイナンバーカードに対応したICカードリーダライタ](https://www.jpki.go.jp/prepare/reader_writer.html) | PCdesk (DL 版) で申告データに電子署名するため
 
 ## 統一CSV を作成
 
@@ -63,6 +70,6 @@ No. | 項目                                   | 補足
 1. 統一CSV を開き、「印刷」ボタンを押下（この後、印刷ウィンドウが起動し、PDF 保存も可能）
     ![源泉徴収票](/images/jp-nencho-eltax.2.png)
 
-## WIP 書類を提出
+## 書類を提出
 
-TODO 具体的な説明だけでなく、画面遷移図をここに貼る
+[![書類を提出](/images/jp-nencho-eltax.3.png)](/images/jp-nencho-eltax.3.png)
