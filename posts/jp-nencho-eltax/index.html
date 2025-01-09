@@ -40,8 +40,8 @@
 <div class=date>
 <div>
 <div>Last committed</div>
-<time datetime=2024-12-25T16:15:50Z+0900>
-24/12/25 16:15
+<time datetime=2025-01-10T00:55:47Z+0900>
+25/01/10 00:55
 </time>
 </div>
 <div>
@@ -60,13 +60,32 @@
 <img src=/images/headers/jp-nencho-eltax.png>
 <section><p>会社は、翌年 1/31 までに「給与支払報告書」や「源泉徴収票」「法定調書合計表」といった年末調整の成果物となる書類を、
 従業員が住む市町村や国税に提出しなければなりません。</p>
-<p>郵送や e-Tax & eLTAX でも提出できますが、<a href=https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hotei/eltax.htm>eLTAX だけで完結する</a>方法があるので紹介します。</p>
+<p>郵送や e-Tax + eLTAX でも提出できますが、<a href=https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hotei/eltax.htm>eLTAX だけで完結する</a>方法があるので紹介します。</p>
 <h2 id=ここで紹介すること>ここで紹介すること</h2>
 <ul>
-<li><a href=https://www.eltax.lta.go.jp/eltax/software/>PCdesk (DL 版)</a> による eLTAX で「給与支払報告書」や「源泉徴収票」「法定調書合計表」の提出手順</li>
+<li><a href=https://www.eltax.lta.go.jp/eltax/software/>PCdesk (DL 版)</a> による eLTAX で「給与支払報告書」「源泉徴収票」「法定調書合計表」を提出する手順</li>
 <li>各書類のソースとなる <a href=https://www.eltax.lta.go.jp/news/09390>統一CSVレイアウト CSV ファイル（以下、統一CSV）</a>の作成例</li>
 <li>各書類の提出前に PCdesk で統一CSVから従業員へ配布用の源泉徴収票を印刷、PDF 保存する方法</li>
 </ul>
+<h2 id=必要な機材環境>必要な機材・環境</h2>
+<table>
+<thead>
+<tr>
+<th>要件</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows PC</td>
+<td>PCdesk (DL 版) を動かすため</td>
+</tr>
+<tr>
+<td><a href=https://www.jpki.go.jp/prepare/reader_writer.html>マイナンバーカードに対応したICカードリーダライタ</a></td>
+<td>PCdesk (DL 版) で申告データに電子署名するため</td>
+</tr>
+</tbody>
+</table>
 <h2 id=統一csv-を作成>統一CSV を作成</h2>
 <p>最初に <a href=https://www.eltax.lta.go.jp/news/09390>eLTAX 公式ページから統一CSVレイアウト仕様書をダウンロード</a>します。これは、作業に困ったときに仕様を参照する用途です。</p>
 <p><a href=/docs/jp-nencho-eltax.unified.csv>統一CSV サンプルをダウンロード</a>したら、エクセルで開きます。
@@ -160,8 +179,8 @@ PCdesk への投入時、ヘッダ行は不要です（あるとエラーにな�
 <img src=/images/jp-nencho-eltax.2.png alt=源泉徴収票></p>
 </li>
 </ol>
-<h2 id=wip-書類を提出>WIP 書類を提出</h2>
-<p>TODO 具体的な説明だけでなく、画面遷移図をここに貼る</p>
+<h2 id=書類を提出>書類を提出</h2>
+<p><a href=/images/jp-nencho-eltax.3.png><img src=/images/jp-nencho-eltax.3.png alt=書類を提出></a></p>
 </section>
 </article>
 <script>var submittedMessage=!1;function handleMessageSubmit(b){b.target.querySelector('input[type="hidden"]').value=location.href;const a=confirm('メッセージを送信します。よろしいですか？');return b.target.querySelector('button').disabled=a,b.target.querySelector('textarea').readOnly=a,submittedMessage=a,a}</script>
