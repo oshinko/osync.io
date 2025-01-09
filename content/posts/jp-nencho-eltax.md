@@ -72,4 +72,6 @@ No. | 項目                                   | 補足
 
 ## 書類を提出
 
+PCdesk より、次の画像にある手順で書類データを作成、署名、送信する。
+
 [![書類を提出](/images/jp-nencho-eltax.3.png)](/images/jp-nencho-eltax.3.png)
