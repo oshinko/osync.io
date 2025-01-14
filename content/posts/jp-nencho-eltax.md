@@ -3,7 +3,7 @@ date: "2024-12-25T03:00:00+09:00"
 draft: false
 title: 年末調整の提出書類を電子申請 (eLTAX) する
 tags: [日本, 年末調整, eLTAX, e-Tax]
-image: /images/headers/jp-nencho-eltax.png
+image: /images/headers/jp-etax.png
 ---
 
 会社は、翌年 1/31 までに「給与支払報告書」や「源泉徴収票」「法定調書合計表」といった年末調整の成果物となる書類を、

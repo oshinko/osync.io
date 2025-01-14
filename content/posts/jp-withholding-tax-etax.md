@@ -3,7 +3,7 @@ date: "2024-12-26T22:00:00+09:00"
 draft: false
 title: 源泉所得税を電子申請 (e-Tax) する
 tags: [日本, 源泉徴収, 年末調整, e-Tax]
-image: /images/headers/jp-nencho-eltax.png
+image: /images/headers/jp-etax.png
 ---
 
 次の手順で手続きを進めます。
