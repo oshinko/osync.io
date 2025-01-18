@@ -45,11 +45,13 @@ image: /images/headers/jp-etax.png
 
 ## 源泉所得税の過不足分を算出
 
-各従業員から徴収した源泉所得税の「不足税額」と「超過税額」を[年末調整計算シート](https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/gensen/annai/nencho_keisan/index.htm)で算出する。
+各従業員から徴収した源泉所得税の「不足税額」と「超過税額」を[年末調整計算シート](https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/gensen/annai/nencho_keisan/index.htm)で算出します。
+
+[給与所得控除についてのページ](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1410.htm)も参照下さい。
 
 ## 次回以降の給与で調整
 
-源泉所得税の過不足分を各従業員の次回以降の給与で調整する。
+源泉所得税の過不足分を各従業員の次回以降の給与で調整します。
 
 ## [年末調整の提出書類を電子申請 (eLTAX)](/posts/jp-nencho-eltax/)
 
