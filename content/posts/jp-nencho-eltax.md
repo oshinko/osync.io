@@ -2,7 +2,7 @@
 date: "2024-12-25T03:00:00+09:00"
 draft: false
 title: 年末調整の提出書類を電子申請 (eLTAX) する
-tags: [日本, 年末調整, eLTAX, e-Tax]
+tags: [日本, 法人, 会社, 年末調整, eLTAX, e-Tax]
 image: /images/headers/jp-etax.png
 ---
 

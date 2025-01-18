@@ -2,7 +2,7 @@
 date: "2025-01-18T19:00:00+09:00"
 draft: false
 title: 年末調整のやり方
-tags: [日本, 法人, 会社, 年末調整, eLTAX, e-Tax]
+tags: [日本, 法人, 会社, 年末調整]
 image: /images/headers/jp-etax.png
 ---
 
