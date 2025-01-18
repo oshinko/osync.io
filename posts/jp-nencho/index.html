@@ -6,12 +6,12 @@
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:creator content="@osynco">
 <meta name=twitter:site content="@osynco">
-<meta property="twitter:title" content="源泉所得税を電子申請 (e-Tax) する - Osync I/O">
-<meta property="og:url" content="https://osync.io/posts/jp-withholding-tax-etax/">
-<meta property="og:title" content="源泉所得税を電子申請 (e-Tax) する - Osync I/O">
-<meta property="og:description" content="次の手順で手続きを進めます。 e-Taxソフト(WEB版) にログイン 左メニューの「申告・申請・納税」をクリック 新規作成 (操作に進む) をクリック">
+<meta property="twitter:title" content="年末調整のやり方 - Osync I/O">
+<meta property="og:url" content="https://osync.io/posts/jp-nencho/">
+<meta property="og:title" content="年末調整のやり方 - Osync I/O">
+<meta property="og:description" content="年末調整の流れ 年末調整は、次の手順で実施します。 従業員が必要書類を会社に提出する 各従業員から徴収した源泉所得税の過不足分を年末調整計算シート">
 <meta property="og:image" content="https://osync.io/images/headers/jp-etax.png">
-<title>源泉所得税を電子申請 (e-Tax) する - Osync I/O</title>
+<title>年末調整のやり方 - Osync I/O</title>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JQCHZM9PGG"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-JQCHZM9PGG',{anonymize_ip:!1})}</script>
 <style>:root{--color-link:#499bea;--color-link-hover:#304999;--color-muted:#7d8590;--font-base:-apple-system, "BlinkMacSystemFont",
@@ -36,51 +36,83 @@
 </nav>
 <main>
 <article>
-<h1><a href=/posts/jp-withholding-tax-etax/>源泉所得税を電子申請 (e-Tax) する</a></h1>
+<h1><a href=/posts/jp-nencho/>年末調整のやり方</a></h1>
 <div class=date>
 <div>
 <div>Last committed</div>
-<time datetime=2025-01-14T22:30:33Z+0900>
-25/01/14 22:30
+<time datetime=2025-01-18T22:29:22Z+0900>
+25/01/18 22:29
 </time>
 </div>
 <div>
 <div>Posted</div>
-<time datetime=2024-12-26T22:00:00Z+0900>
-24/12/26 22:00
+<time datetime=2025-01-18T19:00:00Z+0900>
+25/01/18 19:00
 </time>
 </div>
 </div>
 <ul>
 <li><a href=/tags/%E6%97%A5%E6%9C%AC/>日本</a></li>
-<li><a href=/tags/%E6%BA%90%E6%B3%89%E5%BE%B4%E5%8F%8E/>源泉徴収</a></li>
+<li><a href=/tags/%E6%B3%95%E4%BA%BA/>法人</a></li>
+<li><a href=/tags/%E4%BC%9A%E7%A4%BE/>会社</a></li>
 <li><a href=/tags/%E5%B9%B4%E6%9C%AB%E8%AA%BF%E6%95%B4/>年末調整</a></li>
+<li><a href=/tags/eltax/>eLTAX</a></li>
 <li><a href=/tags/e-tax/>e-Tax</a></li>
 </ul>
 <img src=/images/headers/jp-etax.png>
-<section><p>次の手順で手続きを進めます。</p>
+<section><h2 id=年末調整の流れ>年末調整の流れ</h2>
+<p>年末調整は、次の手順で実施します。</p>
 <ol>
-<li>e-Taxソフト(WEB版) にログイン</li>
-<li>左メニューの「申告・申請・納税」をクリック</li>
-<li>新規作成 (操作に進む) をクリック</li>
-<li>「給与所得・退職所得等の所得税徴収高計算書」の作成に進む
-<ul>
-<li>小規模企業のうち、納期特例を受けている場合は「給与所得・退職所得等の所得税徴収高計算書(納期特例分)」</li>
-<li>それ以外は「給与所得・退職所得等の所得税徴収高計算書(一般)」</li>
-</ul>
-</li>
+<li>従業員が必要書類を会社に提出する</li>
+<li>各従業員から徴収した源泉所得税の過不足分を<a href=https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/gensen/annai/nencho_keisan/index.htm>年末調整計算シート</a>で算出する</li>
+<li>源泉所得税の過不足分を各従業員の次回以降の給与で調整する</li>
+<li><a href=/posts/jp-nencho-eltax/>年末調整の提出書類を電子申請 (eLTAX)</a>する</li>
 </ol>
-<p>画面遷移は次の図の通りです。</p>
-<p><img src=/images/jp-withholding-tax-etax.png alt="e-Tax 画面遷移"></p>
-<p>この後は e-Tax 画面に従い手続きを進めて下さい。
-最終的に、インターネットバンキング (Pay-easy) やクレジットカードでの納付が可能です。</p>
-<h2 id=送信内容納税した額にミスがあった場合>送信内容（納税した額）にミスがあった場合</h2>
-<p>もし、納税額に不足があった場合、再度差額だけ入力し送信しましょう。
-再度、区分ごとの「人員」「支給額」「税額」に正しい数値を入力し、「本税」及び「合計額」が差額と一致していることを確認します。
-その後データを送信し、差額を納付します。</p>
-<p>このように「訂正・追加分を重ねて送信してもよい」ことは、国税庁に電話相談して確認しています。</p>
-<p>ただし、納税額に超過があった場合は、どのように還付されるか未確認ですので、国税庁に相談することをお勧めします。</p>
-<p>いずれの場合も「徴収額に誤りはなく、納税額に誤りがあった」というケースですので、ご承知おきください！</p>
+<h2 id=従業員が会社に提出する書類>従業員が会社に提出する書類</h2>
+<table>
+<thead>
+<tr>
+<th>提出物</th>
+<th>要求</th>
+<th>備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href=https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/gensen/annai/1648_73.htm>給与所得者の基礎控除（等）申告書</a></td>
+<td>必須</td>
+<td>全員が提出</td>
+</tr>
+<tr>
+<td><a href=https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/gensen/annai/1648_05.htm>給与所得者の保険料控除申告書</a></td>
+<td>任意</td>
+<td>必要な者だけ提出</td>
+</tr>
+<tr>
+<td><a href=https://www.nta.go.jp/publication/pamph/shotoku/jukari/index.htm>住宅借入金等特別控除申告書</a></td>
+<td>任意</td>
+<td>必要な者だけ提出</td>
+</tr>
+</tbody>
+</table>
+<h3 id=給与所得者の基礎控除等申告書httpswwwntagojptaxestetsuzukishinseiannaigensenannai1648_73htm><a href=https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/gensen/annai/1648_73.htm>給与所得者の基礎控除（等）申告書</a></h3>
+<blockquote>
+<p>（注）　この申告書は、本来、給与の支払者を経由して税務署長へ提出することになっていますが、給与の支払者は、税務署長から特に提出を求められた場合以外は、税務署へ提出する必要はありません（給与の支払者が保管しておくことになっています。）。</p>
+</blockquote>
+<p>ということで、従業員が会社に提出するだけでよく、会社は税務署へ提出する必要はない。</p>
+<h3 id=給与所得者の保険料控除申告書httpswwwntagojptaxestetsuzukishinseiannaigensenannai1648_05htm><a href=https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/gensen/annai/1648_05.htm>給与所得者の保険料控除申告書</a></h3>
+<p>社会保険料控除欄については<a href=https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1130.htm>こちら</a>を参照のこと。</p>
+<p>社会保険料控除は、従業員が親族の負担すべき社会保険料を支払った場合にのみ受けることができる。そのため、通常は未記入のケースが多いと思われる。</p>
+<p>なお、控除できる金額は、その年に実際に支払った金額または給与や公的年金から差し引かれた金額の全額となる。</p>
+<h3 id=住宅借入金等特別控除申告書httpswwwntagojppublicationpamphshotokujukariindexhtm><a href=https://www.nta.go.jp/publication/pamph/shotoku/jukari/index.htm>住宅借入金等特別控除申告書</a></h3>
+<p>従業員から提出を受けた『住宅借入金等特別控除申告書』　の内容を確認し、（特定増改築等）住宅借入金等特別控除額を入力して下さい。</p>
+<p>（注）控除額は、従業員がその住宅を居住の用に供した年等に応じて定められており、最大６０万円です。また、申告書にしたがい控除額を計算した結果１００円未満の端数が生じた場合には、その端数を切り捨てます。</p>
+<h2 id=源泉所得税の過不足分を算出>源泉所得税の過不足分を算出</h2>
+<p>各従業員から徴収した源泉所得税の「不足税額」と「超過税額」を<a href=https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/gensen/annai/nencho_keisan/index.htm>年末調整計算シート</a>で算出する。</p>
+<h2 id=次回以降の給与で調整>次回以降の給与で調整</h2>
+<p>源泉所得税の過不足分を各従業員の次回以降の給与で調整する。</p>
+<h2 id=年末調整の提出書類を電子申請-eltaxpostsjp-nencho-eltax><a href=/posts/jp-nencho-eltax/>年末調整の提出書類を電子申請 (eLTAX)</a></h2>
+<p>詳しくは、リンク先を参照下さい。</p>
 </section>
 </article>
 <script>var submittedMessage=!1;function handleMessageSubmit(b){b.target.querySelector('input[type="hidden"]').value=location.href;const a=confirm('メッセージを送信します。よろしいですか？');return b.target.querySelector('button').disabled=a,b.target.querySelector('textarea').readOnly=a,submittedMessage=a,a}</script>
