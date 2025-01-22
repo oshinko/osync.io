@@ -201,6 +201,7 @@ table {
       <th>健康保険</th>
       <th>介護保険</th>
       <th>厚生年金</th>
+      <th>雇用保険</th>
       <th class="extra hidden">
         課税所得<br>
         <i>合計所得 - 基礎控除 - 社会保険</i>
@@ -271,12 +272,16 @@ async function getHealthInsuranceInfo(date) {
   return { table, revision };
 }
 
-function roundHalfEven(value) {
-  const rounded = Math.round(value);
-  const decimalPart = value % 1;
-  if (decimalPart === 0.5 || decimalPart === -0.5)
-    return rounded % 2 === 0 ? rounded : rounded + Math.sign(value - rounded);
-  return rounded;
+async function getEmploymentInsuranceInfo(date, { type = 'general' } = {}) {
+  const division = await get(`/social-insurances/employment/types/${type}.json`);
+  const revision = division.revisions.find(({ start, end }) =>
+    new Date(start) <= date && (date < new Date(end) || !end));
+  return { revision };
+}
+
+function roundHalfDown(value) {  // 被保険者負担分（従業員分）は五捨五超入
+  const down = Math.floor(value);
+  return value - down <= 0.5 ? down : Math.ceil(value);
 }
 
 const numberFormat = new Intl.NumberFormat();
@@ -357,8 +362,11 @@ getHealthInsuranceInfo(date).then(info => {
   healthInsuranceInfo = info;
   getPensionInsuranceInfo(date).then(info => {
     pensionInsuranceInfo = info;
-    initInputs();
-    calc();
+    getEmploymentInsuranceInfo(date).then(info => {
+      employmentInsuranceInfo = info;
+      initInputs();
+      calc();
+    });
   });
 });
 
@@ -459,28 +467,33 @@ async function calc() {
             0;
     appendYenCell(row, basicDeduction);
 
-    let [health, care, pension] = [0, 0, 0];
+    let [health, care, pension, employment] = [0, 0, 0, 0];
     if (!dependent && income >= SOCIAL_INSURANCE_BOARDER || income >= NO_DEPENDENT_BOARDER) {
       // 健康保険
       const healthGrade = healthInsuranceInfo.table.find(({ start, end }) => start <= monthlyIncome && (monthlyIncome < end || !end));
-      const monthlyHealth = roundHalfEven(healthGrade.remuneration * healthInsuranceInfo.revision.rate * healthInsuranceInfo.revision.contributionRate);
+      const monthlyHealth = roundHalfDown(healthGrade.remuneration * healthInsuranceInfo.revision.rate * healthInsuranceInfo.revision.contributionRate);
       health = monthlyHealth * 12;
 
       if (careDeduction) {
         // 介護保険
-        const monthlyCare = roundHalfEven(healthGrade.remuneration * healthInsuranceInfo.revision.careRate * healthInsuranceInfo.revision.contributionRate);
+        const monthlyCare = roundHalfDown(healthGrade.remuneration * healthInsuranceInfo.revision.careRate * healthInsuranceInfo.revision.contributionRate);
         care = monthlyCare * 12;
       }
     }
     if (forcePensionDeduction || income >= NO_DEPENDENT_BOARDER) {
       // 厚生年金
       const pensionGrade = pensionInsuranceInfo.table.find(({ start, end }) => start <= monthlyIncome && (monthlyIncome < end || !end));
-      const monthlyPension = roundHalfEven(pensionGrade.remuneration * pensionInsuranceInfo.revision.rate * pensionInsuranceInfo.revision.contributionRate);
+      const monthlyPension = roundHalfDown(pensionGrade.remuneration * pensionInsuranceInfo.revision.rate * pensionInsuranceInfo.revision.contributionRate);
       pension = monthlyPension * 12;
+
+      // 雇用保険
+      const monthlyEmployment = roundHalfDown(monthlyIncome * employmentInsuranceInfo.revision.employeeRate);
+      employment = monthlyEmployment * 12;
     }
     appendYenCell(row, health);
     appendYenCell(row, care);
     appendYenCell(row, pension);
+    appendYenCell(row, employment);
 
     // 課税所得
     const taxableIncome = Math.floor(Math.max(
