@@ -10,7 +10,7 @@ image: "/images/headers/boxing.jpg"
 
 順位|選手|階級|次戦|相手
 ---|---|---|---|---
-1|[井上 尚弥](https://boxrec.com/en/box-pro/628407)|S.バンタム|1/24|Ye Joon Kim (WBO 11 位)
+1|[井上 尚弥](https://boxrec.com/en/box-pro/628407)|S.バンタム|-|-
 2|[中谷 潤人](https://boxrec.com/en/box-pro/718508)|バンタム|2/24|David Cuellar Contreras (WBC 6 位)
 3|[寺地 拳四朗](https://boxrec.com/en/box-pro/692967)|フライ|-|-
 4|[井岡 一翔](https://boxrec.com/en/box-pro/483786)|S.フライ|-|-
@@ -28,7 +28,7 @@ image: "/images/headers/boxing.jpg"
 16|[重岡 銀次朗](https://boxrec.com/en/box-pro/846108)|ミニマム|-|-
 17|[健文 トーレス](https://boxrec.com/en/box-pro/233323)|S.フライ, バンタム|-|-
 18|[岩田 翔吉](https://boxrec.com/en/box-pro/853769)|L.フライ|-|-
-19|[佐々木 尽](https://boxrec.com/en/box-pro/847229)|ウェルター|1/24|坂井 祥紀 (日本 4 位)
+19|[佐々木 尽](https://boxrec.com/en/box-pro/847229)|ウェルター|-|-
 20|[比嘉 大吾](https://boxrec.com/en/box-pro/691593)|バンタム|2/24|堤 聖也 (WBA 王者)
 21|[尾川 堅一](https://boxrec.com/en/box-pro/535757)|S.フェザー|-|-
 22|[那須川 天心](https://boxrec.com/en/box-pro/853210)|バンタム|2/24|ジェイソン・モロニー (IBF 6 位, WBC 5 位, WBO 6 位)
@@ -51,8 +51,9 @@ image: "/images/headers/boxing.jpg"
 39|[波田 大和](https://boxrec.com/en/box-pro/731145)|S.フェザー|-|-
 40|[小國 以載](https://boxrec.com/en/box-pro/518213)|S.バンタム|-|-
 41|[鈴木 雅弘](https://boxrec.com/en/box-pro/846560)|ライト|-|-
-42|[下町 俊貴](https://boxrec.com/en/box-pro/740239)|S.バンタム|1/24|平野 岬 (日本 13 位)
+42|[下町 俊貴](https://boxrec.com/en/box-pro/740239)|S.バンタム|-|-
 43|[村田 昴](https://boxrec.com/en/box-pro/893147)|S.バンタム|-|-
 44|[今永 虎雅](https://boxrec.com/en/box-pro/889835)|ライト|-|-
-45|[仲里 周磨](https://boxrec.com/en/box-pro/716694)|ライト|-|-
-46|[横山 葵海](https://boxrec.com/en/box-pro/1182099)|S.フライ|-|-
+45|[中野 幹士](https://boxrec.com/en/box-pro/853415)|フェザー|-|-
+46|[仲里 周磨](https://boxrec.com/en/box-pro/716694)|ライト|-|-
+47|[横山 葵海](https://boxrec.com/en/box-pro/1182099)|S.フライ|-|-
