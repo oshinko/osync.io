@@ -39,7 +39,7 @@ PDCA | PDCA サイクルが分かる形で表記されていれば✅そうで�
 東京都 | [狛江市](https://www.city.komae.tokyo.jp/index.cfm/46,0,362,3163,html) | ❌ | ❌ | 1 | 内部・外部評価に分けてるのはいいが、そもそも情報不足
 東京都 | [調布市](https://www.city.chofu.lg.jp/shiseijouhou/seisaku/seika/index.html) | ❌ | ❌ | 0 | 施策評価のみで事務事業評価がない
 東京都 | [小平市](https://www.city.kodaira.tokyo.jp/kurashi/071/071864.html) | ❌ | ❌ | 0 | 施策評価のみで事務事業評価がない
-東京都 | 三鷹市 | ❌ | ❌ | 0 | そもそも行政評価自体が公開されてない？
+東京都 | [三鷹市](https://www.city.mitaka.lg.jp/c_categories/index05009005.html) | ❌ | ❌ | 0 | 一般的な形式の施策・事務事業評価が見つからない
 東京都 | 稲城市 | - | - | - | 調査中
 東京都 | 多摩市 | - | - | - | 調査中
 東京都 | 国立市 | - | - | - | 調査中
