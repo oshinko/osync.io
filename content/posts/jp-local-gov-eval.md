@@ -14,6 +14,7 @@ image: /images/headers/local-gov.jpg
 --|--
 PDCA | PDCA サイクルが分かる形で表記されていれば✅そうでなければ❌
 活動指標 | 活動量を示す指標が、成果指標から分離されていれば✅そうでなければ❌
+最新版 | 最後に公開された事務事業評価の事業年度です。一般的には、令和５年度に実施した事務事業に対する評価は、翌年の令和６年度の事務事業評価として公開されます。この場合「令５」がこの列の値になります。
 定性評価 | <ul><li>私による 0 ~ 10 の採点</li><li>形式が標準的であるほど（優良事例に近しいほど）高い</li><li>評価判定が妥当であるほど高い</li><li>評価シート自体が存在しなければ 0</li></ul>
 
 ## 優良事例
@@ -23,8 +24,8 @@ PDCA | PDCA サイクルが分かる形で表記されていれば✅そうで�
 
 都道府県 | 市町村 | PDCA | 活動指標 | 定性評価 | 備考
 --|--|--|--|--|--
-兵庫県 | [西宮市](https://www.nishi.or.jp/shisei/gyoseikeiei/gyoseihyoka/hyokakekka.html) | ✅ | ✅ | 10 | とにかく奇麗👍
-茨城県 | [那珂市](https://www.city.naka.lg.jp/gyousei/gyouzaisei-kaikaku/gyouseihyouka/kekka/r05/page009899.html) | ✅ | ✅ | 10 | PDCA ではなく PDS。 指標は、対象・活動・成果に分かれている。多次元評価👍
+兵庫県 | [西宮市](https://www.nishi.or.jp/shisei/gyoseikeiei/gyoseihyoka/hyokakekka.html) | ✅ | ✅ | 10 | <ul><li>とにかく奇麗👍</li><li>当年度の評価も迅速に公開👍</li><li>次年度の評価も予算ベースで公開👍</li></ul>
+茨城県 | [那珂市](https://www.city.naka.lg.jp/gyousei/gyouzaisei-kaikaku/gyouseihyouka/kekka/r05/page009899.html) | ✅ | ✅ | 10 | <ul><li>PDCA ではなく PDS</li><li>指標は、対象・活動・成果に分離👍</li><li>多次元評価👍</li><li>次年度、次々年度の評価も予算ベースで公開👍</li></ul>
 
 ## 東京都の市町村
 
@@ -34,14 +35,14 @@ PDCA | PDCA サイクルが分かる形で表記されていれば✅そうで�
 東京都 | [西東京市](https://www.city.nishitokyo.lg.jp/siseizyoho/sesaku_keikaku/jigyou_hyouka/index.html) | ❌ | ❌ | 5 | 2 ~ 4 の多次元評価👍
 東京都 | [立川市](https://www.city.tachikawa.lg.jp/shisei/sesaku/1006562/1006673/index.html) | ❌ | ✅ | 4 | コストと成果の二次評価👍だが、廃止すべき事業の継続判定が散見される
 東京都 | [国分寺市](https://www.city.kokubunji.tokyo.jp/shisei/shiryou/gyouzaisei/1020308/index.html) | ❌ | ❌ | 4 | 簡素で見やすい点は👍
+東京都 | [稲城市](https://www.city.inagi.tokyo.jp/smph/shisei/keikaku_hokoku/gyousei/sinkoukaikeiseido_jimujigyouhyouka.html) | ❌ | ❌ | 4 | PDCA っぽくなっているが、様式として組み込まれていない
 東京都 | [小金井市](https://www.city.koganei.lg.jp/smph/shisei/zaiseiyosan/kaikaku/hyoukasaikouchikur4/D01016012022100.html) | ✅ | ❌ | 3 | 施策評価と一体
 東京都 | [府中市](https://www.city.fuchu.tokyo.jp/gyosei/kekaku/kekaku/gyosei/gyosehyoka/index.html) | ✅  | ❌ | 3 | 施策評価もある
 東京都 | [狛江市](https://www.city.komae.tokyo.jp/index.cfm/46,0,362,3163,html) | ❌ | ❌ | 1 | 内部・外部評価に分けてるのはいいが、そもそも情報不足
 東京都 | [調布市](https://www.city.chofu.lg.jp/shiseijouhou/seisaku/seika/index.html) | ❌ | ❌ | 0 | 施策評価のみで事務事業評価がない
 東京都 | [小平市](https://www.city.kodaira.tokyo.jp/kurashi/071/071864.html) | ❌ | ❌ | 0 | 施策評価のみで事務事業評価がない
 東京都 | [三鷹市](https://www.city.mitaka.lg.jp/c_categories/index05009005.html) | ❌ | ❌ | 0 | 一般的な形式の施策・事務事業評価が見つからない
-東京都 | 稲城市 | - | - | - | 調査中
-東京都 | 多摩市 | - | - | - | 調査中
+東京都 | [多摩市](https://www.city.tama.lg.jp/shisei/keikaku/kaikaku/hyouka/index.html) | - | - | - | 調査中
 東京都 | 国立市 | - | - | - | 調査中
 東京都 | 日野市  | - | - | - | 調査中
 東京都 | 八王子市 | - | - | - | 調査中
