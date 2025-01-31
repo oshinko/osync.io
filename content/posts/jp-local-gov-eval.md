@@ -35,23 +35,23 @@ PDCA | PDCA サイクルが分かる形で表記されていれば✅そうで�
 東京都 | [立川市](https://www.city.tachikawa.lg.jp/shisei/sesaku/1006562/1006673/index.html) | ❌ | ✅ | 4 | コストと成果の二次評価👍だが、廃止すべき事業の継続判定が散見される
 東京都 | [国分寺市](https://www.city.kokubunji.tokyo.jp/shisei/shiryou/gyouzaisei/1020308/index.html) | ❌ | ❌ | 4 | 簡素で見やすい点は👍
 東京都 | [稲城市](https://www.city.inagi.tokyo.jp/smph/shisei/keikaku_hokoku/gyousei/sinkoukaikeiseido_jimujigyouhyouka.html) | ❌ | ❌ | 4 | PDCA っぽくなっているが、様式として組み込まれていない
+東京都 | [昭島市](https://www.city.akishima.lg.jp/li/060/070/010/020/) | ❌ | ❌ | 4 | まともに見える👍現状維持ばかり🤔
 東京都 | [小金井市](https://www.city.koganei.lg.jp/smph/shisei/zaiseiyosan/kaikaku/hyoukasaikouchikur4/D01016012022100.html) | ✅ | ❌ | 3 | 施策評価と一体
 東京都 | [府中市](https://www.city.fuchu.tokyo.jp/gyosei/kekaku/kekaku/gyosei/gyosehyoka/index.html) | ✅  | ❌ | 3 | 施策評価もある
 東京都 | [国立市](https://www.city.kunitachi.tokyo.jp/shisei/zaisei/1/2/index.html) | ✅ | ✅ | 3 | 対象事業が絞られている❌指標が沢山ある🤔割とちゃんとしてる気がする👍
 東京都 | [八王子市](https://www.city.hachioji.tokyo.jp/shisei/001/004/004/002/p034392.html) | ❌ | ✅ | 2 | 一見見栄えが良いが、活動指標のみだったり、情報不足など❌
 東京都 | [狛江市](https://www.city.komae.tokyo.jp/index.cfm/46,0,362,3163,html) | ❌ | ❌ | 1 | 内部・外部評価に分けてるのはいいが、そもそも情報不足
+東京都 | [東大和市](https://www.city.higashiyamato.lg.jp/shisei/torikumi/1005026/1005048/index.html) | ❌ | ❌ | 1 | 情報不足❌
+東京都 | [武蔵村山市](https://www.city.musashimurayama.lg.jp/shisei/shisaku/gyouseihyouka/index.html) | ❌ | ❌ | 1 | 情報不足❌
 東京都 | [調布市](https://www.city.chofu.lg.jp/shiseijouhou/seisaku/seika/index.html) | ❌ | ❌ | 0 | 施策評価のみで事務事業評価がない
 東京都 | [小平市](https://www.city.kodaira.tokyo.jp/kurashi/071/071864.html) | ❌ | ❌ | 0 | 施策評価のみで事務事業評価がない
 東京都 | [三鷹市](https://www.city.mitaka.lg.jp/c_categories/index05009005.html) | ❌ | ❌ | 0 | 一般的な形式の施策・事務事業評価が見つからない
-東京都 | [多摩市](https://www.city.tama.lg.jp/shisei/keikaku/kaikaku/hyouka/index.html) | - | - | 0 | 一般的な形式の施策・事務事業評価が見つからない❌
-東京都 | 日野市  | - | - | 0 | 一般的な形式の施策・事務事業評価が見つからない❌手法が独特過ぎて混乱❌
-東京都 | 東久留米市 | - | - | - | 調査中
-東京都 | 清瀬市 | - | - | - | 調査中
-東京都 | 東村山市 | - | - | - | 調査中
-東京都 | 東大和市 | - | - | - | 調査中
-東京都 | 武蔵村山市 | - | - | - | 調査中
-東京都 | 町田市 | - | - | - | 調査中
-東京都 | 昭島市 | - | - | - | 調査中
+東京都 | [多摩市](https://www.city.tama.lg.jp/shisei/keikaku/kaikaku/hyouka/index.html) | ❌ | ❌ | 0 | 一般的な形式の施策・事務事業評価が見つからない❌
+東京都 | [日野市](https://www.city.hino.lg.jp/shisei/gyozaisei/hyoka/index.html)  | ❌ | ❌ | 0 | 一般的な形式の施策・事務事業評価が見つからない❌手法が独特過ぎて混乱❌
+東京都 | [東久留米市](https://www.city.higashikurume.lg.jp/shisei/gyousaisei/hyoka/index.html) | ❌ | ❌ | 0 | 一般的な形式の施策・事務事業評価が見つからない❌
+東京都 | [清瀬市](https://www.city.kiyose.lg.jp/siseijouhou/zaisei/gyouzaiseikaikaku/1004570/index.html) | ❌ | ❌ | 0 | 施策評価のみで事務事業評価がない❌
+東京都 | [東村山市](https://www.city.higashimurayama.tokyo.jp/shisei/tokei/zaisan/index.html) | ❌ | ❌ | 0 | 一般的な形式の施策・事務事業評価が見つからない❌
+東京都 | [町田市](https://www.city.machida.tokyo.jp/shisei/gyouzaisei/shin_ko-kaikei/kessan/index.html) | ❌ | ❌ | 0 | 一般的な形式の施策・事務事業評価が見つからない❌
 東京都 | 福生市 | - | - | - | 調査中
 東京都 | 羽村市 | - | - | - | 調査中
 東京都 | あきる野市 | - | - | - | 調査中
