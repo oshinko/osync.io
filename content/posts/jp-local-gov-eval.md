@@ -68,7 +68,7 @@ PDCA | PDCA サイクルが分かる形で表記されていれば✅そうで�
 都道府県 | 市町村 | PDCA | 活動指標 | 定性評価 | 備考
 --|--|--|--|--|--
 東京都 | [杉並区](https://www.city.suginami.tokyo.jp/kusei/gyouseikaikaku/gyouseihyoka/index.html) | ✅ | ✅ | 6 | 様式は👍施策評価との関係性も分かりやすく👍[東京減税会が指摘している点](https://note.com/tokyo_genzeikai/n/nde7d1e8fc423)は❌
-東京都 | [足立区](https://www.city.adachi.tokyo.jp/ku/kuse/gyosehyoka/index.html) | ❌ | ❌ | 3 | 活動指標の記載はあるが、成果指標との区別しづらい。[東京減税会が指摘している点](https://note.com/tokyo_genzeikai/n/nde7d1e8fc423)は❌
+東京都 | [足立区](https://www.city.adachi.tokyo.jp/ku/kuse/gyosehyoka/index.html) | ❌ | ❌ | 3 | 活動指標の記載はあるが、成果指標と区別しづらい。[東京減税会が指摘している点](https://note.com/tokyo_genzeikai/n/nde7d1e8fc423)は❌
 東京都 | [練馬区](https://www.city.nerima.tokyo.jp/kusei/gyokaku/kokakensyo/senryaku/gyosei_hyoka/index.html) | ❌ | ❌ | 0 | 事務事業評価は 2014 年分を最後に廃止されている
 東京都 | [中野区](https://www.city.tokyo-nakano.lg.jp/kusei/kousou/seido/gyousei/gyouseihyouka/index.html) | ❌ | ❌ | 0 | 一般的な形式の施策・事務事業評価が見つからない
 東京都 | 渋谷区 | ❌ | ❌ | 0 | 何もない。定性評価をマイナスにしたいくらい
