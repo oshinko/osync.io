@@ -39,10 +39,14 @@ PDCA | PDCA サイクルが分かる形で表記されていれば✅そうで�
 東京都 | [小金井市](https://www.city.koganei.lg.jp/smph/shisei/zaiseiyosan/kaikaku/hyoukasaikouchikur4/D01016012022100.html) | ✅ | ❌ | 3 | 施策評価と一体
 東京都 | [府中市](https://www.city.fuchu.tokyo.jp/gyosei/kekaku/kekaku/gyosei/gyosehyoka/index.html) | ✅  | ❌ | 3 | 施策評価もある
 東京都 | [国立市](https://www.city.kunitachi.tokyo.jp/shisei/zaisei/1/2/index.html) | ✅ | ✅ | 3 | 対象事業が絞られている❌指標が沢山ある🤔割とちゃんとしてる気がする👍
+東京都 | [日の出町](https://www.town.hinode.tokyo.jp/0000003594.html) | ❌ | ❌ | 3 | 割とちゃんとしてる気がする👍
 東京都 | [八王子市](https://www.city.hachioji.tokyo.jp/shisei/001/004/004/002/p034392.html) | ❌ | ✅ | 2 | 一見見栄えが良いが、活動指標のみだったり、情報不足など❌
 東京都 | [狛江市](https://www.city.komae.tokyo.jp/index.cfm/46,0,362,3163,html) | ❌ | ❌ | 1 | 内部・外部評価に分けてるのはいいが、そもそも情報不足
 東京都 | [東大和市](https://www.city.higashiyamato.lg.jp/shisei/torikumi/1005026/1005048/index.html) | ❌ | ❌ | 1 | 情報不足❌
 東京都 | [武蔵村山市](https://www.city.musashimurayama.lg.jp/shisei/shisaku/gyouseihyouka/index.html) | ❌ | ❌ | 1 | 情報不足❌
+東京都 | [福生市](https://www.city.fussa.tokyo.jp/municipal/management/reform/1003477.html) | ❌ | ❌ | 1 | 文字が見づらい❌
+東京都 | [羽村市](https://www.city.hamura.tokyo.jp/category/3-2-15-0-0-0-0-0-0-0.html) | ❌ | ❌ | 1 | 様式が独特で見づらい❌情報不足❌
+東京都 | [青梅市](https://www.city.ome.tokyo.jp/soshiki/4/9.html) | ✅ | ❌ | 1 | 定量評価なし❌
 東京都 | [調布市](https://www.city.chofu.lg.jp/shiseijouhou/seisaku/seika/index.html) | ❌ | ❌ | 0 | 施策評価のみで事務事業評価がない
 東京都 | [小平市](https://www.city.kodaira.tokyo.jp/kurashi/071/071864.html) | ❌ | ❌ | 0 | 施策評価のみで事務事業評価がない
 東京都 | [三鷹市](https://www.city.mitaka.lg.jp/c_categories/index05009005.html) | ❌ | ❌ | 0 | 一般的な形式の施策・事務事業評価が見つからない
@@ -52,14 +56,10 @@ PDCA | PDCA サイクルが分かる形で表記されていれば✅そうで�
 東京都 | [清瀬市](https://www.city.kiyose.lg.jp/siseijouhou/zaisei/gyouzaiseikaikaku/1004570/index.html) | ❌ | ❌ | 0 | 施策評価のみで事務事業評価がない❌
 東京都 | [東村山市](https://www.city.higashimurayama.tokyo.jp/shisei/tokei/zaisan/index.html) | ❌ | ❌ | 0 | 一般的な形式の施策・事務事業評価が見つからない❌
 東京都 | [町田市](https://www.city.machida.tokyo.jp/shisei/gyouzaisei/shin_ko-kaikei/kessan/index.html) | ❌ | ❌ | 0 | 一般的な形式の施策・事務事業評価が見つからない❌
-東京都 | 福生市 | - | - | - | 調査中
-東京都 | 羽村市 | - | - | - | 調査中
-東京都 | あきる野市 | - | - | - | 調査中
-東京都 | 青梅市 | - | - | - | 調査中
-東京都 | 檜原村 | - | - | - | 調査中
-東京都 | 瑞穂町 | - | - | - | 調査中
-東京都 | 日の出町 | - | - | - | 調査中
-東京都 | 奥多摩町 | - | - | - | 調査中
+東京都 | [あきる野市](https://www.city.akiruno.tokyo.jp/0000003630.html) | ❌ | ❌ | 0 | 一般的な形式の施策・事務事業評価が見つからない❌
+東京都 | [檜原村](https://www.vill.hinohara.tokyo.jp/) | ❌ | ❌ | 0 | 何もない❌
+東京都 | [瑞穂町](https://www.town.mizuho.tokyo.jp/tyosei/004/index.html) | ❌ | ❌ | 0 | 施策評価のみで事務事業評価がない❌
+東京都 | [奥多摩町](https://www.town.okutama.tokyo.jp/1/kikakuzaiseika/shisaku_keikaku/3/959.html) | ❌ | ❌ | 0 | 一般的な形式の施策・事務事業評価が見つからない❌
 
 ※離島を除く
 
