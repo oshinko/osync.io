@@ -218,7 +218,7 @@ table {
 <div style="margin-top: 1em"><a href="/">ホームに戻る</a></div>
 
 <script>
-const API_ENDPOINT = 'https://renjaku.github.io/opendata2';
+const API_ENDPOINT = 'https://opendata.renjaku.co.jp/v1/jp';
 const DEFAULT_MIN_INCOME = 100_000;
 const DEFAULT_MAX_INCOME = 100_000_000;
 const SOCIAL_INSURANCE_BOARDER = 1_060_000;
@@ -251,29 +251,29 @@ async function get(resource) {
 }
 
 async function getPensionInsuranceInfo(date) {
-  const tables = await get('/social-insurances/pension/remuneration-tables.json');
+  const tables = await get('/pension/remuneration-tables.json');
   const { id } = tables.find(({ start, end }) =>
     new Date(start) <= date && (date < new Date(end) || !end));
-  const table = await get(`/social-insurances/pension/remuneration-tables/${id}.json`);
-  const division = await get('/social-insurances/pension/types/general.json');
+  const table = await get(`/pension/remuneration-tables/${id}.json`);
+  const division = await get('/pension/types/general.json');
   const revision = division.revisions.find(({ start, end }) =>
     new Date(start) <= date && (date < new Date(end) || !end));
   return { table, revision };
 }
 
 async function getHealthInsuranceInfo(date) {
-  const tables = await get('/social-insurances/health/remuneration-tables.json');
+  const tables = await get('/health-insurance/remuneration-tables.json');
   const { id } = tables.find(({ start, end }) =>
     new Date(start) <= date && (date < new Date(end) || !end));
-  const table = await get(`/social-insurances/health/remuneration-tables/${id}.json`);
-  const division = await get('/social-insurances/health/organizations/kyoukaikenpo-tokyo.json');  // 協会けんぽ東京都
+  const table = await get(`/health-insurance/remuneration-tables/${id}.json`);
+  const division = await get('/health-insurance/organizations/kyoukaikenpo-tokyo.json');  // 協会けんぽ東京都
   const revision = division.revisions.find(({ start, end }) =>
     new Date(start) <= date && (date < new Date(end) || !end));
   return { table, revision };
 }
 
 async function getEmploymentInsuranceInfo(date, { type = 'general' } = {}) {
-  const division = await get(`/social-insurances/employment/types/${type}.json`);
+  const division = await get(`/employment-insurance/types/${type}.json`);
   const revision = division.revisions.find(({ start, end }) =>
     new Date(start) <= date && (date < new Date(end) || !end));
   return { revision };
