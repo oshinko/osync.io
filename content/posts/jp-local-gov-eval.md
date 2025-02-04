@@ -18,13 +18,13 @@ PDCA | PDCA サイクルが分かる形で表記されていれば✅そうで�
 
 ## 優良事例
 
-現時点で、評価シートの標準に相応しい優良事例を上げています。
+現時点で、評価シート様式の標準に相応しい事例を上げています。
 他にもあれば教えて下さい。
 
-都道府県 | 市町村 | PDCA | 活動指標 | 定性評価 | 備考
---|--|--|--|--|--
-兵庫県 | [西宮市](https://www.nishi.or.jp/shisei/gyoseikeiei/gyoseihyoka/hyokakekka.html) | ✅ | ✅ | 10 | <ul><li>とにかく奇麗👍</li><li>当年度の評価も迅速に公開👍</li><li>次年度の評価も予算ベースで公開👍</li></ul>
-茨城県 | [那珂市](https://www.city.naka.lg.jp/gyousei/gyouzaisei-kaikaku/gyouseihyouka/kekka/r05/page009899.html) | ✅ | ✅ | 10 | <ul><li>PDCA ではなく PDS</li><li>指標は、対象・活動・成果に分離👍</li><li>多次元評価👍</li><li>次年度、次々年度の評価も予算ベースで公開👍</li></ul>
+都道府県 | 市町村 | PDCA | 活動指標 | 備考
+--|--|--|--|--
+兵庫県 | [西宮市](https://www.nishi.or.jp/shisei/gyoseikeiei/gyoseihyoka/hyokakekka.html) | ✅ | ✅ | <ul><li>とにかく奇麗👍</li><li>当年度の評価も迅速に公開👍</li><li>次年度の評価も予算ベースで公開👍</li></ul>
+茨城県 | [那珂市](https://www.city.naka.lg.jp/gyousei/gyouzaisei-kaikaku/gyouseihyouka/kekka/r05/page009899.html) | ✅ | ✅ | <ul><li>PDCA ではなく PDS</li><li>指標は、対象・活動・成果に分離👍</li><li>多次元評価👍</li><li>次年度、次々年度の評価も予算ベースで公開👍</li></ul>
 
 ## 東京都の市町村
 
@@ -69,6 +69,6 @@ PDCA | PDCA サイクルが分かる形で表記されていれば✅そうで�
 --|--|--|--|--|--
 東京都 | [杉並区](https://www.city.suginami.tokyo.jp/kusei/gyouseikaikaku/gyouseihyoka/index.html) | ✅ | ✅ | 6 | 様式は👍施策評価との関係性も分かりやすく👍[東京減税会が指摘している点](https://note.com/tokyo_genzeikai/n/nde7d1e8fc423)は❌
 東京都 | [足立区](https://www.city.adachi.tokyo.jp/ku/kuse/gyosehyoka/index.html) | ❌ | ❌ | 3 | 活動指標の記載はあるが、成果指標と区別しづらい。[東京減税会が指摘している点](https://note.com/tokyo_genzeikai/n/nde7d1e8fc423)は❌
-東京都 | [練馬区](https://www.city.nerima.tokyo.jp/kusei/gyokaku/kokakensyo/senryaku/gyosei_hyoka/index.html) | ❌ | ❌ | 0 | 事務事業評価は 2014 年分を最後に廃止されている
-東京都 | [中野区](https://www.city.tokyo-nakano.lg.jp/kusei/kousou/seido/gyousei/gyouseihyouka/index.html) | ❌ | ❌ | 0 | 一般的な形式の施策・事務事業評価が見つからない
-東京都 | 渋谷区 | ❌ | ❌ | 0 | 何もない。定性評価をマイナスにしたいくらい
+東京都 | [練馬区](https://www.city.nerima.tokyo.jp/kusei/gyokaku/kokakensyo/senryaku/gyosei_hyoka/index.html) | ❌ | ❌ | 0 | 事務事業評価は 2014 年分を最後に廃止されている❌
+東京都 | [中野区](https://www.city.tokyo-nakano.lg.jp/kusei/kousou/seido/gyousei/gyouseihyouka/index.html) | ❌ | ❌ | 0 | 一般的な形式の施策・事務事業評価が見つからない❌
+東京都 | 渋谷区 | ❌ | ❌ | 0 | 何もない❌
