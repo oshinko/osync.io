@@ -68,7 +68,7 @@ image: /images/headers/local-gov.jpg
 
 市町村 | 対象年度 | 定性評価 | 歳出透明度 | 評価 | 備考
 --|--|--|--|--|--
-[杉並区](https://www.city.suginami.tokyo.jp/kusei/gyouseikaikaku/gyouseihyoka/index.html) | 令５ | 6 | 調査中 | ? | 様式は👍施策評価との関係性も分かりやすく👍[東京減税会が指摘している点](https://note.com/tokyo_genzeikai/n/nde7d1e8fc423)は❌
+[杉並区](https://www.city.suginami.tokyo.jp/kusei/gyouseikaikaku/gyouseihyoka/index.html) | 令５ | 8 | 調査中 | ? | 様式は👍施策評価との関係性も分かりやすく👍[東京減税会が指摘している点](https://note.com/tokyo_genzeikai/n/nde7d1e8fc423)は❌
 [足立区](https://www.city.adachi.tokyo.jp/ku/kuse/gyosehyoka/index.html) | ? | 3 | 調査中 | ? | 活動指標の記載はあるが、成果指標と区別しづらい。[東京減税会が指摘している点](https://note.com/tokyo_genzeikai/n/nde7d1e8fc423)は❌
 [練馬区](https://www.city.nerima.tokyo.jp/kusei/gyokaku/kokakensyo/senryaku/gyosei_hyoka/index.html) | - | 0 | - | 0 | 事務事業評価は 2014 年分を最後に廃止されている❌
 [中野区](https://www.city.tokyo-nakano.lg.jp/kusei/kousou/seido/gyousei/gyouseihyouka/index.html) | - | 0 | - | 0 | 一般的な形式の施策・事務事業評価が見つからない❌
