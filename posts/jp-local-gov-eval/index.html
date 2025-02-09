@@ -40,8 +40,8 @@
 <div class=date>
 <div>
 <div>Last committed</div>
-<time datetime=2025-02-04T22:21:12Z+0900>
-25/02/04 22:21
+<time datetime=2025-02-09T16:42:10Z+0900>
+25/02/09 16:42
 </time>
 </div>
 <div>
@@ -69,16 +69,20 @@
 </thead>
 <tbody>
 <tr>
-<td>PDCA</td>
-<td>PDCA サイクルが分かる形で表記されていれば✅そうでなければ❌</td>
-</tr>
-<tr>
-<td>活動指標</td>
-<td>活動量を示す指標が、成果指標から分離されていれば✅そうでなければ❌</td>
+<td>対象年度</td>
+<td>事務事業評価の対象となる事務事業が実施された年度</td>
 </tr>
 <tr>
 <td>定性評価</td>
-<td><ul><li>私による 0 ~ 10 の採点</li><li>形式が標準的であるほど（優良事例に近しいほど）高い</li><li>評価判定が妥当であるほど高い</li><li>評価シート自体が存在しなければ 0</li></ul></td>
+<td>次の基準に基づき 0 ~ 10 の範囲で私が採点した値です。<ul><li>事務事業評価がない 場合、上位の「施策評価」に類するものがあり、施策に紐づく事務事業が列挙されていれば 1 ~ 5 の範囲で採点</li><li>事務事業評価があれば 1 ~ 10 の範囲で採点</li><li>形式が標準的であり、優良事例に近いほど高評価</li><li>評価シートが存在しなければ 0 点</li></ul></td>
+</tr>
+<tr>
+<td>歳出透明度</td>
+<td>歳出決算額の総額に対する評価シートの費用公開率を計算し、行政の事業透明性を示す指標です。人件費の記載の有無を考慮し、次の手順で算出します。<ol><li>単純な歳出透明度 = 事務事業評価シート上の費用総額 ÷ 当年度の歳出決算額の総額</li><li>歳出透明度 = 単純な歳出透明度 x 事務事業評価シートに人件費の記載があれば 0.5 なければ 1</li></ol></td>
+</tr>
+<tr>
+<td>評価</td>
+<td>10 点満点の最終評価値 = 定性評価 × 歳出透明度</td>
 </tr>
 </tbody>
 </table>
@@ -90,8 +94,10 @@
 <tr>
 <th>都道府県</th>
 <th>市町村</th>
-<th>PDCA</th>
-<th>活動指標</th>
+<th>対象年度</th>
+<th>定性評価</th>
+<th>歳出透明度</th>
+<th>評価</th>
 <th>備考</th>
 </tr>
 </thead>
@@ -99,15 +105,19 @@
 <tr>
 <td>兵庫県</td>
 <td><a href=https://www.nishi.or.jp/shisei/gyoseikeiei/gyoseihyoka/hyokakekka.html>西宮市</a></td>
-<td>✅</td>
-<td>✅</td>
+<td>令５</td>
+<td>10</td>
+<td>78.42%</td>
+<td>7.84</td>
 <td><ul><li>とにかく奇麗👍</li><li>当年度の評価も迅速に公開👍</li><li>次年度の評価も予算ベースで公開👍</li></ul></td>
 </tr>
 <tr>
 <td>茨城県</td>
 <td><a href=https://www.city.naka.lg.jp/gyousei/gyouzaisei-kaikaku/gyouseihyouka/kekka/r05/page009899.html>那珂市</a></td>
-<td>✅</td>
-<td>✅</td>
+<td>令４</td>
+<td>10</td>
+<td>調査中</td>
+<td>?</td>
 <td><ul><li>PDCA ではなく PDS</li><li>指標は、対象・活動・成果に分離👍</li><li>多次元評価👍</li><li>次年度、次々年度の評価も予算ベースで公開👍</li></ul></td>
 </tr>
 </tbody>
@@ -116,252 +126,252 @@
 <table>
 <thead>
 <tr>
-<th>都道府県</th>
 <th>市町村</th>
-<th>PDCA</th>
-<th>活動指標</th>
+<th>対象年度</th>
 <th>定性評価</th>
+<th>歳出透明度</th>
+<th>評価</th>
 <th>備考</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>東京都</td>
-<td><a href=https://www.city.musashino.lg.jp/shiseijoho/shisaku_keikaku/sogoseisakubu_shisaku_keikaku/gyoseihyokaseido/jimujigyo_hojokinminaoshi/jimujigyo_hojokin_hyoka/index.html>武蔵野市</a></td>
-<td>❌</td>
-<td>✅</td>
-<td>6</td>
-<td>所管課と市長の多次元評価👍</td>
+<td><a href=https://www.city.kodaira.tokyo.jp/kurashi/071/071864.html>小平市</a></td>
+<td>令５</td>
+<td>2.5</td>
+<td>42.10%</td>
+<td>1.05</td>
+<td>施策評価のみで事務事業評価がない❌</td>
 </tr>
 <tr>
-<td>東京都</td>
-<td><a href=https://www.city.nishitokyo.lg.jp/siseizyoho/sesaku_keikaku/jigyou_hyouka/index.html>西東京市</a></td>
-<td>❌</td>
-<td>❌</td>
-<td>5</td>
-<td>2 ~ 4 の多次元評価👍</td>
-</tr>
-<tr>
-<td>東京都</td>
-<td><a href=https://www.city.tachikawa.lg.jp/shisei/sesaku/1006562/1006673/index.html>立川市</a></td>
-<td>❌</td>
-<td>✅</td>
-<td>4</td>
-<td>コストと成果の二次評価👍だが、廃止すべき事業の継続判定が散見される</td>
-</tr>
-<tr>
-<td>東京都</td>
-<td><a href=https://www.city.kokubunji.tokyo.jp/shisei/shiryou/gyouzaisei/1020308/index.html>国分寺市</a></td>
-<td>❌</td>
-<td>❌</td>
-<td>4</td>
-<td>簡素で見やすい点は👍</td>
-</tr>
-<tr>
-<td>東京都</td>
-<td><a href=https://www.city.inagi.tokyo.jp/smph/shisei/keikaku_hokoku/gyousei/sinkoukaikeiseido_jimujigyouhyouka.html>稲城市</a></td>
-<td>❌</td>
-<td>❌</td>
-<td>4</td>
-<td>PDCA っぽくなっているが、様式として組み込まれていない</td>
-</tr>
-<tr>
-<td>東京都</td>
 <td><a href=https://www.city.akishima.lg.jp/li/060/070/010/020/>昭島市</a></td>
-<td>❌</td>
-<td>❌</td>
+<td>令４</td>
 <td>4</td>
+<td>16.29%</td>
+<td>0.65</td>
 <td>まともに見える👍現状維持ばかり🤔</td>
 </tr>
 <tr>
-<td>東京都</td>
+<td><a href=https://www.city.musashino.lg.jp/shiseijoho/shisaku_keikaku/sogoseisakubu_shisaku_keikaku/gyoseihyokaseido/jimujigyo_hojokinminaoshi/jimujigyo_hojokin_hyoka/index.html>武蔵野市</a></td>
+<td>令４</td>
+<td>6</td>
+<td>0.64%</td>
+<td>0.04</td>
+<td>所管課と市長の多次元評価👍</td>
+</tr>
+<tr>
+<td><a href=https://www.city.nishitokyo.lg.jp/siseizyoho/sesaku_keikaku/jigyou_hyouka/index.html>西東京市</a></td>
+<td>令４</td>
+<td>5</td>
+<td>0.42%</td>
+<td>0.02</td>
+<td>2 ~ 4 の多次元評価👍</td>
+</tr>
+<tr>
+<td><a href=https://www.city.tachikawa.lg.jp/shisei/sesaku/1006562/1006673/index.html>立川市</a></td>
+<td>令５</td>
+<td>4</td>
+<td>調査中</td>
+<td>?</td>
+<td>コストと成果の二次評価👍</td>
+</tr>
+<tr>
+<td><a href=https://www.city.kokubunji.tokyo.jp/shisei/shiryou/gyouzaisei/1020308/index.html>国分寺市</a></td>
+<td>令４</td>
+<td>4</td>
+<td>調査中</td>
+<td>?</td>
+<td>簡素で見やすい点は👍</td>
+</tr>
+<tr>
+<td><a href=https://www.city.inagi.tokyo.jp/smph/shisei/keikaku_hokoku/gyousei/sinkoukaikeiseido_jimujigyouhyouka.html>稲城市</a></td>
+<td>令４</td>
+<td>4</td>
+<td>調査中</td>
+<td>?</td>
+<td>PDCA っぽくはなっている🤔</td>
+</tr>
+<tr>
 <td><a href=https://www.city.koganei.lg.jp/smph/shisei/zaiseiyosan/kaikaku/hyoukasaikouchikur4/D01016012022100.html>小金井市</a></td>
-<td>✅</td>
-<td>❌</td>
+<td>令５</td>
 <td>3</td>
+<td>調査中</td>
+<td>?</td>
 <td>施策評価と一体</td>
 </tr>
 <tr>
-<td>東京都</td>
 <td><a href=https://www.city.fuchu.tokyo.jp/gyosei/kekaku/kekaku/gyosei/gyosehyoka/index.html>府中市</a></td>
-<td>✅</td>
-<td>❌</td>
+<td>令５</td>
 <td>3</td>
+<td>調査中</td>
+<td>?</td>
 <td>施策評価もある</td>
 </tr>
 <tr>
-<td>東京都</td>
 <td><a href=https://www.city.kunitachi.tokyo.jp/shisei/zaisei/1/2/index.html>国立市</a></td>
-<td>✅</td>
-<td>✅</td>
+<td>令５</td>
 <td>3</td>
-<td>対象事業が絞られている❌指標が沢山ある🤔割とちゃんとしてる気がする👍</td>
+<td>調査中</td>
+<td>?</td>
+<td>対象事業が絞られている❌指標が沢山ある🤔</td>
 </tr>
 <tr>
-<td>東京都</td>
 <td><a href=https://www.town.hinode.tokyo.jp/0000003594.html>日の出町</a></td>
-<td>❌</td>
-<td>❌</td>
+<td>令４</td>
 <td>3</td>
+<td>調査中</td>
+<td>?</td>
 <td>割とちゃんとしてる気がする👍</td>
 </tr>
 <tr>
-<td>東京都</td>
 <td><a href=https://www.city.hachioji.tokyo.jp/shisei/001/004/004/002/p034392.html>八王子市</a></td>
-<td>❌</td>
-<td>✅</td>
+<td>令５</td>
 <td>2</td>
-<td>一見見栄えが良いが、活動指標のみだったり、情報不足など❌</td>
+<td>調査中</td>
+<td>?</td>
+<td>一見見栄えが良いが、活動指標のみ、情報不足など❌</td>
 </tr>
 <tr>
-<td>東京都</td>
 <td><a href=https://www.city.komae.tokyo.jp/index.cfm/46,0,362,3163,html>狛江市</a></td>
-<td>❌</td>
-<td>❌</td>
+<td>令５</td>
 <td>1</td>
+<td>調査中</td>
+<td>?</td>
 <td>内部・外部評価に分けてるのはいいが、そもそも情報不足</td>
 </tr>
 <tr>
-<td>東京都</td>
 <td><a href=https://www.city.higashiyamato.lg.jp/shisei/torikumi/1005026/1005048/index.html>東大和市</a></td>
-<td>❌</td>
-<td>❌</td>
+<td>令５</td>
 <td>1</td>
+<td>調査中</td>
+<td>?</td>
 <td>情報不足❌</td>
 </tr>
 <tr>
-<td>東京都</td>
 <td><a href=https://www.city.musashimurayama.lg.jp/shisei/shisaku/gyouseihyouka/index.html>武蔵村山市</a></td>
-<td>❌</td>
-<td>❌</td>
+<td>令４</td>
 <td>1</td>
+<td>調査中</td>
+<td>?</td>
 <td>情報不足❌</td>
 </tr>
 <tr>
-<td>東京都</td>
 <td><a href=https://www.city.fussa.tokyo.jp/municipal/management/reform/1003477.html>福生市</a></td>
-<td>❌</td>
-<td>❌</td>
+<td>令４</td>
 <td>1</td>
+<td>調査中</td>
+<td>?</td>
 <td>文字が見づらい❌</td>
 </tr>
 <tr>
-<td>東京都</td>
 <td><a href=https://www.city.hamura.tokyo.jp/category/3-2-15-0-0-0-0-0-0-0.html>羽村市</a></td>
-<td>❌</td>
-<td>❌</td>
+<td>令４</td>
 <td>1</td>
+<td>調査中</td>
+<td>?</td>
 <td>様式が独特で見づらい❌情報不足❌</td>
 </tr>
 <tr>
-<td>東京都</td>
 <td><a href=https://www.city.ome.tokyo.jp/soshiki/4/9.html>青梅市</a></td>
-<td>✅</td>
-<td>❌</td>
+<td>令３</td>
 <td>1</td>
+<td>調査中</td>
+<td>?</td>
 <td>定量評価なし❌</td>
 </tr>
 <tr>
-<td>東京都</td>
 <td><a href=https://www.city.chofu.lg.jp/shiseijouhou/seisaku/seika/index.html>調布市</a></td>
-<td>❌</td>
-<td>❌</td>
+<td>令５</td>
 <td>0</td>
+<td>調査中</td>
+<td>?</td>
 <td>施策評価のみで事務事業評価がない</td>
 </tr>
 <tr>
-<td>東京都</td>
-<td><a href=https://www.city.kodaira.tokyo.jp/kurashi/071/071864.html>小平市</a></td>
-<td>❌</td>
-<td>❌</td>
-<td>0</td>
-<td>施策評価のみで事務事業評価がない</td>
-</tr>
-<tr>
-<td>東京都</td>
 <td><a href=https://www.city.mitaka.lg.jp/c_categories/index05009005.html>三鷹市</a></td>
-<td>❌</td>
-<td>❌</td>
+<td>-</td>
+<td>0</td>
+<td>-</td>
 <td>0</td>
 <td>一般的な形式の施策・事務事業評価が見つからない</td>
 </tr>
 <tr>
-<td>東京都</td>
 <td><a href=https://www.city.tama.lg.jp/shisei/keikaku/kaikaku/hyouka/index.html>多摩市</a></td>
-<td>❌</td>
-<td>❌</td>
+<td>-</td>
+<td>0</td>
+<td>-</td>
 <td>0</td>
 <td>一般的な形式の施策・事務事業評価が見つからない❌</td>
 </tr>
 <tr>
-<td>東京都</td>
 <td><a href=https://www.city.hino.lg.jp/shisei/gyozaisei/hyoka/index.html>日野市</a></td>
-<td>❌</td>
-<td>❌</td>
+<td>-</td>
+<td>0</td>
+<td>-</td>
 <td>0</td>
 <td>一般的な形式の施策・事務事業評価が見つからない❌手法が独特過ぎて混乱❌</td>
 </tr>
 <tr>
-<td>東京都</td>
 <td><a href=https://www.city.higashikurume.lg.jp/shisei/gyousaisei/hyoka/index.html>東久留米市</a></td>
-<td>❌</td>
-<td>❌</td>
+<td>-</td>
+<td>0</td>
+<td>-</td>
 <td>0</td>
 <td>一般的な形式の施策・事務事業評価が見つからない❌</td>
 </tr>
 <tr>
-<td>東京都</td>
 <td><a href=https://www.city.kiyose.lg.jp/siseijouhou/zaisei/gyouzaiseikaikaku/1004570/index.html>清瀬市</a></td>
-<td>❌</td>
-<td>❌</td>
+<td>-</td>
+<td>0</td>
+<td>-</td>
 <td>0</td>
 <td>施策評価のみで事務事業評価がない❌</td>
 </tr>
 <tr>
-<td>東京都</td>
 <td><a href=https://www.city.higashimurayama.tokyo.jp/shisei/tokei/zaisan/index.html>東村山市</a></td>
-<td>❌</td>
-<td>❌</td>
+<td>-</td>
+<td>0</td>
+<td>-</td>
 <td>0</td>
 <td>一般的な形式の施策・事務事業評価が見つからない❌</td>
 </tr>
 <tr>
-<td>東京都</td>
 <td><a href=https://www.city.machida.tokyo.jp/shisei/gyouzaisei/shin_ko-kaikei/kessan/index.html>町田市</a></td>
-<td>❌</td>
-<td>❌</td>
+<td>-</td>
+<td>0</td>
+<td>-</td>
 <td>0</td>
 <td>一般的な形式の施策・事務事業評価が見つからない❌</td>
 </tr>
 <tr>
-<td>東京都</td>
 <td><a href=https://www.city.akiruno.tokyo.jp/0000003630.html>あきる野市</a></td>
-<td>❌</td>
-<td>❌</td>
+<td>-</td>
+<td>0</td>
+<td>-</td>
 <td>0</td>
 <td>一般的な形式の施策・事務事業評価が見つからない❌</td>
 </tr>
 <tr>
-<td>東京都</td>
 <td><a href=https://www.vill.hinohara.tokyo.jp/>檜原村</a></td>
-<td>❌</td>
-<td>❌</td>
+<td>-</td>
+<td>0</td>
+<td>-</td>
 <td>0</td>
 <td>何もない❌</td>
 </tr>
 <tr>
-<td>東京都</td>
 <td><a href=https://www.town.mizuho.tokyo.jp/tyosei/004/index.html>瑞穂町</a></td>
-<td>❌</td>
-<td>❌</td>
+<td>-</td>
+<td>0</td>
+<td>-</td>
 <td>0</td>
 <td>施策評価のみで事務事業評価がない❌</td>
 </tr>
 <tr>
-<td>東京都</td>
 <td><a href=https://www.town.okutama.tokyo.jp/1/kikakuzaiseika/shisaku_keikaku/3/959.html>奥多摩町</a></td>
-<td>❌</td>
-<td>❌</td>
+<td>-</td>
+<td>0</td>
+<td>-</td>
 <td>0</td>
 <td>一般的な形式の施策・事務事業評価が見つからない❌</td>
 </tr>
@@ -372,52 +382,52 @@
 <table>
 <thead>
 <tr>
-<th>都道府県</th>
 <th>市町村</th>
-<th>PDCA</th>
-<th>活動指標</th>
+<th>対象年度</th>
 <th>定性評価</th>
+<th>歳出透明度</th>
+<th>評価</th>
 <th>備考</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>東京都</td>
 <td><a href=https://www.city.suginami.tokyo.jp/kusei/gyouseikaikaku/gyouseihyoka/index.html>杉並区</a></td>
-<td>✅</td>
-<td>✅</td>
+<td>令５</td>
 <td>6</td>
+<td>調査中</td>
+<td>?</td>
 <td>様式は👍施策評価との関係性も分かりやすく👍<a href=https://note.com/tokyo_genzeikai/n/nde7d1e8fc423>東京減税会が指摘している点</a>は❌</td>
 </tr>
 <tr>
-<td>東京都</td>
 <td><a href=https://www.city.adachi.tokyo.jp/ku/kuse/gyosehyoka/index.html>足立区</a></td>
-<td>❌</td>
-<td>❌</td>
+<td>?</td>
 <td>3</td>
+<td>調査中</td>
+<td>?</td>
 <td>活動指標の記載はあるが、成果指標と区別しづらい。<a href=https://note.com/tokyo_genzeikai/n/nde7d1e8fc423>東京減税会が指摘している点</a>は❌</td>
 </tr>
 <tr>
-<td>東京都</td>
 <td><a href=https://www.city.nerima.tokyo.jp/kusei/gyokaku/kokakensyo/senryaku/gyosei_hyoka/index.html>練馬区</a></td>
-<td>❌</td>
-<td>❌</td>
+<td>-</td>
+<td>0</td>
+<td>-</td>
 <td>0</td>
 <td>事務事業評価は 2014 年分を最後に廃止されている❌</td>
 </tr>
 <tr>
-<td>東京都</td>
 <td><a href=https://www.city.tokyo-nakano.lg.jp/kusei/kousou/seido/gyousei/gyouseihyouka/index.html>中野区</a></td>
-<td>❌</td>
-<td>❌</td>
+<td>-</td>
+<td>0</td>
+<td>-</td>
 <td>0</td>
 <td>一般的な形式の施策・事務事業評価が見つからない❌</td>
 </tr>
 <tr>
-<td>東京都</td>
 <td>渋谷区</td>
-<td>❌</td>
-<td>❌</td>
+<td>-</td>
+<td>0</td>
+<td>-</td>
 <td>0</td>
 <td>何もない❌</td>
 </tr>
