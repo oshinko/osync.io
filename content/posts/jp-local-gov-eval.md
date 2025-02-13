@@ -6,9 +6,10 @@ tags: [日本, 行政評価, 事務事業評価, 東京都]
 image: /images/headers/local-gov.jpg
 ---
 
-各自治体で行われる[事務事業評価](https://laws.e-gov.go.jp/law/413AC0000000086)の整備において、最初のステップは、正確で意味のある文書の公開です。この段階で特に重要なのは、既存の優良事例からベストプラクティスを選定し、それを基に業界標準を確立すること、つまり、**標準化（規格化）** を推進することです。これにより、評価の均一化、属人化の解消、公平性と透明性の確保に向けた最低限の基盤が整うはずです。
+各自治体における[事務事業評価](https://laws.e-gov.go.jp/law/413AC0000000086)の整備において、最初のステップは、正確で意味のある文書の公開です。この段階で特に重要なのは、既存の優良事例からベストプラクティスを選定し、それを基に業界標準を確立すること、つまり、**標準化（規格化）** を推進することです。
+これにより、評価の均一化、属人化の解消、公平性と透明性の確保が促進され、客観的な判断が可能となり、より信頼性の高い評価体制の構築につながります。
 
-このページに登場する「事務事業評価」の評価に関する表の列について、補足は次の通りです。
+このページに登場する「事務事業評価」の評価に関する表の列について、詳細は次の通りです。
 
 列名 | 説明
 --|--
@@ -53,16 +54,25 @@ PDCA | Plan → Do → Check → Action の形になっていれば✅そうで�
 東京都 | [中野区](https://www.city.tokyo-nakano.lg.jp/kusei/kousou/seido/gyousei/gyouseihyouka/index.html) | 令５ | 1.00 | 事業 | ✅ | ✅ | ✅ | ✅ | ❌ | 0.60 | 参考 | 0.60
 東京都 | [荒川区](https://www.city.arakawa.tokyo.jp/a001/gyouseihyouka/r6gyouseihyouka/r6jimujigyo.html) | 令５ | 1.00 | 事業 | ❌ | ❌ | ✅ | ✅ | ✅ | 0.60 | 参考 | 0.60
 東京都 | [葛飾区](https://www.city.katsushika.lg.jp/information/1000085/1006294/1006358/index.html) | 令５ | 1.00 | 事業 | ✅ | ✅ | ✅ | ✅ | ❌ | 0.60 | 参考 | 0.60
+東京都 | [国立市](https://www.city.kunitachi.tokyo.jp/shisei/zaisei/1/2/index.html) | 令４ | 0.75 | 事業 | ✅ | ✅ | ✅ | ✅ | ✅ | 0.70 | 参考 | 0.53
 東京都 | [足立区](https://www.city.adachi.tokyo.jp/ku/kuse/gyosehyoka/index.html) | 令５ | 1.00 | 事業 | ✅ | ❌ | ✅ | ✅ | ✅ | 0.50 | 参考 | 0.50
+東京都 | [府中市](https://www.city.fuchu.tokyo.jp/gyosei/kekaku/kekaku/gyosei/gyosehyoka/index.html) | 令５ | 1.00 | 事業 | ✅ | ❌ | ✅ | ✅ | ✅ | 0.50 | 参考 | 0.50
 東京都 | [武蔵野市](https://www.city.musashino.lg.jp/shiseijoho/shisaku_keikaku/sogoseisakubu_shisaku_keikaku/gyoseihyokaseido/jimujigyo_hojokinminaoshi/jimujigyo_hojokin_hyoka/index.html) | 令４ | 0.75 | 事業 | ✅ | ✅ | ✅ | ✅ | ❌ | 0.60 | 参考 | 0.45
 東京都 | [西東京市](https://www.city.nishitokyo.lg.jp/siseizyoho/sesaku_keikaku/jigyou_hyouka/index.html) | 令４ | 0.75 | 事業 | ✅ | ❌ | ✅ | ✅ | ✅ | 0.60 | 参考 | 0.45
+東京都 | [豊島区](https://www.city.toshima.lg.jp/kuse/shisaku/gyosehyoka/index.html) | 令５ | 1.00 | 事業 | ✅ | ✅ | ✅ | ❌ | ✅ | 0.40 | - | 0.40
 東京都 | [昭島市](https://www.city.akishima.lg.jp/li/060/070/010/020/) | 令４ | 0.75 | 事業 | ✅ | ❌ | ✅ | ✅ | ✅ | 0.50 | 参考 | 0.38
+東京都 | [稲城市](https://www.city.inagi.tokyo.jp/shisei/keikaku_hokoku/index.html) | 令４ | 0.75 | 事業 | ✅ | ❌ | ✅ | ✅ | ✅ | 0.40 | - | 0.30
+東京都 | [東大和市](https://www.city.higashiyamato.lg.jp/shisei/torikumi/1005026/1005048/index.html) | 令５ | 1.00 | 事業 | ✅ | ❌ | ✅ | ❌ | ✅ | 0.30 | - | 0.30
 東京都 | [江東区](https://www.city.koto.lg.jp/kuse/shisaku/hyokasedo/system22/index.html) | 令４ | 0.75 | 施策 | ✅ | ❌ | ✅ | ✅ | ❌ | 0.60 | 参考 | 0.23
-東京都 | [清瀬市](https://www.city.kiyose.lg.jp/siseijouhou/zaisei/gyouzaiseikaikaku/1004570/index.html) | 令４ | 0.75 | 施策 | ❌ | ❌ | ✅ | ❌ | ❌ | 0.10 | 参考 | 0.04
+東京都 | [武蔵村山市](https://www.city.musashimurayama.lg.jp/shisei/shisaku/gyouseihyouka/index.html) | 令４ | 0.75 | 事業 | ✅ | ❌ | ✅ | ✅ | ❌ | 0.30 | - | 0.23
+東京都 | [中央区](https://www.city.chuo.lg.jp/kusei/gyouseihyouka/hyouka/hyoukakekka/index.html) | 令５ | 1.00 | 事業 | ✅ | ❌ | ✅ | ✅ | ❌ | 0.20 | - | 0.20
+東京都 | [品川区](https://www.city.shinagawa.tokyo.jp/PC/kuseizyoho/kuseizyoho-siryo/kuseizyoho-siryo-zaisei/kuseizyoho-siryo-zaisei-shinagawa/kuseizyoho-siryo-zaisei-shinagawa-gyouseihyoka/index.html) | 令４ | 0.75 | 事業 | ✅ | ❌ | ✅ | ✅ | ❌ | 0.20 | - | 0.15
 
 ## 最終評価
 
 「一次評価 × 歳出評価率 = 最終評価」を求めます。
+
+「評価総額」の計算には手間がかかるため、一部の自治体に限定して記載しています。要望があれば、追加の自治体情報について検討しますので、本ページ下部のフォームからお気軽にご連絡ください。
 
 都道府県 | 市町村 | 対象年度 | 一次評価 | 評価総額 | 歳出決算額 | 歳出評価率 | 最終評価
 --|--|--|--|--|--|--|--
