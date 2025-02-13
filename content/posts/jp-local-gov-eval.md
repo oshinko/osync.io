@@ -34,7 +34,7 @@ PDCA | Plan → Do → Check → Action の形になっていれば✅そうで�
 現時点で、評価シート様式の標準に相応しい事例を上げています。
 他にもあれば教えて下さい。
 
-都道府県 | 市町村 | 対象年度 | 様式点 | 備考
+都道府県 | 市区町村 | 対象年度 | 様式点 | 備考
 --|--|--|--|--
 兵庫県 | [西宮市](https://www.nishi.or.jp/shisei/gyoseikeiei/gyoseihyoka/hyokakekka.html) | 令５ | 1.00 | <ul><li>とにかく奇麗👍</li><li>当年度の評価も迅速に公開👍</li><li>次年度の評価も予算ベースで公開👍</li></ul>
 茨城県 | [那珂市](https://www.city.naka.lg.jp/gyousei/gyouzaisei-kaikaku/gyouseihyouka/kekka/r05/page009899.html) | 令４ | 1.00 | <ul><li>PDCA ではなく PDS</li><li>指標は、対象・活動・成果に分離👍</li><li>多次元評価👍</li><li>次年度、次々年度の評価も予算ベースで公開👍</li></ul>
@@ -43,7 +43,9 @@ PDCA | Plan → Do → Check → Action の形になっていれば✅そうで�
 
 「公開速度」と「評価対象」「様式点」による一次評価です。
 
-都道府県 | 市町村 | 対象年度 | 公開速度 | 評価対象 | PDCA | 活動指標 | 成果指標 | 人件費記載 | 財源記載 | 様式点 | 様式参考分類 | 一次評価
+<div></div>
+
+都道府県 | 市区町村 | 対象年度 | 公開速度 | 評価対象 | PDCA | 活動指標 | 成果指標 | 人件費記載 | 財源記載 | 様式点 | 様式分類 | 一次評価
 --|--|--|--|--|--|--|--|--|--|--|--|--
 兵庫県 | [西宮市](https://www.nishi.or.jp/shisei/gyoseikeiei/gyoseihyoka/hyokakekka.html) | 令５ | 1.00 | 事業 | ✅ | ✅ | ✅ | ✅ | ✅ | 1.00 | 標準 | 1.00
 東京都 | [杉並区](https://www.city.suginami.tokyo.jp/kusei/gyouseikaikaku/gyouseihyoka/index.html) | 令５ | 1.00 | 事業 | ✅ | ✅ | ✅ | ✅ | ✅ | 0.80 | 準標準 | 0.80
@@ -81,7 +83,7 @@ PDCA | Plan → Do → Check → Action の形になっていれば✅そうで�
 東京都 | [羽村市](https://www.city.hamura.tokyo.jp/category/3-2-15-0-0-0-0-0-0-0.html) | 令４ | 0.75 | 事業 | ❌ | ❌ | ❌ | ✅ | ✅ | 0.10 | - | 0.08
 東京都 | [千代田区](https://www.city.chiyoda.lg.jp/koho/kuse/zaise/shisaku/index.html) | 令５ | 1.00 | 施策 | ❌ | ❌ | ❌ | ❌ | ❌ | 0.10 | - | 0.05
 東京都 | [調布市](https://www.city.chofu.lg.jp/shiseijouhou/seisaku/seika/index.html) | 令５ | 1.00 | 施策 | ❌ | ❌ | ✅ | ❌ | ❌ | 0.10 | - | 0.05
-東京都 | [清瀬市](https://www.city.kiyose.lg.jp/siseijouhou/zaisei/gyouzaiseikaikaku/1004570/index.html) | 令４ | 0.75 | 施策 | ❌ | ❌ | ✅ | ❌ | ❌ | 0.10 | 参考 | 0.04
+東京都 | [清瀬市](https://www.city.kiyose.lg.jp/siseijouhou/zaisei/gyouzaiseikaikaku/1004570/index.html) | 令４ | 0.75 | 施策 | ❌ | ❌ | ✅ | ❌ | ❌ | 0.10 | - | 0.04
 東京都 | [瑞穂町](https://www.town.mizuho.tokyo.jp/tyosei/004/index.html) | 令４ | 0.75 | 施策 | ❌ | ❌ | ✅ | ❌ | ✅ | 0.10 | - | 0.04
 東京都 | [世田谷区](https://www.city.setagaya.lg.jp/kuseijouhou/seisaku/12655.html) | 令３ | 0.50 | 施策 | ✅ | ❌ | ✅ | ✅ | ✅ | 0.10 | - | 0.03
 東京都 | [江戸川区](https://www.city.edogawa.tokyo.jp/kuseijoho/zaisei/gyoseikaikaku/hyoka/index.html) | 令５ | 1.00 | なし | ❌ | ❌ | ❌ | ❌ | ❌ | 0.40 | - | 0.00
@@ -106,7 +108,7 @@ PDCA | Plan → Do → Check → Action の形になっていれば✅そうで�
 
 「評価総額」の計算には手間がかかるため、一部の自治体に限定して記載しています。要望があれば、追加の自治体情報について検討しますので、本ページ下部のフォームからお気軽にご連絡ください。
 
-都道府県 | 市町村 | 対象年度 | 一次評価 | 評価総額 | 歳出決算額 | 歳出評価率 | 最終評価
+都道府県 | 市区町村 | 対象年度 | 一次評価 | 評価総額 | 歳出決算額 | 歳出評価率 | 最終評価
 --|--|--|--|--|--|--|--
 東京都 | [杉並区](https://www.city.suginami.tokyo.jp/kusei/gyouseikaikaku/gyouseihyoka/index.html) | 令５ | 0.80 | ¥372,122,168,000 | ¥340,141,864,095 | 100.00% | 0.80
 兵庫県 | [西宮市](https://www.nishi.or.jp/shisei/gyoseikeiei/gyoseihyoka/hyokakekka.html) | 令５ | 1.00 | ¥227,682,463,448 | ¥290,324,183,000 | 78.42% | 0.78
