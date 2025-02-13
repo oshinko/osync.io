@@ -67,6 +67,38 @@ PDCA | Plan → Do → Check → Action の形になっていれば✅そうで�
 東京都 | [武蔵村山市](https://www.city.musashimurayama.lg.jp/shisei/shisaku/gyouseihyouka/index.html) | 令４ | 0.75 | 事業 | ✅ | ❌ | ✅ | ✅ | ❌ | 0.30 | - | 0.23
 東京都 | [中央区](https://www.city.chuo.lg.jp/kusei/gyouseihyouka/hyouka/hyoukakekka/index.html) | 令５ | 1.00 | 事業 | ✅ | ❌ | ✅ | ✅ | ❌ | 0.20 | - | 0.20
 東京都 | [品川区](https://www.city.shinagawa.tokyo.jp/PC/kuseizyoho/kuseizyoho-siryo/kuseizyoho-siryo-zaisei/kuseizyoho-siryo-zaisei-shinagawa/kuseizyoho-siryo-zaisei-shinagawa-gyouseihyoka/index.html) | 令４ | 0.75 | 事業 | ✅ | ❌ | ✅ | ✅ | ❌ | 0.20 | - | 0.15
+東京都 | [港区](https://www.city.minato.tokyo.jp/kikaku/kuse/shisaku/gyozaise/gyosehyoka/kekka/hyokakekka.html) | 令４ | 0.75 | 事業 | ❌ | ❌ | ✅ | ❌ | ✅ | 0.20 | - | 0.15
+東京都 | [日の出町](https://www.town.hinode.tokyo.jp/0000003594.html) | 令４ | 0.75 | 事業 | ❌ | ❌ | ✅ | ❌ | ✅ | 0.20 | - | 0.15
+東京都 | [小平市](https://www.city.kodaira.tokyo.jp/kurashi/071/071864.html) | 令５ | 1.00 | 施策 | ✅ | ❌ | ✅ | ❌ | ❌ | 0.30 | - | 0.15
+東京都 | [青梅市](https://www.city.ome.tokyo.jp/soshiki/4/9.html) | 令３ | 0.50 | 事業 | ✅ | ❌ | ✅ | ✅ | ✅ | 0.30 | - | 0.15
+東京都 | [新宿区](https://www.city.shinjuku.lg.jp/kusei/index24_naibu19.html) | 令５ | 1.00 | 施策 | ✅ | ❌ | ✅ | ❌ | ✅ | 0.20 | - | 0.10
+東京都 | [小金井市](https://www.city.koganei.lg.jp/smph/shisei/zaiseiyosan/kaikaku/hyoukasaikouchikur4/D01016012022100.html) | 令５ | 1.00 | 事業 | ✅ | ❌ | ✅ | ❌ | ❌ | 0.10 | - | 0.10
+東京都 | [八王子市](https://www.city.hachioji.tokyo.jp/shisei/001/004/004/002/p034392.html) | 令５ | 1.00 | 事業 | ❌ | ✅ | ✅ | ❌ | ❌ | 0.10 | - | 0.10
+東京都 | [狛江市](https://www.city.komae.tokyo.jp/index.cfm/46,0,362,3163,html) | 令５ | 1.00 | 事業 | ❌ | ❌ | ❌ | ❌ | ❌ | 0.10 | - | 0.10
+東京都 | [北区](https://www.city.kita.tokyo.jp/kuse/shisaku/hyoka/index.html) | 令４ | 1.00 | 事業 | ❌ | ❌ | ✅ | ❌ | ❌ | 0.10 | - | 0.08
+東京都 | [国分寺市](https://www.city.kokubunji.tokyo.jp/shisei/shiryou/gyouzaisei/1020308/index.html) | 令４ | 0.75 | 事業 | ❌ | ❌ | ✅ | ❌ | ❌ | 0.10 | - | 0.08
+東京都 | [福生市](https://www.city.fussa.tokyo.jp/municipal/management/reform/1003477.html) | 令４ | 0.75 | 事業 | ❌ | ❌ | ✅ | ✅ | ✅ | 0.10 | - | 0.08
+東京都 | [羽村市](https://www.city.hamura.tokyo.jp/category/3-2-15-0-0-0-0-0-0-0.html) | 令４ | 0.75 | 事業 | ❌ | ❌ | ❌ | ✅ | ✅ | 0.10 | - | 0.08
+東京都 | [千代田区](https://www.city.chiyoda.lg.jp/koho/kuse/zaise/shisaku/index.html) | 令５ | 1.00 | 施策 | ❌ | ❌ | ❌ | ❌ | ❌ | 0.10 | - | 0.05
+東京都 | [調布市](https://www.city.chofu.lg.jp/shiseijouhou/seisaku/seika/index.html) | 令５ | 1.00 | 施策 | ❌ | ❌ | ✅ | ❌ | ❌ | 0.10 | - | 0.05
+東京都 | [清瀬市](https://www.city.kiyose.lg.jp/siseijouhou/zaisei/gyouzaiseikaikaku/1004570/index.html) | 令４ | 0.75 | 施策 | ❌ | ❌ | ✅ | ❌ | ❌ | 0.10 | 参考 | 0.04
+東京都 | [瑞穂町](https://www.town.mizuho.tokyo.jp/tyosei/004/index.html) | 令４ | 0.75 | 施策 | ❌ | ❌ | ✅ | ❌ | ✅ | 0.10 | - | 0.04
+東京都 | [世田谷区](https://www.city.setagaya.lg.jp/kuseijouhou/seisaku/12655.html) | 令３ | 0.50 | 施策 | ✅ | ❌ | ✅ | ✅ | ✅ | 0.10 | - | 0.03
+東京都 | [江戸川区](https://www.city.edogawa.tokyo.jp/kuseijoho/zaisei/gyoseikaikaku/hyoka/index.html) | 令５ | 1.00 | なし | ❌ | ❌ | ❌ | ❌ | ❌ | 0.40 | - | 0.00
+東京都 | [三鷹市](https://www.city.mitaka.lg.jp/c_categories/index05009005.html) | - | 0.00 | なし | ❌ | ❌ | ❌ | ❌ | ❌ | 0.00 | - | 0.00
+東京都 | [多摩市](https://www.city.tama.lg.jp/shisei/keikaku/kaikaku/hyouka/index.html) | - | 0.00 | なし | ❌ | ❌ | ❌ | ❌ | ❌ | 0.00 | - | 0.00
+東京都 | [日野市](https://www.city.hino.lg.jp/shisei/gyozaisei/hyoka/index.html) | - | 0.00 | なし | ❌ | ❌ | ❌ | ❌ | ❌ | 0.00 | - | 0.00
+東京都 | [東久留米市](https://www.city.higashikurume.lg.jp/shisei/gyousaisei/hyoka/index.html) | - | 0.00 | なし | ❌ | ❌ | ❌ | ❌ | ❌ | 0.00 | - | 0.00
+東京都 | [東村山市](https://www.city.higashimurayama.tokyo.jp/shisei/tokei/zaisan/index.html) | - | 0.00 | なし | ❌ | ❌ | ❌ | ❌ | ❌ | 0.00 | - | 0.00
+東京都 | [町田市](https://www.city.machida.tokyo.jp/shisei/gyouzaisei/shin_ko-kaikei/kessan/index.html) | - | 0.00 | なし | ❌ | ❌ | ❌ | ❌ | ❌ | 0.00 | - | 0.00
+東京都 | [あきる野市](https://www.city.akiruno.tokyo.jp/0000003630.html) | - | 0.00 | なし | ❌ | ❌ | ❌ | ❌ | ❌ | 0.00 | - | 0.00
+東京都 | [檜原村](https://www.vill.hinohara.tokyo.jp/) | - | 0.00 | なし | ❌ | ❌ | ❌ | ❌ | ❌ | 0.00 | - | 0.00
+東京都 | [奥多摩町](https://www.town.okutama.tokyo.jp/1/kikakuzaiseika/shisaku_keikaku/3/959.html) | - | 0.00 | なし | ❌ | ❌ | ❌ | ❌ | ❌ | 0.00 | - | 0.00
+東京都 | [練馬区](https://www.city.nerima.tokyo.jp/kusei/gyokaku/kokakensyo/senryaku/gyosei_hyoka/index.html) | - | 0.00 | なし | ❌ | ❌ | ❌ | ❌ | ❌ | 0.00 | - | 0.00
+東京都 | 渋谷区 | - | 0.00 | なし | ❌ | ❌ | ❌ | ❌ | ❌ | 0.00 | - | 0.00
+東京都 | [大田区](https://www.city.ota.tokyo.jp/kuseijoho/ota_plan/plan_seika/index.html) | - | 0.00 | なし | ❌ | ❌ | ❌ | ❌ | ❌ | 0.00 | - | 0.00
+東京都 | [文京区](https://www.city.bunkyo.lg.jp/b001/p005542/index.html) | - | 0.00 | なし | ❌ | ❌ | ❌ | ❌ | ❌ | 0.00 | - | 0.00
+東京都 | [目黒区](https://www.city.meguro.tokyo.jp/kikakukeiei/kusei/keikaku/jisshi_r3.html) | - | 0.00 | なし | ❌ | ❌ | ❌ | ❌ | ❌ | 0.00 | - | 0.00
 
 ## 最終評価
 
