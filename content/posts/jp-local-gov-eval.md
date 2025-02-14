@@ -43,64 +43,83 @@ PDCA | Plan → Do → Check → Action の形になっていれば✅そうで�
 
 「公開速度」と「評価対象」「様式点」による一次評価です。
 
-<div></div>
-
-都道府県 | 市区町村 | 対象年度 | 公開速度 | 評価対象 | PDCA | 活動指標 | 成果指標 | 人件費記載 | 財源記載 | 様式点 | 様式分類 | 一次評価
---|--|--|--|--|--|--|--|--|--|--|--|--
-兵庫県 | [西宮市](https://www.nishi.or.jp/shisei/gyoseikeiei/gyoseihyoka/hyokakekka.html) | 令５ | 1.00 | 事業 | ✅ | ✅ | ✅ | ✅ | ✅ | 1.00 | 標準 | 1.00
-東京都 | [杉並区](https://www.city.suginami.tokyo.jp/kusei/gyouseikaikaku/gyouseihyoka/index.html) | 令５ | 1.00 | 事業 | ✅ | ✅ | ✅ | ✅ | ✅ | 0.80 | 準標準 | 0.80
-東京都 | [板橋区](https://www.city.itabashi.tokyo.jp/kusei/seisakukeiei/hyouka/kekka/index.html) | 令５ | 1.00 | 事業 | ✅ | ✅ | ✅ | ✅ | ✅ | 0.80 | 準標準 | 0.80
-東京都 | [墨田区](https://www.city.sumida.lg.jp/kuseijoho/gyousei_hyouka/index.html) | 令５ | 1.00 | 事業 | ✅ | ✅ | ✅ | ✅ | ✅ | 0.70 | 参考 | 0.70
-東京都 | [台東区](https://www.city.taito.lg.jp/kusei/kunokeikaku/gyouseihyouka/index.html) | 令５ | 1.00 | 事業 | ✅ | ✅ | ✅ | ✅ | ✅ | 0.70 | 参考 | 0.70
-東京都 | [立川市](https://www.city.tachikawa.lg.jp/shisei/sesaku/1006562/1006673/index.html) | 令５ | 1.00 | 事業 | ✅ | ✅ | ✅ | ✅ | ✅ | 0.70 | 参考 | 0.70
-東京都 | [中野区](https://www.city.tokyo-nakano.lg.jp/kusei/kousou/seido/gyousei/gyouseihyouka/index.html) | 令５ | 1.00 | 事業 | ✅ | ✅ | ✅ | ✅ | ❌ | 0.60 | 参考 | 0.60
-東京都 | [荒川区](https://www.city.arakawa.tokyo.jp/a001/gyouseihyouka/r6gyouseihyouka/r6jimujigyo.html) | 令５ | 1.00 | 事業 | ❌ | ❌ | ✅ | ✅ | ✅ | 0.60 | 参考 | 0.60
-東京都 | [葛飾区](https://www.city.katsushika.lg.jp/information/1000085/1006294/1006358/index.html) | 令５ | 1.00 | 事業 | ✅ | ✅ | ✅ | ✅ | ❌ | 0.60 | 参考 | 0.60
-東京都 | [国立市](https://www.city.kunitachi.tokyo.jp/shisei/zaisei/1/2/index.html) | 令４ | 0.75 | 事業 | ✅ | ✅ | ✅ | ✅ | ✅ | 0.70 | 参考 | 0.53
-東京都 | [足立区](https://www.city.adachi.tokyo.jp/ku/kuse/gyosehyoka/index.html) | 令５ | 1.00 | 事業 | ✅ | ❌ | ✅ | ✅ | ✅ | 0.50 | 参考 | 0.50
-東京都 | [府中市](https://www.city.fuchu.tokyo.jp/gyosei/kekaku/kekaku/gyosei/gyosehyoka/index.html) | 令５ | 1.00 | 事業 | ✅ | ❌ | ✅ | ✅ | ✅ | 0.50 | 参考 | 0.50
-東京都 | [武蔵野市](https://www.city.musashino.lg.jp/shiseijoho/shisaku_keikaku/sogoseisakubu_shisaku_keikaku/gyoseihyokaseido/jimujigyo_hojokinminaoshi/jimujigyo_hojokin_hyoka/index.html) | 令４ | 0.75 | 事業 | ✅ | ✅ | ✅ | ✅ | ❌ | 0.60 | 参考 | 0.45
-東京都 | [西東京市](https://www.city.nishitokyo.lg.jp/siseizyoho/sesaku_keikaku/jigyou_hyouka/index.html) | 令４ | 0.75 | 事業 | ✅ | ❌ | ✅ | ✅ | ✅ | 0.60 | 参考 | 0.45
-東京都 | [豊島区](https://www.city.toshima.lg.jp/kuse/shisaku/gyosehyoka/index.html) | 令５ | 1.00 | 事業 | ✅ | ✅ | ✅ | ❌ | ✅ | 0.40 | - | 0.40
-東京都 | [昭島市](https://www.city.akishima.lg.jp/li/060/070/010/020/) | 令４ | 0.75 | 事業 | ✅ | ❌ | ✅ | ✅ | ✅ | 0.50 | 参考 | 0.38
-東京都 | [稲城市](https://www.city.inagi.tokyo.jp/shisei/keikaku_hokoku/index.html) | 令４ | 0.75 | 事業 | ✅ | ❌ | ✅ | ✅ | ✅ | 0.40 | - | 0.30
-東京都 | [東大和市](https://www.city.higashiyamato.lg.jp/shisei/torikumi/1005026/1005048/index.html) | 令５ | 1.00 | 事業 | ✅ | ❌ | ✅ | ❌ | ✅ | 0.30 | - | 0.30
-東京都 | [江東区](https://www.city.koto.lg.jp/kuse/shisaku/hyokasedo/system22/index.html) | 令４ | 0.75 | 施策 | ✅ | ❌ | ✅ | ✅ | ❌ | 0.60 | 参考 | 0.23
-東京都 | [武蔵村山市](https://www.city.musashimurayama.lg.jp/shisei/shisaku/gyouseihyouka/index.html) | 令４ | 0.75 | 事業 | ✅ | ❌ | ✅ | ✅ | ❌ | 0.30 | - | 0.23
-東京都 | [中央区](https://www.city.chuo.lg.jp/kusei/gyouseihyouka/hyouka/hyoukakekka/index.html) | 令５ | 1.00 | 事業 | ✅ | ❌ | ✅ | ✅ | ❌ | 0.20 | - | 0.20
-東京都 | [品川区](https://www.city.shinagawa.tokyo.jp/PC/kuseizyoho/kuseizyoho-siryo/kuseizyoho-siryo-zaisei/kuseizyoho-siryo-zaisei-shinagawa/kuseizyoho-siryo-zaisei-shinagawa-gyouseihyoka/index.html) | 令４ | 0.75 | 事業 | ✅ | ❌ | ✅ | ✅ | ❌ | 0.20 | - | 0.15
-東京都 | [港区](https://www.city.minato.tokyo.jp/kikaku/kuse/shisaku/gyozaise/gyosehyoka/kekka/hyokakekka.html) | 令４ | 0.75 | 事業 | ❌ | ❌ | ✅ | ❌ | ✅ | 0.20 | - | 0.15
-東京都 | [日の出町](https://www.town.hinode.tokyo.jp/0000003594.html) | 令４ | 0.75 | 事業 | ❌ | ❌ | ✅ | ❌ | ✅ | 0.20 | - | 0.15
-東京都 | [小平市](https://www.city.kodaira.tokyo.jp/kurashi/071/071864.html) | 令５ | 1.00 | 施策 | ✅ | ❌ | ✅ | ❌ | ❌ | 0.30 | - | 0.15
-東京都 | [青梅市](https://www.city.ome.tokyo.jp/soshiki/4/9.html) | 令３ | 0.50 | 事業 | ✅ | ❌ | ✅ | ✅ | ✅ | 0.30 | - | 0.15
-東京都 | [新宿区](https://www.city.shinjuku.lg.jp/kusei/index24_naibu19.html) | 令５ | 1.00 | 施策 | ✅ | ❌ | ✅ | ❌ | ✅ | 0.20 | - | 0.10
-東京都 | [小金井市](https://www.city.koganei.lg.jp/smph/shisei/zaiseiyosan/kaikaku/hyoukasaikouchikur4/D01016012022100.html) | 令５ | 1.00 | 事業 | ✅ | ❌ | ✅ | ❌ | ❌ | 0.10 | - | 0.10
-東京都 | [八王子市](https://www.city.hachioji.tokyo.jp/shisei/001/004/004/002/p034392.html) | 令５ | 1.00 | 事業 | ❌ | ✅ | ✅ | ❌ | ❌ | 0.10 | - | 0.10
-東京都 | [狛江市](https://www.city.komae.tokyo.jp/index.cfm/46,0,362,3163,html) | 令５ | 1.00 | 事業 | ❌ | ❌ | ❌ | ❌ | ❌ | 0.10 | - | 0.10
-東京都 | [北区](https://www.city.kita.tokyo.jp/kuse/shisaku/hyoka/index.html) | 令４ | 1.00 | 事業 | ❌ | ❌ | ✅ | ❌ | ❌ | 0.10 | - | 0.08
-東京都 | [国分寺市](https://www.city.kokubunji.tokyo.jp/shisei/shiryou/gyouzaisei/1020308/index.html) | 令４ | 0.75 | 事業 | ❌ | ❌ | ✅ | ❌ | ❌ | 0.10 | - | 0.08
-東京都 | [福生市](https://www.city.fussa.tokyo.jp/municipal/management/reform/1003477.html) | 令４ | 0.75 | 事業 | ❌ | ❌ | ✅ | ✅ | ✅ | 0.10 | - | 0.08
-東京都 | [羽村市](https://www.city.hamura.tokyo.jp/category/3-2-15-0-0-0-0-0-0-0.html) | 令４ | 0.75 | 事業 | ❌ | ❌ | ❌ | ✅ | ✅ | 0.10 | - | 0.08
-東京都 | [千代田区](https://www.city.chiyoda.lg.jp/koho/kuse/zaise/shisaku/index.html) | 令５ | 1.00 | 施策 | ❌ | ❌ | ❌ | ❌ | ❌ | 0.10 | - | 0.05
-東京都 | [調布市](https://www.city.chofu.lg.jp/shiseijouhou/seisaku/seika/index.html) | 令５ | 1.00 | 施策 | ❌ | ❌ | ✅ | ❌ | ❌ | 0.10 | - | 0.05
-東京都 | [清瀬市](https://www.city.kiyose.lg.jp/siseijouhou/zaisei/gyouzaiseikaikaku/1004570/index.html) | 令４ | 0.75 | 施策 | ❌ | ❌ | ✅ | ❌ | ❌ | 0.10 | - | 0.04
-東京都 | [瑞穂町](https://www.town.mizuho.tokyo.jp/tyosei/004/index.html) | 令４ | 0.75 | 施策 | ❌ | ❌ | ✅ | ❌ | ✅ | 0.10 | - | 0.04
-東京都 | [世田谷区](https://www.city.setagaya.lg.jp/kuseijouhou/seisaku/12655.html) | 令３ | 0.50 | 施策 | ✅ | ❌ | ✅ | ✅ | ✅ | 0.10 | - | 0.03
-東京都 | [江戸川区](https://www.city.edogawa.tokyo.jp/kuseijoho/zaisei/gyoseikaikaku/hyoka/index.html) | 令５ | 1.00 | なし | ❌ | ❌ | ❌ | ❌ | ❌ | 0.40 | - | 0.00
-東京都 | [三鷹市](https://www.city.mitaka.lg.jp/c_categories/index05009005.html) | - | 0.00 | なし | ❌ | ❌ | ❌ | ❌ | ❌ | 0.00 | - | 0.00
-東京都 | [多摩市](https://www.city.tama.lg.jp/shisei/keikaku/kaikaku/hyouka/index.html) | - | 0.00 | なし | ❌ | ❌ | ❌ | ❌ | ❌ | 0.00 | - | 0.00
-東京都 | [日野市](https://www.city.hino.lg.jp/shisei/gyozaisei/hyoka/index.html) | - | 0.00 | なし | ❌ | ❌ | ❌ | ❌ | ❌ | 0.00 | - | 0.00
-東京都 | [東久留米市](https://www.city.higashikurume.lg.jp/shisei/gyousaisei/hyoka/index.html) | - | 0.00 | なし | ❌ | ❌ | ❌ | ❌ | ❌ | 0.00 | - | 0.00
-東京都 | [東村山市](https://www.city.higashimurayama.tokyo.jp/shisei/tokei/zaisan/index.html) | - | 0.00 | なし | ❌ | ❌ | ❌ | ❌ | ❌ | 0.00 | - | 0.00
-東京都 | [町田市](https://www.city.machida.tokyo.jp/shisei/gyouzaisei/shin_ko-kaikei/kessan/index.html) | - | 0.00 | なし | ❌ | ❌ | ❌ | ❌ | ❌ | 0.00 | - | 0.00
-東京都 | [あきる野市](https://www.city.akiruno.tokyo.jp/0000003630.html) | - | 0.00 | なし | ❌ | ❌ | ❌ | ❌ | ❌ | 0.00 | - | 0.00
-東京都 | [檜原村](https://www.vill.hinohara.tokyo.jp/) | - | 0.00 | なし | ❌ | ❌ | ❌ | ❌ | ❌ | 0.00 | - | 0.00
-東京都 | [奥多摩町](https://www.town.okutama.tokyo.jp/1/kikakuzaiseika/shisaku_keikaku/3/959.html) | - | 0.00 | なし | ❌ | ❌ | ❌ | ❌ | ❌ | 0.00 | - | 0.00
-東京都 | [練馬区](https://www.city.nerima.tokyo.jp/kusei/gyokaku/kokakensyo/senryaku/gyosei_hyoka/index.html) | - | 0.00 | なし | ❌ | ❌ | ❌ | ❌ | ❌ | 0.00 | - | 0.00
-東京都 | 渋谷区 | - | 0.00 | なし | ❌ | ❌ | ❌ | ❌ | ❌ | 0.00 | - | 0.00
-東京都 | [大田区](https://www.city.ota.tokyo.jp/kuseijoho/ota_plan/plan_seika/index.html) | - | 0.00 | なし | ❌ | ❌ | ❌ | ❌ | ❌ | 0.00 | - | 0.00
-東京都 | [文京区](https://www.city.bunkyo.lg.jp/b001/p005542/index.html) | - | 0.00 | なし | ❌ | ❌ | ❌ | ❌ | ❌ | 0.00 | - | 0.00
-東京都 | [目黒区](https://www.city.meguro.tokyo.jp/kikakukeiei/kusei/keikaku/jisshi_r3.html) | - | 0.00 | なし | ❌ | ❌ | ❌ | ❌ | ❌ | 0.00 | - | 0.00
+<div style="margin-block: 1em; max-width: 100%; max-height: 960px; overflow: auto;">
+  <table style="margin: 0;">
+    <thead>
+      <tr>
+        <th>都道府県</th>
+        <th>市区町村</th>
+        <th>対象年度</th>
+        <th>公開速度</th>
+        <th>評価対象</th>
+        <th>PDCA</th>
+        <th>活動指標</th>
+        <th>成果指標</th>
+        <th>人件費記載</th>
+        <th>財源記載</th>
+        <th>様式点</th>
+        <th>様式分類</th>
+        <th>一次評価</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>兵庫県</td><td><a href="https://www.nishi.or.jp/shisei/gyoseikeiei/gyoseihyoka/hyokakekka.html">西宮市</a></td><td>令５</td><td>1.00</td><td>事業</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>1.00</td><td>標準</td><td>1.00</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.suginami.tokyo.jp/kusei/gyouseikaikaku/gyouseihyoka/index.html">杉並区</a></td><td>令５</td><td>1.00</td><td>事業</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>0.80</td><td>準標準</td><td>0.80</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.itabashi.tokyo.jp/kusei/seisakukeiei/hyouka/kekka/index.html">板橋区</a></td><td>令５</td><td>1.00</td><td>事業</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>0.80</td><td>準標準</td><td>0.80</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.sumida.lg.jp/kuseijoho/gyousei_hyouka/index.html">墨田区</a></td><td>令５</td><td>1.00</td><td>事業</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>0.70</td><td>参考</td><td>0.70</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.taito.lg.jp/kusei/kunokeikaku/gyouseihyouka/index.html">台東区</a></td><td>令５</td><td>1.00</td><td>事業</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>0.70</td><td>参考</td><td>0.70</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.tachikawa.lg.jp/shisei/sesaku/1006562/1006673/index.html">立川市</a></td><td>令５</td><td>1.00</td><td>事業</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>0.70</td><td>参考</td><td>0.70</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.tokyo-nakano.lg.jp/kusei/kousou/seido/gyousei/gyouseihyouka/index.html">中野区</a></td><td>令５</td><td>1.00</td><td>事業</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>❌</td><td>0.60</td><td>参考</td><td>0.60</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.arakawa.tokyo.jp/a001/gyouseihyouka/r6gyouseihyouka/r6jimujigyo.html">荒川区</a></td><td>令５</td><td>1.00</td><td>事業</td><td>❌</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td><td>0.60</td><td>参考</td><td>0.60</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.katsushika.lg.jp/information/1000085/1006294/1006358/index.html">葛飾区</a></td><td>令５</td><td>1.00</td><td>事業</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>0.60</td><td>参考</td><td>0.60</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.kunitachi.tokyo.jp/shisei/zaisei/1/2/index.html">国立市</a></td><td>令４</td><td>0.75</td><td>事業</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>0.70</td><td>参考</td><td>0.52</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.adachi.tokyo.jp/ku/kuse/gyosehyoka/index.html">足立区</a></td><td>令５</td><td>1.00</td><td>事業</td><td>✅</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td><td>0.50</td><td>参考</td><td>0.50</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.fuchu.tokyo.jp/gyosei/kekaku/kekaku/gyosei/gyosehyoka/index.html">府中市</a></td><td>令５</td><td>1.00</td><td>事業</td><td>✅</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td><td>0.50</td><td>参考</td><td>0.50</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.musashino.lg.jp/shiseijoho/shisaku_keikaku/sogoseisakubu_shisaku_keikaku/gyoseihyokaseido/jimujigyo_hojokinminaoshi/jimujigyo_hojokin_hyoka/index.html">武蔵野市</a></td><td>令４</td><td>0.75</td><td>事業</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>❌</td><td>0.60</td><td>参考</td><td>0.45</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.nishitokyo.lg.jp/siseizyoho/sesaku_keikaku/jigyou_hyouka/index.html">西東京市</a></td><td>令４</td><td>0.75</td><td>事業</td><td>✅</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td><td>0.60</td><td>参考</td><td>0.45</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.toshima.lg.jp/kuse/shisaku/gyosehyoka/index.html">豊島区</a></td><td>令５</td><td>1.00</td><td>事業</td><td>✅</td><td>✅</td><td>✅</td><td>❌</td><td>✅</td><td>0.40</td><td>-</td><td>0.40</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.akishima.lg.jp/li/060/070/010/020/">昭島市</a></td><td>令４</td><td>0.75</td><td>事業</td><td>✅</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td><td>0.50</td><td>参考</td><td>0.38</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.inagi.tokyo.jp/shisei/keikaku_hokoku/index.html">稲城市</a></td><td>令４</td><td>0.75</td><td>事業</td><td>✅</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td><td>0.40</td><td>-</td><td>0.30</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.higashiyamato.lg.jp/shisei/torikumi/1005026/1005048/index.html">東大和市</a></td><td>令５</td><td>1.00</td><td>事業</td><td>✅</td><td>❌</td><td>✅</td><td>❌</td><td>✅</td><td>0.30</td><td>-</td><td>0.30</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.koto.lg.jp/kuse/shisaku/hyokasedo/system22/index.html">江東区</a></td><td>令４</td><td>0.75</td><td>施策</td><td>✅</td><td>❌</td><td>✅</td><td>✅</td><td>❌</td><td>0.60</td><td>参考</td><td>0.22</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.musashimurayama.lg.jp/shisei/shisaku/gyouseihyouka/index.html">武蔵村山市</a></td><td>令４</td><td>0.75</td><td>事業</td><td>✅</td><td>❌</td><td>✅</td><td>✅</td><td>❌</td><td>0.30</td><td>-</td><td>0.22</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.chuo.lg.jp/kusei/gyouseihyouka/hyouka/hyoukakekka/index.html">中央区</a></td><td>令５</td><td>1.00</td><td>事業</td><td>✅</td><td>❌</td><td>✅</td><td>✅</td><td>❌</td><td>0.20</td><td>-</td><td>0.20</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.shinagawa.tokyo.jp/PC/kuseizyoho/kuseizyoho-siryo/kuseizyoho-siryo-zaisei/kuseizyoho-siryo-zaisei-shinagawa/kuseizyoho-siryo-zaisei-shinagawa-gyouseihyoka/index.html">品川区</a></td><td>令４</td><td>0.75</td><td>事業</td><td>✅</td><td>❌</td><td>✅</td><td>✅</td><td>❌</td><td>0.20</td><td>-</td><td>0.15</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.minato.tokyo.jp/kikaku/kuse/shisaku/gyozaise/gyosehyoka/kekka/hyokakekka.html">港区</a></td><td>令４</td><td>0.75</td><td>事業</td><td>❌</td><td>❌</td><td>✅</td><td>❌</td><td>✅</td><td>0.20</td><td>-</td><td>0.15</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.town.hinode.tokyo.jp/0000003594.html">日の出町</a></td><td>令４</td><td>0.75</td><td>事業</td><td>❌</td><td>❌</td><td>✅</td><td>❌</td><td>✅</td><td>0.20</td><td>-</td><td>0.15</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.kodaira.tokyo.jp/kurashi/071/071864.html">小平市</a></td><td>令５</td><td>1.00</td><td>施策</td><td>✅</td><td>❌</td><td>✅</td><td>❌</td><td>❌</td><td>0.30</td><td>-</td><td>0.15</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.ome.tokyo.jp/soshiki/4/9.html">青梅市</a></td><td>令３</td><td>0.50</td><td>事業</td><td>✅</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td><td>0.30</td><td>-</td><td>0.15</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.shinjuku.lg.jp/kusei/index24_naibu19.html">新宿区</a></td><td>令５</td><td>1.00</td><td>施策</td><td>✅</td><td>❌</td><td>✅</td><td>❌</td><td>✅</td><td>0.20</td><td>-</td><td>0.10</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.koganei.lg.jp/smph/shisei/zaiseiyosan/kaikaku/hyoukasaikouchikur4/D01016012022100.html">小金井市</a></td><td>令５</td><td>1.00</td><td>事業</td><td>✅</td><td>❌</td><td>✅</td><td>❌</td><td>❌</td><td>0.10</td><td>-</td><td>0.10</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.hachioji.tokyo.jp/shisei/001/004/004/002/p034392.html">八王子市</a></td><td>令５</td><td>1.00</td><td>事業</td><td>❌</td><td>✅</td><td>✅</td><td>❌</td><td>❌</td><td>0.10</td><td>-</td><td>0.10</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.komae.tokyo.jp/index.cfm/46,0,362,3163,html">狛江市</a></td><td>令５</td><td>1.00</td><td>事業</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>0.10</td><td>-</td><td>0.10</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.kita.tokyo.jp/kuse/shisaku/hyoka/index.html">北区</a></td><td>令４</td><td>0.75</td><td>事業</td><td>❌</td><td>❌</td><td>✅</td><td>❌</td><td>❌</td><td>0.10</td><td>-</td><td>0.08</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.kokubunji.tokyo.jp/shisei/shiryou/gyouzaisei/1020308/index.html">国分寺市</a></td><td>令４</td><td>0.75</td><td>事業</td><td>❌</td><td>❌</td><td>✅</td><td>❌</td><td>❌</td><td>0.10</td><td>-</td><td>0.08</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.fussa.tokyo.jp/municipal/management/reform/1003477.html">福生市</a></td><td>令４</td><td>0.75</td><td>事業</td><td>❌</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td><td>0.10</td><td>-</td><td>0.08</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.hamura.tokyo.jp/category/3-2-15-0-0-0-0-0-0-0.html">羽村市</a></td><td>令４</td><td>0.75</td><td>事業</td><td>❌</td><td>❌</td><td>❌</td><td>✅</td><td>✅</td><td>0.10</td><td>-</td><td>0.08</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.chiyoda.lg.jp/koho/kuse/zaise/shisaku/index.html">千代田区</a></td><td>令５</td><td>1.00</td><td>施策</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>0.10</td><td>-</td><td>0.05</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.chofu.lg.jp/shiseijouhou/seisaku/seika/index.html">調布市</a></td><td>令５</td><td>1.00</td><td>施策</td><td>❌</td><td>❌</td><td>✅</td><td>❌</td><td>❌</td><td>0.10</td><td>-</td><td>0.05</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.kiyose.lg.jp/siseijouhou/zaisei/gyouzaiseikaikaku/1004570/index.html">清瀬市</a></td><td>令４</td><td>0.75</td><td>施策</td><td>❌</td><td>❌</td><td>✅</td><td>❌</td><td>❌</td><td>0.10</td><td>-</td><td>0.04</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.town.mizuho.tokyo.jp/tyosei/004/index.html">瑞穂町</a></td><td>令４</td><td>0.75</td><td>施策</td><td>❌</td><td>❌</td><td>✅</td><td>❌</td><td>✅</td><td>0.10</td><td>-</td><td>0.04</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.setagaya.lg.jp/kuseijouhou/seisaku/12655.html">世田谷区</a></td><td>令３</td><td>0.50</td><td>施策</td><td>✅</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td><td>0.10</td><td>-</td><td>0.03</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.edogawa.tokyo.jp/kuseijoho/zaisei/gyoseikaikaku/hyoka/index.html">江戸川区</a></td><td>令５</td><td>1.00</td><td>なし</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>0.40</td><td>-</td><td>0.00</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.mitaka.lg.jp/c_categories/index05009005.html">三鷹市</a></td><td>-</td><td>0.00</td><td>なし</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>0.00</td><td>-</td><td>0.00</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.tama.lg.jp/shisei/keikaku/kaikaku/hyouka/index.html">多摩市</a></td><td>-</td><td>0.00</td><td>なし</td><td>❌</td><td>❌</td><td>❌</td><td></td><td>❌</td><td>0.00</td><td>-</td><td>0.00</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.hino.lg.jp/shisei/gyozaisei/hyoka/index.html">日野市</a></td><td>-</td><td>0.00</td><td>なし</td><td>❌</td><td>❌</td><td>❌</td><td></td><td>❌</td><td>0.00</td><td>-</td><td>0.00</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.higashikurume.lg.jp/shisei/gyousaisei/hyoka/index.html">東久留米市</a></td><td>-</td><td>0.00</td><td>なし</td><td>❌</td><td>❌</td><td>❌</td><td></td><td>❌</td><td>0.00</td><td>-</td><td>0.00</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.higashimurayama.tokyo.jp/shisei/tokei/zaisan/index.html">東村山市</a></td><td>-</td><td>0.00</td><td>なし</td><td>❌</td><td>❌</td><td>❌</td><td></td><td>❌</td><td>0.00</td><td>-</td><td>0.00</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.machida.tokyo.jp/shisei/gyouzaisei/shin_ko-kaikei/kessan/index.html">町田市</a></td><td>-</td><td>0.00</td><td>なし</td><td>❌</td><td>❌</td><td>❌</td><td></td><td>❌</td><td>0.00</td><td>-</td><td>0.00</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.akiruno.tokyo.jp/0000003630.html">あきる野市</a></td><td>-</td><td>0.00</td><td>なし</td><td>❌</td><td>❌</td><td>❌</td><td></td><td>❌</td><td>0.00</td><td>-</td><td>0.00</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.vill.hinohara.tokyo.jp/">檜原村</a></td><td>-</td><td>0.00</td><td>なし</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>0.00</td><td>-</td><td>0.00</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.town.okutama.tokyo.jp/1/kikakuzaiseika/shisaku_keikaku/3/959.html">奥多摩町</a></td><td>-</td><td>0.00</td><td>なし</td><td>❌</td><td>❌</td><td>❌</td><td></td><td>❌</td><td>0.00</td><td>-</td><td>0.00</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.nerima.tokyo.jp/kusei/gyokaku/kokakensyo/senryaku/gyosei_hyoka/index.html">練馬区</a></td><td>-</td><td>0.00</td><td>なし</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>0.00</td><td>-</td><td>0.00</td></tr>
+      <tr><td>東京都</td><td>渋谷区</td><td>-</td><td>0.00</td><td>なし</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>0.00</td><td>-</td><td>0.00</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.ota.tokyo.jp/kuseijoho/ota_plan/plan_seika/index.html">大田区</a></td><td>-</td><td>0.00</td><td>なし</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>0.00</td><td>-</td><td>0.00</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.bunkyo.lg.jp/b001/p005542/index.html">文京区</a></td><td>-</td><td>0.00</td><td>なし</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>0.00</td><td>-</td><td>0.00</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.meguro.tokyo.jp/kikakukeiei/kusei/keikaku/jisshi_r3.html">目黒区</a></td><td>-</td><td>0.00</td><td>なし</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>0.00</td><td>-</td><td>0.00</td></tr>
+    </tbody>
+  </table>
+</div>
 
 ## 最終評価
 
@@ -108,12 +127,28 @@ PDCA | Plan → Do → Check → Action の形になっていれば✅そうで�
 
 「評価総額」の計算には手間がかかるため、一部の自治体に限定して記載しています。要望があれば、追加の自治体情報について検討しますので、本ページ下部のフォームからお気軽にご連絡ください。
 
-都道府県 | 市区町村 | 対象年度 | 一次評価 | 評価総額 | 歳出決算額 | 歳出評価率 | 最終評価
---|--|--|--|--|--|--|--
-東京都 | [杉並区](https://www.city.suginami.tokyo.jp/kusei/gyouseikaikaku/gyouseihyoka/index.html) | 令５ | 0.80 | ¥372,122,168,000 | ¥340,141,864,095 | 100.00% | 0.80
-兵庫県 | [西宮市](https://www.nishi.or.jp/shisei/gyoseikeiei/gyoseihyoka/hyokakekka.html) | 令５ | 1.00 | ¥227,682,463,448 | ¥290,324,183,000 | 78.42% | 0.78
-東京都 | [小平市](https://www.city.kodaira.tokyo.jp/kurashi/071/071864.html) | 令５ | 0.15 | ¥107,821,234,000 | ¥128,057,981,497 | 84.20% | 0.13
-東京都 | [昭島市](https://www.city.akishima.lg.jp/li/060/070/010/020/) | 令４ | 0.15 | ¥12,079,618,000 | ¥74,151,079,763 | 16.29% | 0.06
-東京都 | [清瀬市](https://www.city.kiyose.lg.jp/siseijouhou/zaisei/gyouzaiseikaikaku/1004570/index.html) | 令４ | 0.04 | ¥16,652,610,000 | ¥53,747,056,382 | 30.98% | 0.01
-東京都 | [武蔵野市](https://www.city.musashino.lg.jp/shiseijoho/shisaku_keikaku/sogoseisakubu_shisaku_keikaku/gyoseihyokaseido/jimujigyo_hojokinminaoshi/jimujigyo_hojokin_hyoka/index.html) | 令４ | 0.45 | ¥675,115,938 | ¥104,730,877,469 | 0.64% | 0.00
-東京都 | [西東京市](https://www.city.nishitokyo.lg.jp/siseizyoho/sesaku_keikaku/jigyou_hyouka/index.html) | 令４ | 0.45 | ¥526,255,000 | ¥126,652,876,441 | 0.42% | 0.00
+<div style="margin-block: 1em; max-width: 100%; max-height: 960px; overflow: auto;">
+  <table style="margin: 0;">
+    <thead>
+      <tr>
+        <th>都道府県</th>
+        <th>市区町村</th>
+        <th>対象年度</th>
+        <th>一次評価</th>
+        <th>評価総額</th>
+        <th>歳出決算額</th>
+        <th>歳出評価率</th>
+        <th>最終評価</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>東京都</td><td><a href="https://www.city.suginami.tokyo.jp/kusei/gyouseikaikaku/gyouseihyoka/index.html">杉並区</a></td><td>令５</td><td>0.80</td><td>¥372,122,168,000</td><td>¥340,141,864,095</td><td>100.00%</td><td>0.80</td></tr>
+      <tr><td>兵庫県</td><td><a href="https://www.nishi.or.jp/shisei/gyoseikeiei/gyoseihyoka/hyokakekka.html">西宮市</a></td><td>令５</td><td>1.00</td><td>¥227,682,463,448</td><td>¥290,324,183,000</td><td>78.42%</td><td>0.78</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.kodaira.tokyo.jp/kurashi/071/071864.html">小平市</a></td><td>令５</td><td>0.15</td><td>¥107,821,234,000</td><td>¥128,057,981,497</td><td>84.20%</td><td>0.13</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.akishima.lg.jp/li/060/070/010/020/">昭島市</a></td><td>令４</td><td>0.38</td><td>¥12,079,618,000</td><td>¥74,151,079,763</td><td>16.29%</td><td>0.06</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.kiyose.lg.jp/siseijouhou/zaisei/gyouzaiseikaikaku/1004570/index.html">清瀬市</a></td><td>令４</td><td>0.04</td><td>¥16,652,610,000</td><td>¥53,747,056,382</td><td>30.98%</td><td>0.01</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.musashino.lg.jp/shiseijoho/shisaku_keikaku/sogoseisakubu_shisaku_keikaku/gyoseihyokaseido/jimujigyo_hojokinminaoshi/jimujigyo_hojokin_hyoka/index.html">武蔵野市</a></td><td>令４</td><td>0.45</td><td>¥675,115,938</td><td>¥104,730,877,469</td><td>0.64%</td><td>0.00</td></tr>
+      <tr><td>東京都</td><td><a href="https://www.city.nishitokyo.lg.jp/siseizyoho/sesaku_keikaku/jigyou_hyouka/index.html">西東京市</a></td><td>令４</td><td>0.45</td><td>¥526,255,000</td><td>¥126,652,876,441</td><td>0.42%</td><td>0.00</td></tr>
+    </tbody>
+  </table>
+</div>
