@@ -159,7 +159,7 @@ table {
     <div>
       <h2>年収を指定</h2>
       <input name="income" type="number" value="" placeholder="確認したい年収を入力"
-        onfocus="numberUnformat(event)" onblur="yenFormatAndUpdateHash(event.target, { income: event.target.value })">
+        onfocus="numberUnformat(event)" onblur="updateIncome(event)" onkeydown="enterToBlur(event)">
     </div>
 
     <div>
@@ -219,13 +219,13 @@ table {
 
 <script>
 const API_ENDPOINT = 'https://opendata.renjaku.co.jp/v1/jp';
-const DEFAULT_MIN_INCOME = 100_000;
+const DEFAULT_MIN_INCOME = 1_000_000;
 const DEFAULT_MAX_INCOME = 100_000_000;
 const SOCIAL_INSURANCE_BOARDER = 1_060_000;
 const NO_DEPENDENT_BOARDER = 1_300_000;
 
 function parseHashParams(hash) {
-  const params = new URLSearchParams(hash.replace(/^#+/, ''))
+  const params = new URLSearchParams(hash.replace(/^#+/, ''));
   const result = {};
   for (const [key, value] of params.entries()) {
     const n = Number(value);
@@ -241,7 +241,8 @@ function parseHashParams(hash) {
 function stringifyHashParams(params) {
   const searchParams = new URLSearchParams();
   for (const [key, value] of Object.entries(params))
-    if (value !== false) searchParams.append(key, value === true ? '' : value);
+    if (value !== undefined && value !== false)
+      searchParams.append(key, value === true ? '' : value);
   return '#' + searchParams.toString().replace(/=$/g, '').replace(/=&/g, '&');
 }
 
@@ -301,9 +302,15 @@ function updateHash(patch) {
   location.hash = stringifyHashParams({ ...params, ...patch });
 }
 
-function yenFormatAndUpdateHash(input, patch) {
-  yenFormat(input);
-  updateHash(patch);
+function updateIncome(event) {
+  const income = event.target.value || undefined;
+  yenFormat(event.target);
+  updateHash({ income });
+}
+
+function enterToBlur(event) {
+  if (event.key !== 'Enter') return;
+  event.target.blur();
 }
 
 function appendYenCell(row, value, classes) {
@@ -416,7 +423,7 @@ async function calc() {
     let income = minIncome;
     while (income <= maxIncome) {
       yield income;
-      income += Math.pow(10, income.toString().length - 1) / 10;
+      income += 1_000_000;
     }
   }
 
