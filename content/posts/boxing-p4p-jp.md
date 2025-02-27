@@ -18,9 +18,9 @@ image: "/images/headers/boxing.jpg"
 6|[阿久井 政悟](https://boxrec.com/en/box-pro/685429)|フライ|3/13|寺地 拳四朗
 7|[井上 拓真](https://boxrec.com/en/box-pro/667667)|バンタム|-|-
 8|[力石 政法](https://boxrec.com/en/box-pro/806436)|S.フェザー|-|-
-9|[堤 聖也](https://boxrec.com/en/box-pro/829718)|バンタム|-|-
-10|[田中 恒成](https://boxrec.com/en/box-pro/666339)|S.フライ|-|-
-11|[西田 凌佑](https://boxrec.com/en/box-pro/898844)|バンタム|-|-
+9|[西田 凌佑](https://boxrec.com/en/box-pro/898844)|バンタム|-|-
+10|[堤 聖也](https://boxrec.com/en/box-pro/829718)|バンタム|-|-
+11|[田中 恒成](https://boxrec.com/en/box-pro/666339)|S.フライ|-|-
 12|[吉野 修一郎](https://boxrec.com/en/box-pro/737760)|ライト|-|-
 13|[矢吹 正道](https://boxrec.com/en/box-pro/752510)|L.フライ|3/29|Angel Ayala Lardizabal
 14|[武居 由樹](https://boxrec.com/en/box-pro/990774)|バンタム|-|-
