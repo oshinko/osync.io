@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="各自治体の優良事例を参考にした事務事業評価標準シートの草案です。">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@osynco">
+<meta name="twitter:site" content="@osynco">
+<meta property="twitter:title" content="事務事業評価標準シートの草案 - Osync I/O">
+<meta property="og:url" content="https://osync.io/docs/local-gov-eval-std-sheet.html">
+<meta property="og:title" content="事務事業評価標準シートの草案 - Osync I/O">
+<meta property="og:description" content="各自治体の優良事例を参考にした事務事業評価標準シートの草案です。">
+<meta property="og:image" content="https://osync.io/images/headers/local-gov.jpg">
+<title>事務事業評価標準シートの草案</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+<style>
+html {
+  font-family:
+    "Noto Sans JP",
+    'Source Sans Pro',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 3mm;
+  line-height: 1.6;
+  margin: 0;
+  print-color-adjust: exact;
+}
+
+main {
+  margin: 0 8px;
+}
+
+@media (min-width: 1024px) {
+  main {
+    width: 210mm;
+    margin: 0 auto;
+  }
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+section {
+  break-inside: avoid;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+
+  &.base {
+    th {
+      width: 8em;
+    }
+  }
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+  vertical-align: middle;
+
+  > ul, ol {
+    margin: 0;
+    padding-inline-start: 1.5em;
+  }
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: calc(2.25 / 1.875);
+}
+
+details p {
+  font-size: 1rem;
+}
+
+a[data-tooltip] {
+  color: black;
+}
+
+:is(h1, h2, h3) a[data-tooltip] {
+  color: #333;
+}
+</style>
+</head>
+<body>
+
+<main>
+  <h1>事務事業評価標準シートの草案</h1>
+
+  <section>
+    <h2>基本情報</h2>
+
+    <table class="base">
+      <tr>
+        <th>事務事業</th>
+        <td>ごみ減量等推進事業</td>
+      </tr>
+      <tr>
+        <th>階層</th>
+        <td>環境・都市基盤、安全・安心  ＞  生活環境  ＞  ごみの減量・処理施設の整備</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="#" data-tooltip="「法的根拠」は任意。例えば、都市開発や細かな事務などは、法的根拠が見いだせないが、必要なものもある。">
+            法的根拠
+          </a>
+        </th>
+        <td>
+          <ul>
+            <li><a href="https://laws.e-gov.go.jp/law/345AC0000000137">廃棄物の処理及び清掃に関する法律</a></li>
+            <li>○○市廃棄物の処理及び清掃に関する条例</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <a href="#" data-tooltip="「データ的根拠」（EBPM）は任意。記入すればこの事業の正当性を強力に支援することになる。">
+            データ的根拠
+          </a>
+        </th>
+        <td><a href="https://www.stat.go.jp/dstart/">（この事業に関する EBPM データ参照先があれば記載）</a></td>
+      </tr>
+      <tr>
+        <th>作成日</th>
+        <td>令和６年６月３０日</td>
+      </tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>
+      <a href="#" data-tooltip="「概要」は全て必須項目としたい。">
+        概要（PLAN &amp; DO）
+      </a>
+    </h2>
+
+    <table class="base">
+      <tr>
+        <th>概要</th>
+        <td>
+          平成31年４月に改定した一般廃棄物処理基本計画に基づき、環境負荷の少ない持続可能なまちづくりを目指して、市民・事業者・行政の各主体の自律と協働により、リデュース（発生抑制）とリユース（再使用）の２Ｒを優先的に進めることによりごみの減量化を図るとともに、分別排出の徹底によるリサイクルに取り組む等、資源循環型社会の形成に向けて積極的な取り組みを進める。
+        </td>
+      </tr>
+      <tr>
+        <th>対象</th>
+        <td>
+          ごみを排出する市民、事業所
+        </td>
+      </tr>
+      <tr>
+        <th>目的</th>
+        <td>
+          市民および事業者におけるごみの発生抑制及び再資源化に対する意識を高め、ごみ排出量の削減および適正な分別排出に取り組んでいる状態を目指す。
+        </td>
+      </tr>
+      <tr>
+        <th>類似事業</th>
+        <td>
+          ごみ減量等推進事業
+        </td>
+      </tr>
+      <tr>
+        <th>実施内容</th>
+        <td>
+          <ol>
+            <li>再生資源集団回収奨励金の交付（登録団体：607団体、交付団体：569団体）</li>
+            <li>使用済小型家電の分別回収（拠点回収：34ヶ所・年間回収量：55,244㎏、宅配回収量：31,237kg）</li>
+            <li>常設型フードドライブの実施（市内５事業者20店舗・年間回収量6,739㎏）</li>
+            <li>環境ポスターコンクールおよび環境ポスター展を環境企画課と共同で実施（応募者総数3,532点、優秀作品数116点）</li>
+            <li>親子で環境バスツアー実施（実施日 令和５年８月４日 小学生を対象とした19組37名）</li>
+            <li>特定事業者による減量化計画書及び排出実績書の提出（提出事業者数：625事業所）</li>
+            <li>特定事業者のうち、特に排出量が多い事業者に対する個別訪問による現状調査の実施（177事業所）</li>
+            <li>市内の事業者を対象に、事業系一般廃棄物の再資源化、減量を推進するため研修会を実施。（90事業者115名参加）</li>
+            <li>庁舎内で発生する機密文書類の再資源化を推進するため製紙会社に搬入し、再資源化を行った。（回収量：94,740㎏）</li>
+          </ol>
+        </td>
+      </tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>
+      <a href="#" data-tooltip="「コストと財源」は全て必須項目としたい。この事業（ひいては自治体行政の運営）にどれだけの費用が掛かっているかを知れる貴重な情報源となる。">
+        コストと財源（PLAN &amp; DO）
+      </a>
+    </h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th colspan="3">区分</th>
+          <th>令和３年決算</th>
+          <th>令和４年決算</th>
+          <th>令和５年決算</th>
+          <th>令和６年予算</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="3">コスト</td>
+          <td colspan="2">事業費</td>
+          <td>¥33,081,000</td>
+          <td>¥31,811,000</td>
+          <td>¥31,429,000</td>
+          <td>¥34,608,000</td>
+        </tr>
+        <tr>
+          <td colspan="2">人件費</td>
+          <td>¥76,216,000</td>
+          <td>¥79,670,000</td>
+          <td>¥89,179,000</td>
+          <td>¥80,163,000</td>
+        </tr>
+        <tr>
+          <td colspan="2">合計</td>
+          <td>¥109,297,000</td>
+          <td>¥111,481,000</td>
+          <td>¥120,608,000</td>
+          <td>¥114,771,000</td>
+        </tr>
+        <tr>
+          <td rowspan="7">財源</td>
+          <td rowspan="5" style="width: 2em">特定財源</td>
+          <td>国庫支出金</td>
+          <td>¥0</td>
+          <td>¥0</td>
+          <td>¥0</td>
+          <td>¥0</td>
+        </tr>
+        <tr>
+          <td>都道府県支出金</td>
+          <td>¥447,000</td>
+          <td>¥547,000</td>
+          <td>¥155,000</td>
+          <td>¥495,000</td>
+        </tr>
+        <tr>
+          <td>都道府県支出金</td>
+          <td>¥0</td>
+          <td>¥0</td>
+          <td>¥0</td>
+          <td>¥0</td>
+        </tr>
+        <tr>
+          <td>地方債</td>
+          <td>¥0</td>
+          <td>¥0</td>
+          <td>¥0</td>
+          <td>¥0</td>
+        </tr>
+        <tr>
+          <td>その他</td>
+          <td>¥0</td>
+          <td>¥224,000</td>
+          <td>¥265,000</td>
+          <td>¥351,000</td>
+        </tr>
+        <tr>
+          <td colspan="2">一般財源</td>
+          <td>¥108,850,000</td>
+          <td>¥110,710,000</td>
+          <td>¥120,188,000</td>
+          <td>¥113,925,000</td>
+        </tr>
+        <tr>
+          <td colspan="2">合計</td>
+          <td>¥109,297,000</td>
+          <td>¥111,481,000</td>
+          <td>¥120,608,000</td>
+          <td>¥114,771,000</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>
+      <a href="#" data-tooltip="「成果指標」は、もし「データ的根拠」がある場合、その評価指標を流用するだけで完結する場合がある。">
+        指標と結果（CHECK）
+      </a>
+    </h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">指標</th>
+          <th>令和３年</th>
+          <th>令和４年</th>
+          <th>令和５年</th>
+          <th>令和６年</th>
+          <th>最終目標</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="3">活動指標</td>
+          <td>政策介入カバレッジ率</td>
+          <td>10%</td>
+          <td>20%</td>
+          <td>30%</td>
+          <td>40%</td>
+          <td>100%</td>
+        </tr>
+        <tr>
+          <td>ごみ分別指導実施率</td>
+          <td>10%</td>
+          <td>20%</td>
+          <td>30%</td>
+          <td>40%</td>
+          <td>100%</td>
+        </tr>
+        <tr>
+          <td>事業者ごみ削減計画提出率</td>
+          <td>10%</td>
+          <td>20%</td>
+          <td>30%</td>
+          <td>40%</td>
+          <td>100%</td>
+        </tr>
+        <tr>
+          <td rowspan="3">成果指標</td>
+          <td>1人1日当り生活系ごみ排出量</td>
+          <td>514.0g</td>
+          <td>473.0g</td>
+          <td>472.0g</td>
+          <td>470.0g</td>
+          <td>459.0g</td>
+        </tr>
+        <tr>
+          <td>1日当り事業系ごみ排出量</td>
+          <td>153.9㌧</td>
+          <td>143.0㌧</td>
+          <td>130.0㌧</td>
+          <td>100.0㌧</td>
+          <td>141.0㌧</td>
+        </tr>
+        <tr>
+          <td>リサイクル率</td>
+          <td>13.8%</td>
+          <td>15.6%</td>
+          <td>15.5%</td>
+          <td>16.0%</td>
+          <td>22.0%</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>評価（CHECK）</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 160px;">評価項目</th>
+          <th style="width: 240px;">評価内容</th>
+          <th>評価内容の説明</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">必要性</td>
+          <td>事業の社会的ニーズ</td>
+          <td rowspan="2"></td>
+        </tr>
+        <tr>
+          <td>市の関与の妥当性</td>
+        </tr>
+        <tr>
+          <td rowspan="3">成果‧有効性</td>
+          <td>成果の達成状況</td>
+          <td rowspan="3">
+            令和５年度の生活系ごみ排出量はほぼ横ばい状態であったが、事業系ごみ排出量は減少傾向にあったため、総排出量としては減少していた。令和８年度から実施する新分別区分の導入により、生活系ごみの排出量の減量を見込んでいる。
+          </td>
+        </tr>
+        <tr>
+          <td>市民ニーズの傾向</td>
+        </tr>
+        <tr>
+          <td>市民満足度</td>
+        </tr>
+        <tr>
+          <td rowspan="3">コスト‧負担</td>
+          <td>コストの節減度</td>
+          <td rowspan="3">
+            引き続き、限られた予算の中で、市民及び事業者のごみ減量・再資源化意識の向上及び活動促進の啓発事業に取り組む。
+          </td>
+        </tr>
+        <tr>
+          <td>将来コストの増減見込み</td>
+        </tr>
+        <tr>
+          <td>受益者負担の適正度</td>
+        </tr>
+        <tr>
+          <td rowspan="2">執行方法</td>
+          <td>外部委託の可能性</td>
+          <td rowspan="2">
+            ごみ減量及び再資源化推進は、市民及び事業者のごみ減量・再資源化推進の意識の向上及び活動促進を前提とした取り組みであり、これを推進することは市の責務である。
+          </td>
+        </tr>
+        <tr>
+          <td>実施方法の効率性</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>今後の方向性（ACTION）</h2>
+
+    <table class="base">
+      <tbody>
+        <tr>
+          <th rowspan="2" class="text-center" style="height: 8em">現在の課題</th>
+          <td rowspan="2">
+            横ばい傾向で推移している生活系ごみのさらなる減量のため、継続してごみの減量及び再資源化推進に取り組む必要がある。
+          </td>
+          <th class="text-center" style="width: 160px">
+            <a href="#result-note" data-tooltip="台東区を参考にすると、結果は「拡大」「改善」「維持」「縮小」「廃止・終了」のいずれかになる。">
+              評価結果
+            </a>
+          </th>
+        </tr>
+        <tr>
+          <td rowspan="3" class="text-center text-3xl">継続</td>
+        </tr>
+        <tr>
+          <th class="text-center" style="height: 8em">今後の方向性</th>
+          <td>
+            引き続きごみの減量及び分別排出の徹底に努め、一般廃棄物処理基本計画の目標達成を目指す。令和６年度は、令和８年度の新区分実施に向けた啓発・広報準備を進め、令和７年度以降は、住民説明会や広報を活用しながら分別区分の見直しを周知し、再資源化を促進する。
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</main>
+
+<script>
+for (const elm of document.querySelectorAll('a[data-tooltip]')) {
+  elm.addEventListener('click', e => {
+    window.alert(elm.dataset.tooltip);
+    e.preventDefault();
+  });
+}
+</script>
+</body>
+</html>
