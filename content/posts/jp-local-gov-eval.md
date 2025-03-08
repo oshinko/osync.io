@@ -12,7 +12,11 @@ image: /images/headers/local-gov.jpg
 
 これにより、評価の均一化、属人化の解消、公平性と透明性の確保が促進され、客観的な判断が可能となり、より信頼性の高い評価体制の構築につながります。
 
-↑の考えを基に作成した標準シートは[こちら](/docs/local-gov-eval-std-sheet.html)です。
+## 事務事業評価標準シートの草案
+
+[この考えを基に作成した標準シート](/docs/local-gov-eval-std-sheet.html)です。
+
+<iframe src="/docs/local-gov-eval-std-sheet.html" style="width: 100%; height: 320px; border: 1px solid black;"></iframe>
 
 ## 評価シートの評価項目
 
