@@ -164,3 +164,21 @@ PDCA | Plan → Do → Check → Action の形になっていれば✅そうで�
     </tbody>
   </table>
 </div>
+
+## 付録
+
+### 事務事業評価のレベル分け
+
+政治アナリストの[渡瀬裕哉氏によるレベル分け](https://x.com/yuyawatase/status/1502847209301192705)です。
+
+1. 腐敗（事務事業評価公開無し）
+2. 臭いものに蓋（事務事業評価の部分公開）
+3. 役人仕事（事業費のみ公開、無意味な成果指標）
+4. 最低限の仕事（事業に人件費紐づけ、妥当な成果指標）
+5. 給料払っても良いレベル（上位の政策との妥当な関連性がある事業評価）
+
+### 事務事業評価の今後の方向性
+
+参議院議員・浜田聡氏による、参議院行政監視委員会での事務事業評価の今後の方向性に関する質問です。
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GGG3g7Q9f50?si=0P-dygeQrDfz0LNJ&amp;start=203" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
