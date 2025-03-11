@@ -169,7 +169,9 @@ PDCA | Plan → Do → Check → Action の形になっていれば✅そうで�
 
 ### 事務事業評価のレベル分け
 
-政治アナリストの[渡瀬裕哉氏によるレベル分け](https://x.com/yuyawatase/status/1502847209301192705)です。
+政治アナリストの渡瀬裕哉氏によるレベル分けです。
+
+<iframe id="twitter-widget-2" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" src="https://platform.x.com/embed/Tweet.html?dnt=false&amp;hideCard=false&amp;frame=false&amp;hideThread=false&amp;id=1502847209301192705&amp;lang=ja&amp;theme=light&amp;width=560px" style="position: static; visibility: visible; width: 560px; height: 470px; display: block; flex-grow: 1;"></iframe>
 
 1. 腐敗（事務事業評価公開無し）
 2. 臭いものに蓋（事務事業評価の部分公開）
