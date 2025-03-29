@@ -19,10 +19,10 @@ image: "/images/headers/boxing.jpg"
 7|[井上 拓真](https://boxrec.com/en/box-pro/667667)|バンタム|-|-
 8|[力石 政法](https://boxrec.com/en/box-pro/806436)|S.フェザー|5/28|Eduardo Nunez (IBF 1 位)
 9|[西田 凌佑](https://boxrec.com/en/box-pro/898844)|バンタム|-|-
-10|[堤 聖也](https://boxrec.com/en/box-pro/829718)|バンタム|-|-
-11|[田中 恒成](https://boxrec.com/en/box-pro/666339)|S.フライ|-|-
-12|[吉野 修一郎](https://boxrec.com/en/box-pro/737760)|ライト|4/19|Siro Choi
-13|[矢吹 正道](https://boxrec.com/en/box-pro/752510)|L.フライ|3/29|Angel Ayala Lardizabal (IBF 王者)
+10|[矢吹 正道](https://boxrec.com/en/box-pro/752510)|L.フライ, フライ|-|-
+11|[堤 聖也](https://boxrec.com/en/box-pro/829718)|バンタム|-|-
+12|[田中 恒成](https://boxrec.com/en/box-pro/666339)|S.フライ|-|-
+13|[吉野 修一郎](https://boxrec.com/en/box-pro/737760)|ライト|4/19|Siro Choi
 14|[武居 由樹](https://boxrec.com/en/box-pro/990774)|バンタム|5/28|Yuttapong Tongdee (WBO 8 位)
 15|[比嘉 大吾](https://boxrec.com/en/box-pro/691593)|バンタム|-|-
 16|[A オラスクアガ](https://boxrec.com/en/box-pro/904246)|フライ|-|-
@@ -40,21 +40,21 @@ image: "/images/headers/boxing.jpg"
 28|[京口 紘人](https://boxrec.com/en/box-pro/752878)|フライ|-|-
 29|[阿部 麗也](https://boxrec.com/en/box-pro/654234)|フェザー|-|-
 30|[重岡 優大](https://boxrec.com/en/box-pro/900843)|ミニマム|3/30|Melvin Jerusalem
-31|[清水 聡](https://boxrec.com/en/box-pro/767358)|フェザー|-|-
-32|[谷口 将隆](https://boxrec.com/en/box-pro/747308)|L.フライ|-|-
-33|[三代 大訓](https://boxrec.com/en/box-pro/794104)|ライト|-|-
-34|[中嶋 一輝](https://boxrec.com/en/box-pro/799358)|S.バンタム|-|-
-35|[松本 圭佑](https://boxrec.com/en/box-pro/944445)|フェザー|-|-
-36|[宇津木 秀](https://boxrec.com/en/box-pro/829717)|ライト|-|-
-37|[永田 大士](https://boxrec.com/en/box-pro/694940)|S.ライト|-|-
-38|[波田 大和](https://boxrec.com/en/box-pro/731145)|S.フェザー|4/5|Takuya Watanabe
-39|[栗原 慶太](https://boxrec.com/en/box-pro/568329)|バンタム|-|-
-40|[小國 以載](https://boxrec.com/en/box-pro/518213)|S.バンタム|-|-
-41|[鈴木 雅弘](https://boxrec.com/en/box-pro/846560)|ライト|5/12|Yangyang Li
-42|[下町 俊貴](https://boxrec.com/en/box-pro/740239)|S.バンタム|4/29|アラン・ディパエン
-43|[村田 昴](https://boxrec.com/en/box-pro/893147)|S.バンタム|-|-
-44|[今永 虎雅](https://boxrec.com/en/box-pro/889835)|ライト|-|-
-45|[中野 幹士](https://boxrec.com/en/box-pro/853415)|フェザー|-|-
-46|[仲里 周磨](https://boxrec.com/en/box-pro/716694)|ライト|-|-
-47|[横山 葵海](https://boxrec.com/en/box-pro/1182099)|S.フライ|3/29|Giemel Magramo
+31|[横山 葵海](https://boxrec.com/en/box-pro/1182099)|S.フライ|-|-
+32|[清水 聡](https://boxrec.com/en/box-pro/767358)|フェザー|-|-
+33|[谷口 将隆](https://boxrec.com/en/box-pro/747308)|L.フライ|-|-
+34|[三代 大訓](https://boxrec.com/en/box-pro/794104)|ライト|-|-
+35|[中嶋 一輝](https://boxrec.com/en/box-pro/799358)|S.バンタム|-|-
+36|[松本 圭佑](https://boxrec.com/en/box-pro/944445)|フェザー|-|-
+37|[宇津木 秀](https://boxrec.com/en/box-pro/829717)|ライト|-|-
+38|[永田 大士](https://boxrec.com/en/box-pro/694940)|S.ライト|-|-
+39|[波田 大和](https://boxrec.com/en/box-pro/731145)|S.フェザー|4/5|Takuya Watanabe
+40|[栗原 慶太](https://boxrec.com/en/box-pro/568329)|バンタム|-|-
+41|[小國 以載](https://boxrec.com/en/box-pro/518213)|S.バンタム|-|-
+42|[鈴木 雅弘](https://boxrec.com/en/box-pro/846560)|ライト|5/12|Yangyang Li
+43|[下町 俊貴](https://boxrec.com/en/box-pro/740239)|S.バンタム|4/29|アラン・ディパエン
+44|[村田 昴](https://boxrec.com/en/box-pro/893147)|S.バンタム|-|-
+45|[今永 虎雅](https://boxrec.com/en/box-pro/889835)|ライト|-|-
+46|[中野 幹士](https://boxrec.com/en/box-pro/853415)|フェザー|-|-
+47|[仲里 周磨](https://boxrec.com/en/box-pro/716694)|ライト|-|-
 48|[坂井 優太](https://boxrec.com/en/box-pro/1130028)|バンタム|-|-
