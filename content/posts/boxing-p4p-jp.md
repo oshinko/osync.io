@@ -39,7 +39,7 @@ image: "/images/headers/boxing.jpg"
 27|[セムジュ・デビッド](https://boxrec.com/en/box-pro/898239)|ウェルター|-|-
 28|[京口 紘人](https://boxrec.com/en/box-pro/752878)|フライ|-|-
 29|[阿部 麗也](https://boxrec.com/en/box-pro/654234)|フェザー|-|-
-30|[重岡 優大](https://boxrec.com/en/box-pro/900843)|ミニマム|3/30|Melvin Jerusalem
+30|[重岡 優大](https://boxrec.com/en/box-pro/900843)|ミニマム|3/30|メルビン・ジェルサレム (WBC 王者)
 31|[横山 葵海](https://boxrec.com/en/box-pro/1182099)|S.フライ|-|-
 32|[清水 聡](https://boxrec.com/en/box-pro/767358)|フェザー|-|-
 33|[谷口 将隆](https://boxrec.com/en/box-pro/747308)|L.フライ|-|-
