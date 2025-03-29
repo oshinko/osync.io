@@ -13,7 +13,7 @@ image: "/images/headers/boxing.jpg"
 1|[井上 尚弥](https://boxrec.com/en/box-pro/628407)|S.バンタム|-|-
 2|[中谷 潤人](https://boxrec.com/en/box-pro/718508)|バンタム|-|-
 3|[寺地 拳四朗](https://boxrec.com/en/box-pro/692967)|フライ|-|-
-4|[井岡 一翔](https://boxrec.com/en/box-pro/483786)|S.フライ|-|-
+4|[井岡 一翔](https://boxrec.com/en/box-pro/483786)|S.フライ|5/11|フェルナンド・マルティネス (WBA 王者)
 5|[平岡 アンディ](https://boxrec.com/en/box-pro/672119)|S.ライト|-|-
 6|[阿久井 政悟](https://boxrec.com/en/box-pro/685429)|フライ|-|-
 7|[井上 拓真](https://boxrec.com/en/box-pro/667667)|バンタム|-|-
