@@ -9,7 +9,7 @@
 <meta property="twitter:title" content="届書作成プログラムの「メッセージID：SE99001 / エラー情報（0053 0119 00000999）」対処法 - Osync I/O">
 <meta property="og:url" content="https://osync.io/posts/jp-20240411/">
 <meta property="og:title" content="届書作成プログラムの「メッセージID：SE99001 / エラー情報（0053 0119 00000999）」対処法 - Osync I/O">
-<meta property="og:description" content="社会保険の電子申請 (届書作成プログラム) でよくあるこのエラー。一体いつになったら直すんでしょう？ いや、直さなくてもいいんです。直さなくてもい">
+<meta property="og:description" content="届書作成プログラム自体のアップデートが必要なエラー（E0024）が確認されています！ 現在お使いのバージョンを確認し、必要に応じて[インストー">
 <meta property="og:image" content="https://osync.io/images/headers/jp-20240411.jpg">
 <title>届書作成プログラムの「メッセージID：SE99001 / エラー情報（0053 0119 00000999）」対処法 - Osync I/O</title>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JQCHZM9PGG"></script>
@@ -40,8 +40,8 @@
 <div class=date>
 <div>
 <div>Last committed</div>
-<time datetime=2025-01-18T23:48:45Z+0900>
-25/01/18 23:48
+<time datetime=2025-04-09T12:23:45Z+0900>
+25/04/09 12:23
 </time>
 </div>
 <div>
@@ -59,7 +59,14 @@
 <li><a href=/tags/%E5%B1%8A%E6%9B%B8%E4%BD%9C%E6%88%90%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0/>届書作成プログラム</a></li>
 </ul>
 <img src=/images/headers/jp-20240411.jpg>
-<section><p>社会保険の電子申請 (届書作成プログラム) でよくあるこのエラー。一体いつになったら直すんでしょう？</p>
+<section><p style=color:red;font-weight:700>
+届書作成プログラム自体のアップデートが必要なエラー（E0024）が確認されています！<br>
+現在お使いのバージョンを確認し、必要に応じて[インストーラーによる最新版へのアップデート](https://www.nenkin.go.jp/denshibenri/program/download.html)を行って下さい。
+</p>
+<p style=color:orange;font-weight:700>
+本記事の届書作成プログラムの最終確認バージョン：30.00
+</p>
+<p>社会保険の電子申請 (届書作成プログラム) でよくあるこのエラー。一体いつになったら直すんでしょう？</p>
 <p>いや、直さなくてもいいんです。直さなくてもいいから、こういう課題があるということを報告させて欲しいし、回避策を含めて公開して欲しいです。</p>
 <p>とにかく、この問題の対処法の一つを記録しておきます。あくまで対処法の一つです。原因が異なる同じエラーもあるかもしれません。</p>
 <h2 id=概要>概要</h2>
@@ -73,12 +80,40 @@
 <li>正常に申請できたかどうかすら分からず、<del>管轄の社会保険事務所</del> <a href=https://www.nenkin.go.jp/section/tel/toiawase_kanyusha.html>ねんきん加入者ダイヤル</a>に電話相談することになり、非常に手間・・</li>
 </ol>
 <p>このエラーは、<strong>過去 3 ヶ月以内に申請したデータが存在しない場合にも起こる</strong> ようです。
-なので、過去 3 ヶ月以内に申請していないのに申請状況を照会しようとしている方は、おそらく回避方法がないのであきらめて下さい。</p>
+なので、過去 3 ヶ月以内に申請していないのに申請状況を照会しようとしている方は、回避方法がないのであきらめて下さい。</p>
 <p><strong>申請したばかりなのに、その提出データの申請状況の照会に失敗してしまう</strong> という場合のみ、後述の解決方法をお試し下さい。</p>
 <h2 id=原因仮説>原因（仮説）</h2>
 <p>このソフトを起動すると、まず最初にバージョンチェックを行います。
 もしバージョンが古ければ、新しいバージョンにアップデートされます。</p>
+<p>これ以外にも、<a href=https://www.nenkin.go.jp/denshibenri/program/download.html>インストーラーによる最新版へのアップデート</a>を行うことがあるでしょう。</p>
 <p>申請状況の照会では、過去に申請した提出データを読み込みますが、過去データが旧バージョンで作られていると、新しいバージョンでは読み込めず失敗する可能性があります。</p>
+<p>つまり、次のような状況です。</p>
+<table>
+<thead>
+<tr>
+<th>プログラムのバージョン</th>
+<th>データのバージョン</th>
+<th>結果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>28</td>
+<td>28</td>
+<td>✅成功</td>
+</tr>
+<tr>
+<td>30</td>
+<td>28</td>
+<td>❌失敗（バージョン不一致）</td>
+</tr>
+<tr>
+<td>30</td>
+<td>30</td>
+<td>✅成功</td>
+</tr>
+</tbody>
+</table>
 <p>これが本エラーの原因だと思われます。</p>
 <p>幸いにも、このソフトは古い形式の過去データを読み込むと最新の形式に変換してくれます。
 本記事では、この仕組みを利用して復旧を試みます。</p>
@@ -98,7 +133,7 @@
 <img src=/images/jp-20240411-5.jpg alt=最新の形式に変換></p>
 </li>
 <li>
-<p>正常に開けたらキャンセルして閉じる</p>
+<p>正常に開けたら「保存終了」ボタンまたは「キャンセル」ボタンを押下して閉じる</p>
 </li>
 <li>
 <p>改めて「起動メニュー > 届書の申請・申請状況の照会 > ＧビズＩＤ > 申請状況の照会 > 申請データ一覧」と進む</p>
@@ -133,6 +168,49 @@
 <p><img src=/images/jp-20240411-3.jpg alt=要ダウンロードあり></p>
 <p>終了:</p>
 <p><img src=/images/jp-20240411-4.jpg alt=終了></p>
+<h2 id=付録エラーコード-e0024-が表示された場合>【付録】エラーコード E0024 が表示された場合</h2>
+<p>これは、GビズIDで申請を行おうとした際に発生し得るエラーであることが確認されています。</p>
+<p>このエラーは、<strong>お使いの届書作成プログラムのバージョンが古いと発生します</strong>ので、**<a href=https://www.nenkin.go.jp/denshibenri/program/download.html>インストーラーによるプログラム自体のバージョンアップ</a>**を行い、再度試します。</p>
+<p>この時、<code>C:\ShakaiHoken\ShFdtdk\dat\該当の申請情報データファイル.jkk</code> のアップデートだけではなく、念のため、申請データそのもの（<code>C:\ShakaiHoken\ShFdtdk\user\</code> の中にある <code>SHFD0006.CSV</code> のこと）を作り直しましょう。</p>
+<p>手順は次の通りです。</p>
+<ol>
+<li>
+<p>申請情報データファイルのアップデート</p>
+<ol>
+<li>「起動メニュー > 届書の作成 > 続きから」と進む</li>
+<li><code>該当の申請情報データファイル.jkk</code> を開き、「はい」ボタンを押下する</li>
+<li>正常に開けたら「保存終了」ボタンまたは「キャンセル」ボタンを押下して閉じる</li>
+</ol>
+</li>
+<li>
+<p>申請データファイルのアップデート</p>
+<ol>
+<li>「起動メニュー > 届書の作成 > 電子申請用」と進む</li>
+<li><code>該当の申請情報データファイル.jkk</code> を開く</li>
+<li>画面手順に沿って CSV を作成する</li>
+<li><code>C:\ShakaiHoken\ShFdtdk\user\</code> 内の、新たな番号フォルダの中に <code>SHFD0006.CSV</code> が作られていることを確認</li>
+</ol>
+</li>
+<li>
+<p>再度、申請を試す</p>
+<ol>
+<li>「起動メニュー > 届書の申請・申請状況の照会 > ＧビズＩＤ > 届書の申請」と進む</li>
+<li>アップデートした申請データファイル <code>SHFD0006.CSV</code> を開く</li>
+<li>申請を行い、エラーが出なくなったことを確認</li>
+</ol>
+</li>
+</ol>
+<h3 id=エラー内容>エラー内容</h3>
+<p>＜エラー発生＞ <br>
+マイナポータルとの通信でエラーが発生しました <br>
+マイナポータルから返却されたエラー情報を表示します</p>
+<p>＜エラー情報＞ <br>
+タイトル：申請データ送信 <br>
+処理結果メッセージ：入力エラーが発生しました。 <br>
+HTTPステータスコード：400</p>
+<p>エラーコード：エラーメッセージ <br>
+E0024：申請できない手続きが選択されています。</p>
+<p><img src=/images/jp-20240411-6.png alt=E0024></p>
 </section>
 </article>
 <script>var submittedMessage=!1;function handleMessageSubmit(b){b.target.querySelector('input[type="hidden"]').value=location.href;const a=confirm('メッセージを送信します。よろしいですか？');return b.target.querySelector('button').disabled=a,b.target.querySelector('textarea').readOnly=a,submittedMessage=a,a}</script>
