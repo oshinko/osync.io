@@ -6,34 +6,38 @@
         {{ partial "nav" . }}
         <main>
             <article>
-                <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
-                {{ if and (ne .Type "page") }}
-                    <div class="date">
-                    {{ with .GitInfo }}
-                        <div>
-                            <div>Last committed</div>
-                            <time datetime="{{ .AuthorDate.Format "2006-01-02T15:04:05Z-0700" }}">
-                                {{ .AuthorDate.Format "06/01/02 15:04" }}
-                            </time>
+                {{ with .Params.Image }}<img src="{{ . }}">{{ end }}
+
+                <div class="info">
+                    <h1>{{ .Title }}</h1>
+                    {{ if and (ne .Type "page") }}
+                        <div class="date">
+                        {{ with .GitInfo }}
+                            <div>
+                                <div>Last committed</div>
+                                <time datetime="{{ .AuthorDate.Format "2006-01-02T15:04:05Z-0700" }}">
+                                    {{ .AuthorDate.Format "06/01/02 15:04" }}
+                                </time>
+                            </div>
+                        {{ end }}
+                            <div>
+                                <div>Posted</div>
+                                <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z-0700" }}">
+                                    {{ .Date.Format "06/01/02 15:04" }}
+                                </time>
+                            </div>
                         </div>
                     {{ end }}
-                        <div>
-                            <div>Posted</div>
-                            <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z-0700" }}">
-                                {{ .Date.Format "06/01/02 15:04" }}
-                            </time>
-                        </div>
-                    </div>
-                {{ end }}
-                {{ with .Params.tags }}
-                    <ul>
-                        {{ range . }}
-                            <li><a href="/tags/{{ . | urlize }}/">{{ . }}</a></li>
-                        {{ end }}
-                    </ul>
-                {{ end }}
-                {{ with .Params.Image }}<img src="{{ . }}">{{ end }}
-                {{ with .Description }}<p>{{ . }}</p>{{ end }}
+                    {{ with .Params.tags }}
+                        <ul class="tags">
+                            {{ range . }}
+                                <li><a href="/tags/{{ . | urlize }}/">{{ . }}</a></li>
+                            {{ end }}
+                        </ul>
+                    {{ end }}
+                    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+                </div>
+
                 <section>{{ .Content }}</section>
             </article>
 

@@ -156,8 +156,15 @@
       padding: 1em;
       background-color: #fff;
     }
+    article .info {
+      margin-block: 3em;
+
+      h1 {
+        font-size: 2em;
+      }
+    }
     article h1 {
-      margin: 0 0 .6em 0;
+      margin-block: .6em;
       font-size: 1.5em;
     }
     article h2 {
@@ -186,15 +193,16 @@
       border-left: .4em solid var(--color-link);
       font-size: 1.125em;
     }
-    article > ul {
+    article ul.tags {
       margin: .5em 0;
       padding: 0;
       list-style: none;
       font-size: .8em;
-    }
-    article > ul li {
-      display: inline;
-      line-height: 1.6;
+
+      li {
+        display: inline;
+        line-height: 1.6;
+      }
     }
     article .date {
       display: flex;
@@ -210,6 +218,15 @@
     }
     article .date > * > :first-child:after {
       content: ":";
+    }
+    .toppage article.outline {
+      @media screen and (min-width: 920px) {
+        height: 430px;
+      }
+
+      p {
+        margin-block: .5em 0;
+      }
     }
     section li {
       line-height: 1.6;

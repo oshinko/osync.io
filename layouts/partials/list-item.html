@@ -1,5 +1,11 @@
-<article>
+<article class="outline">
   {{ $link := .RelPermalink }}
+
+  {{ with .Params.Image }}
+    <a class="fade" href="{{ $link }}">
+      <img src="{{ . }}">
+    </a>
+  {{ end }}
 
   <h1 style="display: -webkit-box; overflow: hidden; -webkit-line-clamp: 2; -webkit-box-orient: vertical; font-size: 1.25em">
     <a href="{{ $link }}">{{ .Title }}</a>
@@ -8,10 +14,10 @@
   <div class="date">
     <div>
       {{ with .GitInfo }}
-      <div>Last committed</div>
-      <time datetime="{{ .AuthorDate.Format "2006-01-02T15:04:05Z-0700" }}">
-        {{ .AuthorDate.Format "06/01/02 15:04" }}
-      </time>
+        <div>Last committed</div>
+        <time datetime="{{ .AuthorDate.Format "2006-01-02T15:04:05Z-0700" }}">
+          {{ .AuthorDate.Format "06/01/02 15:04" }}
+        </time>
       {{ else }}
         <div>Posted</div>
         <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z-0700" }}">
@@ -22,17 +28,11 @@
   </div>
 
   {{ with .Params.tags }}
-    <ul>
+    <ul class="tags">
       {{ range . }}
         <li><a href="/tags/{{ . | urlize }}/">{{ . }}</a></li>
       {{ end }}
     </ul>
-  {{ end }}
-
-  {{ with .Params.Image }}
-    <a class="fade" href="{{ $link }}">
-      <img src="{{ . }}">
-    </a>
   {{ end }}
 
   {{ if or .Description .Summary }}
