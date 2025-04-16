@@ -8,9 +8,10 @@
 
     <main>
       <div class="article-list">
-        {{ $paginator := .Paginate .Site.RegularPages 8 }}
+        {{ $pages := .Site.RegularPages.ByLastmod.Reverse }}
+        {{ $paginator := .Paginate $pages 8 }}
 
-        {{ range $paginator.Pages.ByLastmod.Reverse }}
+        {{ range $paginator.Pages }}
           <div class="article-wrapper col2">
             {{ partial "list-item" . }}
           </div>
