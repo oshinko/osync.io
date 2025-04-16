@@ -7,10 +7,17 @@
 
   <div class="date">
     <div>
-      <div>Posted</div>
-      <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z-0700" }}">
-        {{ .Date.Format "06/01/02 15:04" }}
+      {{ with .GitInfo }}
+      <div>Last committed</div>
+      <time datetime="{{ .AuthorDate.Format "2006-01-02T15:04:05Z-0700" }}">
+        {{ .AuthorDate.Format "06/01/02 15:04" }}
       </time>
+      {{ else }}
+        <div>Posted</div>
+        <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z-0700" }}">
+          {{ .Date.Format "06/01/02 15:04" }}
+        </time>
+      {{ end }}
     </div>
   </div>
 
