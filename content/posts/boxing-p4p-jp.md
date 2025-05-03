@@ -47,12 +47,12 @@ image: "/images/headers/boxing.jpg"
 35|[中嶋 一輝](https://boxrec.com/en/box-pro/799358)|S.バンタム|6/15|Kenshin Oshima (日本 8 位)
 36|[波田 大和](https://boxrec.com/en/box-pro/731145)|S.フェザー|-|-
 37|[松本 圭佑](https://boxrec.com/en/box-pro/944445)|フェザー|-|-
-38|[宇津木 秀](https://boxrec.com/en/box-pro/829717)|ライト|5/27|TBA
+38|[宇津木 秀](https://boxrec.com/en/box-pro/829717)|ライト|5/27|Aketelieti Yelejian
 39|[永田 大士](https://boxrec.com/en/box-pro/694940)|S.ライト|-|-
 40|[栗原 慶太](https://boxrec.com/en/box-pro/568329)|バンタム|-|-
 41|[小國 以載](https://boxrec.com/en/box-pro/518213)|S.バンタム|5/20|村田 昴 (WBO アジア王者)
 42|[鈴木 雅弘](https://boxrec.com/en/box-pro/846560)|ライト|5/12|Yangyang Li
-43|[下町 俊貴](https://boxrec.com/en/box-pro/740239)|S.バンタム|4/29|アラン・ディパエン
+43|[下町 俊貴](https://boxrec.com/en/box-pro/740239)|S.バンタム|-|-
 44|[村田 昴](https://boxrec.com/en/box-pro/893147)|S.バンタム|5/20|小國 以載
 45|[今永 虎雅](https://boxrec.com/en/box-pro/889835)|ライト|-|-
 46|[中野 幹士](https://boxrec.com/en/box-pro/853415)|フェザー|-|-
