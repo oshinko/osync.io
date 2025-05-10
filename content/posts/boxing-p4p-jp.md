@@ -10,7 +10,7 @@ image: "/images/headers/boxing.jpg"
 
 順位|選手|階級|次戦|相手
 ---|---|---|---|---
-1|[井上 尚弥](https://boxrec.com/en/box-pro/628407)|S.バンタム|5/4|ラモン・カルデナス (WBA 2 位)
+1|[井上 尚弥](https://boxrec.com/en/box-pro/628407)|S.バンタム|9/14|ムロジョン・アフマダリエフ (WBA 暫定王者)
 2|[中谷 潤人](https://boxrec.com/en/box-pro/718508)|バンタム|6/8|西田 凌佑 (IBF 王者)
 3|[寺地 拳四朗](https://boxrec.com/en/box-pro/692967)|フライ|-|-
 4|[井岡 一翔](https://boxrec.com/en/box-pro/483786)|S.フライ|5/11|フェルナンド・マルティネス (WBA 王者)
@@ -49,12 +49,12 @@ image: "/images/headers/boxing.jpg"
 37|[松本 圭佑](https://boxrec.com/en/box-pro/944445)|フェザー|-|-
 38|[宇津木 秀](https://boxrec.com/en/box-pro/829717)|ライト|5/27|Aketelieti Yelejian
 39|[永田 大士](https://boxrec.com/en/box-pro/694940)|S.ライト|-|-
-40|[栗原 慶太](https://boxrec.com/en/box-pro/568329)|バンタム|-|-
-41|[小國 以載](https://boxrec.com/en/box-pro/518213)|S.バンタム|5/20|村田 昴 (WBO アジア王者)
-42|[鈴木 雅弘](https://boxrec.com/en/box-pro/846560)|ライト|5/12|Yangyang Li
-43|[下町 俊貴](https://boxrec.com/en/box-pro/740239)|S.バンタム|-|-
-44|[村田 昴](https://boxrec.com/en/box-pro/893147)|S.バンタム|5/20|小國 以載
-45|[今永 虎雅](https://boxrec.com/en/box-pro/889835)|ライト|-|-
-46|[中野 幹士](https://boxrec.com/en/box-pro/853415)|フェザー|-|-
+40|[中野 幹士](https://boxrec.com/en/box-pro/853415)|フェザー|-|-
+41|[栗原 慶太](https://boxrec.com/en/box-pro/568329)|バンタム|-|-
+42|[小國 以載](https://boxrec.com/en/box-pro/518213)|S.バンタム|5/20|村田 昴 (WBO アジア王者)
+43|[鈴木 雅弘](https://boxrec.com/en/box-pro/846560)|ライト|5/12|Yangyang Li
+44|[下町 俊貴](https://boxrec.com/en/box-pro/740239)|S.バンタム|-|-
+45|[村田 昴](https://boxrec.com/en/box-pro/893147)|S.バンタム|5/20|小國 以載
+46|[今永 虎雅](https://boxrec.com/en/box-pro/889835)|ライト|-|-
 47|[仲里 周磨](https://boxrec.com/en/box-pro/716694)|ライト|5/3|村上 雄大 (日本 1 位)
-48|[坂井 優太](https://boxrec.com/en/box-pro/1130028)|バンタム|6/15|TBA
+48|[坂井 優太](https://boxrec.com/en/box-pro/1130028)|バンタム|6/15|Ryoji Miyashita
