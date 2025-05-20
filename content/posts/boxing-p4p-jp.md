@@ -35,21 +35,21 @@ image: "/images/headers/boxing.jpg"
 23|[尾川 堅一](https://boxrec.com/en/box-pro/535757)|S.フェザー|-|-
 24|[桑原 拓](https://boxrec.com/en/box-pro/836764)|フライ|6/15|Yoshiki Minato
 25|[亀田 和毅](https://boxrec.com/en/box-pro/472942)|フェザー|5/24|アンジェロ・レオ (IBF 王者)
-26|[増田 陸](https://boxrec.com/en/box-pro/1096530)|バンタム|-|-
+26|[増田 陸](https://boxrec.com/en/box-pro/1096530)|バンタム|6/8|Michell Banquez
 27|[セムジュ・デビッド](https://boxrec.com/en/box-pro/898239)|ウェルター|-|-
 28|[京口 紘人](https://boxrec.com/en/box-pro/752878)|フライ|-|-
-29|[阿部 麗也](https://boxrec.com/en/box-pro/654234)|フェザー|-|-
+29|[阿部 麗也](https://boxrec.com/en/box-pro/654234)|フェザー|6/19|大久 祐哉 (日本 1 位)
 30|[重岡 優大](https://boxrec.com/en/box-pro/900843)|ミニマム|-|-
 31|[横山 葵海](https://boxrec.com/en/box-pro/1182099)|S.フライ|-|-
 32|[吉良大弥](https://boxrec.com/en/box-pro/1071015)|L.フライ|-|-
 33|[清水 聡](https://boxrec.com/en/box-pro/767358)|フェザー|-|-
 34|[谷口 将隆](https://boxrec.com/en/box-pro/747308)|L.フライ|-|-
-35|[三代 大訓](https://boxrec.com/en/box-pro/794104)|ライト|-|-
+35|[三代 大訓](https://boxrec.com/en/box-pro/794104)|ライト|6/14|アンディ・クルス (IBF 3 位, WBA 3 位, WBC 1 位, WBO 10 位)
 36|[中嶋 一輝](https://boxrec.com/en/box-pro/799358)|S.バンタム|6/15|Kenshin Oshima (日本 8 位)
 37|[波田 大和](https://boxrec.com/en/box-pro/731145)|S.フェザー|-|-
 38|[松本 圭佑](https://boxrec.com/en/box-pro/944445)|フェザー|-|-
 39|[宇津木 秀](https://boxrec.com/en/box-pro/829717)|ライト|5/27|Aketelieti Yelejian
-40|[永田 大士](https://boxrec.com/en/box-pro/694940)|S.ライト|-|-
+40|[永田 大士](https://boxrec.com/en/box-pro/694940)|S.ライト|6/10|Joo Young Kim
 41|[中野 幹士](https://boxrec.com/en/box-pro/853415)|フェザー|-|-
 42|[村田 昴](https://boxrec.com/en/box-pro/893147)|S.バンタム|-|-
 43|[栗原 慶太](https://boxrec.com/en/box-pro/568329)|バンタム|-|-
