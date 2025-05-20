@@ -51,11 +51,11 @@ image: "/images/headers/boxing.jpg"
 39|[宇津木 秀](https://boxrec.com/en/box-pro/829717)|ライト|5/27|Aketelieti Yelejian
 40|[永田 大士](https://boxrec.com/en/box-pro/694940)|S.ライト|-|-
 41|[中野 幹士](https://boxrec.com/en/box-pro/853415)|フェザー|-|-
-42|[栗原 慶太](https://boxrec.com/en/box-pro/568329)|バンタム|-|-
-43|[小國 以載](https://boxrec.com/en/box-pro/518213)|S.バンタム|5/20|村田 昴 (WBO アジア王者)
-44|[鈴木 雅弘](https://boxrec.com/en/box-pro/846560)|ライト|5/12|Yangyang Li
+42|[村田 昴](https://boxrec.com/en/box-pro/893147)|S.バンタム|-|-
+43|[栗原 慶太](https://boxrec.com/en/box-pro/568329)|バンタム|-|-
+44|[鈴木 雅弘](https://boxrec.com/en/box-pro/846560)|ライト|-|-
 45|[下町 俊貴](https://boxrec.com/en/box-pro/740239)|S.バンタム|-|-
-46|[村田 昴](https://boxrec.com/en/box-pro/893147)|S.バンタム|5/20|小國 以載
+46|[小國 以載](https://boxrec.com/en/box-pro/518213)|S.バンタム|-|-
 47|[今永 虎雅](https://boxrec.com/en/box-pro/889835)|ライト|-|-
-48|[仲里 周磨](https://boxrec.com/en/box-pro/716694)|ライト|5/3|村上 雄大 (日本 1 位)
+48|[仲里 周磨](https://boxrec.com/en/box-pro/716694)|ライト|-|-
 49|[坂井 優太](https://boxrec.com/en/box-pro/1130028)|バンタム|6/15|Ryoji Miyashita
