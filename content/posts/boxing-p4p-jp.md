@@ -27,14 +27,14 @@ image: "/images/headers/boxing.jpg"
 15|[比嘉 大吾](https://boxrec.com/en/box-pro/691593)|バンタム|-|-
 16|[A オラスクアガ](https://boxrec.com/en/box-pro/904246)|フライ|-|-
 17|[吉野 修一郎](https://boxrec.com/en/box-pro/737760)|ライト|-|-
-18|[重岡 銀次朗](https://boxrec.com/en/box-pro/846108)|ミニマム|5/24|ペドロ・タドゥラン (IBF 王者)
-19|[那須川 天心](https://boxrec.com/en/box-pro/853210)|バンタム|6/8|Victor Santillan (WBA 6 位)
-20|[健文 トーレス](https://boxrec.com/en/box-pro/233323)|S.フライ, バンタム|-|-
-21|[佐々木 尽](https://boxrec.com/en/box-pro/847229)|ウェルター|6/19|ブライアン・ノーマン・ジュニア (WBO 王者)
-22|[岩田 翔吉](https://boxrec.com/en/box-pro/853769)|L.フライ|-|-
-23|[尾川 堅一](https://boxrec.com/en/box-pro/535757)|S.フェザー|-|-
-24|[桑原 拓](https://boxrec.com/en/box-pro/836764)|フライ|6/15|Yoshiki Minato
-25|[亀田 和毅](https://boxrec.com/en/box-pro/472942)|フェザー|5/24|アンジェロ・レオ (IBF 王者)
+18|[那須川 天心](https://boxrec.com/en/box-pro/853210)|バンタム|6/8|Victor Santillan (WBA 6 位)
+19|[佐々木 尽](https://boxrec.com/en/box-pro/847229)|ウェルター|6/19|ブライアン・ノーマン・ジュニア (WBO 王者)
+20|[重岡 銀次朗](https://boxrec.com/en/box-pro/846108)|ミニマム|-|-
+21|[岩田 翔吉](https://boxrec.com/en/box-pro/853769)|L.フライ|-|-
+22|[亀田 和毅](https://boxrec.com/en/box-pro/472942)|フェザー|-|-
+23|[健文 トーレス](https://boxrec.com/en/box-pro/233323)|S.フライ, バンタム|-|-
+24|[尾川 堅一](https://boxrec.com/en/box-pro/535757)|S.フェザー|-|-
+25|[桑原 拓](https://boxrec.com/en/box-pro/836764)|フライ|6/15|Yoshiki Minato
 26|[増田 陸](https://boxrec.com/en/box-pro/1096530)|バンタム|6/8|Michell Banquez
 27|[セムジュ・デビッド](https://boxrec.com/en/box-pro/898239)|ウェルター|-|-
 28|[京口 紘人](https://boxrec.com/en/box-pro/752878)|フライ|-|-
