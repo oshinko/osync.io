@@ -19,7 +19,7 @@ image: "/images/headers/boxing.jpg"
 7|[井上 拓真](https://boxrec.com/en/box-pro/667667)|バンタム|-|-
 8|[西田 凌佑](https://boxrec.com/en/box-pro/898844)|バンタム|-|-
 9|[力石 政法](https://boxrec.com/en/box-pro/806436)|S.フェザー|-|-
-10|[矢吹 正道](https://boxrec.com/en/box-pro/752510)|L.フライ, フライ|-|-
+10|[矢吹 正道](https://boxrec.com/en/box-pro/752510)|フライ|-|-
 11|[堤 駿斗](https://boxrec.com/en/box-pro/863092)|S.フェザー|-|-
 12|[堤 聖也](https://boxrec.com/en/box-pro/829718)|バンタム|-|-
 13|[田中 恒成](https://boxrec.com/en/box-pro/666339)|S.フライ|-|-
@@ -42,7 +42,7 @@ image: "/images/headers/boxing.jpg"
 30|[阿部 麗也](https://boxrec.com/en/box-pro/654234)|フェザー|6/19|大久 祐哉 (日本 1 位)
 31|[重岡 優大](https://boxrec.com/en/box-pro/900843)|ミニマム|-|-
 32|[横山 葵海](https://boxrec.com/en/box-pro/1182099)|S.フライ|-|-
-33|[吉良大弥](https://boxrec.com/en/box-pro/1071015)|L.フライ|-|-
+33|[吉良 大弥](https://boxrec.com/en/box-pro/1071015)|L.フライ|-|-
 34|[清水 聡](https://boxrec.com/en/box-pro/767358)|フェザー|-|-
 35|[谷口 将隆](https://boxrec.com/en/box-pro/747308)|L.フライ|-|-
 36|[三代 大訓](https://boxrec.com/en/box-pro/794104)|ライト|6/14|アンディ・クルス (IBF 3 位, WBA 3 位, WBC 1 位, WBO 10 位)
