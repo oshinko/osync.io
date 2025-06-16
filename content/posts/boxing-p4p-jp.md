@@ -12,7 +12,7 @@ image: "/images/headers/boxing.jpg"
 ---|---|---|---|---
 1|[井上 尚弥](https://boxrec.com/en/box-pro/628407)|S.バンタム|9/14|ムロジョン・アフマダリエフ (WBA 暫定王者)
 2|[中谷 潤人](https://boxrec.com/en/box-pro/718508)|バンタム|-|-
-3|[寺地 拳四朗](https://boxrec.com/en/box-pro/692967)|フライ|-|-
+3|[寺地 拳四朗](https://boxrec.com/en/box-pro/692967)|フライ|7/30|リカルド・サンドバル (IBF 3 位, WBA 3 位, WBC 4 位, WBO 2 位)
 4|[井岡 一翔](https://boxrec.com/en/box-pro/483786)|S.フライ|-|-
 5|[平岡 アンディ](https://boxrec.com/en/box-pro/672119)|S.ライト|-|-
 6|[阿久井 政悟](https://boxrec.com/en/box-pro/685429)|フライ|-|-
@@ -24,7 +24,7 @@ image: "/images/headers/boxing.jpg"
 12|[堤 聖也](https://boxrec.com/en/box-pro/829718)|バンタム|-|-
 13|[田中 恒成](https://boxrec.com/en/box-pro/666339)|S.フライ|-|-
 14|[武居 由樹](https://boxrec.com/en/box-pro/990774)|バンタム|-|-
-15|[比嘉 大吾](https://boxrec.com/en/box-pro/691593)|バンタム|-|-
+15|[比嘉 大吾](https://boxrec.com/en/box-pro/691593)|バンタム|7/30|アントニオ・バルガス (WBA 暫定王者)
 16|[A オラスクアガ](https://boxrec.com/en/box-pro/904246)|フライ|-|-
 17|[那須川 天心](https://boxrec.com/en/box-pro/853210)|バンタム|-|-
 18|[吉野 修一郎](https://boxrec.com/en/box-pro/737760)|ライト|-|-
@@ -36,7 +36,7 @@ image: "/images/headers/boxing.jpg"
 24|[坪井 智也](https://boxrec.com/en/box-pro/868148)|S.フライ, バンタム|-|-
 25|[健文 トーレス](https://boxrec.com/en/box-pro/233323)|S.フライ, バンタム|-|-
 26|[尾川 堅一](https://boxrec.com/en/box-pro/535757)|S.フェザー|-|-
-27|[桑原 拓](https://boxrec.com/en/box-pro/836764)|フライ|6/15|Yoshiki Minato
+27|[桑原 拓](https://boxrec.com/en/box-pro/836764)|フライ|-|-
 28|[セムジュ・デビッド](https://boxrec.com/en/box-pro/898239)|ウェルター|-|-
 29|[京口 紘人](https://boxrec.com/en/box-pro/752878)|フライ|-|-
 30|[阿部 麗也](https://boxrec.com/en/box-pro/654234)|フェザー|6/19|大久 祐哉 (日本 1 位)
@@ -45,18 +45,18 @@ image: "/images/headers/boxing.jpg"
 33|[吉良 大弥](https://boxrec.com/en/box-pro/1071015)|L.フライ|-|-
 34|[清水 聡](https://boxrec.com/en/box-pro/767358)|フェザー|-|-
 35|[谷口 将隆](https://boxrec.com/en/box-pro/747308)|L.フライ|-|-
-36|[三代 大訓](https://boxrec.com/en/box-pro/794104)|ライト|6/14|アンディ・クルス (IBF 3 位, WBA 3 位, WBC 1 位, WBO 10 位)
-37|[中嶋 一輝](https://boxrec.com/en/box-pro/799358)|S.バンタム|6/15|Kenshin Oshima (日本 8 位)
+36|[三代 大訓](https://boxrec.com/en/box-pro/794104)|ライト|-|-
+37|[中嶋 一輝](https://boxrec.com/en/box-pro/799358)|S.バンタム|-|-
 38|[波田 大和](https://boxrec.com/en/box-pro/731145)|S.フェザー|-|-
 39|[宇津木 秀](https://boxrec.com/en/box-pro/829717)|ライト|-|-
 40|[松本 圭佑](https://boxrec.com/en/box-pro/944445)|フェザー|-|-
-41|[永田 大士](https://boxrec.com/en/box-pro/694940)|S.ライト|6/10|Joo Young Kim
-42|[中野 幹士](https://boxrec.com/en/box-pro/853415)|フェザー|-|-
-43|[村田 昴](https://boxrec.com/en/box-pro/893147)|S.バンタム|-|-
+41|[中野 幹士](https://boxrec.com/en/box-pro/853415)|フェザー|-|-
+42|[村田 昴](https://boxrec.com/en/box-pro/893147)|S.バンタム|-|-
+43|[永田 大士](https://boxrec.com/en/box-pro/694940)|S.ライト|-|-
 44|[栗原 慶太](https://boxrec.com/en/box-pro/568329)|バンタム|-|-
 45|[鈴木 雅弘](https://boxrec.com/en/box-pro/846560)|ライト|-|-
 46|[下町 俊貴](https://boxrec.com/en/box-pro/740239)|S.バンタム|-|-
 47|[小國 以載](https://boxrec.com/en/box-pro/518213)|S.バンタム|-|-
 48|[今永 虎雅](https://boxrec.com/en/box-pro/889835)|ライト|-|-
 49|[仲里 周磨](https://boxrec.com/en/box-pro/716694)|ライト|-|-
-50|[坂井 優太](https://boxrec.com/en/box-pro/1130028)|バンタム|6/15|Ryoji Miyashita
+50|[坂井 優太](https://boxrec.com/en/box-pro/1130028)|バンタム|-|-
