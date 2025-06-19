@@ -28,7 +28,7 @@ image: "/images/headers/boxing.jpg"
 16|[A オラスクアガ](https://boxrec.com/en/box-pro/904246)|フライ|-|-
 17|[那須川 天心](https://boxrec.com/en/box-pro/853210)|バンタム|-|-
 18|[吉野 修一郎](https://boxrec.com/en/box-pro/737760)|ライト|-|-
-19|[佐々木 尽](https://boxrec.com/en/box-pro/847229)|ウェルター|6/19|ブライアン・ノーマン・ジュニア (WBO 王者)
+19|[佐々木 尽](https://boxrec.com/en/box-pro/847229)|ウェルター|-|-
 20|[重岡 銀次朗](https://boxrec.com/en/box-pro/846108)|ミニマム|-|-
 21|[岩田 翔吉](https://boxrec.com/en/box-pro/853769)|L.フライ|-|-
 22|[亀田 和毅](https://boxrec.com/en/box-pro/472942)|フェザー|-|-
@@ -39,7 +39,7 @@ image: "/images/headers/boxing.jpg"
 27|[桑原 拓](https://boxrec.com/en/box-pro/836764)|フライ|-|-
 28|[セムジュ・デビッド](https://boxrec.com/en/box-pro/898239)|ウェルター|-|-
 29|[京口 紘人](https://boxrec.com/en/box-pro/752878)|フライ|-|-
-30|[阿部 麗也](https://boxrec.com/en/box-pro/654234)|フェザー|6/19|大久 祐哉 (日本 1 位)
+30|[阿部 麗也](https://boxrec.com/en/box-pro/654234)|フェザー|-|-
 31|[重岡 優大](https://boxrec.com/en/box-pro/900843)|ミニマム|-|-
 32|[横山 葵海](https://boxrec.com/en/box-pro/1182099)|S.フライ|-|-
 33|[吉良 大弥](https://boxrec.com/en/box-pro/1071015)|L.フライ|-|-
@@ -53,10 +53,10 @@ image: "/images/headers/boxing.jpg"
 41|[中野 幹士](https://boxrec.com/en/box-pro/853415)|フェザー|-|-
 42|[村田 昴](https://boxrec.com/en/box-pro/893147)|S.バンタム|-|-
 43|[永田 大士](https://boxrec.com/en/box-pro/694940)|S.ライト|-|-
-44|[栗原 慶太](https://boxrec.com/en/box-pro/568329)|バンタム|-|-
-45|[鈴木 雅弘](https://boxrec.com/en/box-pro/846560)|ライト|-|-
-46|[下町 俊貴](https://boxrec.com/en/box-pro/740239)|S.バンタム|-|-
-47|[小國 以載](https://boxrec.com/en/box-pro/518213)|S.バンタム|-|-
-48|[今永 虎雅](https://boxrec.com/en/box-pro/889835)|ライト|-|-
-49|[仲里 周磨](https://boxrec.com/en/box-pro/716694)|ライト|-|-
-50|[坂井 優太](https://boxrec.com/en/box-pro/1130028)|バンタム|-|-
+44|[田中 空](https://boxrec.com/en/box-pro/1243144)|ウェルター|-|-
+45|[栗原 慶太](https://boxrec.com/en/box-pro/568329)|バンタム|-|-
+46|[鈴木 雅弘](https://boxrec.com/en/box-pro/846560)|ライト|-|-
+47|[下町 俊貴](https://boxrec.com/en/box-pro/740239)|S.バンタム|-|-
+48|[小國 以載](https://boxrec.com/en/box-pro/518213)|S.バンタム|-|-
+49|[今永 虎雅](https://boxrec.com/en/box-pro/889835)|ライト|-|-
+50|[仲里 周磨](https://boxrec.com/en/box-pro/716694)|ライト|-|-
