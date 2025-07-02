@@ -20,33 +20,33 @@ image: "/images/headers/boxing.jpg"
 8|[西田 凌佑](https://boxrec.com/en/box-pro/898844)|バンタム|-|-
 9|[力石 政法](https://boxrec.com/en/box-pro/806436)|S.フェザー|-|-
 10|[矢吹 正道](https://boxrec.com/en/box-pro/752510)|フライ|-|-
-11|[堤 駿斗](https://boxrec.com/en/box-pro/863092)|S.フェザー|-|-
+11|[堤 駿斗](https://boxrec.com/en/box-pro/863092)|S.フェザー|8/16|Qais Ashfaq
 12|[堤 聖也](https://boxrec.com/en/box-pro/829718)|バンタム|-|-
-13|[田中 恒成](https://boxrec.com/en/box-pro/666339)|S.フライ|-|-
-14|[武居 由樹](https://boxrec.com/en/box-pro/990774)|バンタム|-|-
-15|[比嘉 大吾](https://boxrec.com/en/box-pro/691593)|バンタム|7/30|アントニオ・バルガス (WBA 暫定王者)
-16|[A オラスクアガ](https://boxrec.com/en/box-pro/904246)|フライ|-|-
-17|[那須川 天心](https://boxrec.com/en/box-pro/853210)|バンタム|-|-
-18|[吉野 修一郎](https://boxrec.com/en/box-pro/737760)|ライト|-|-
-19|[岩田 翔吉](https://boxrec.com/en/box-pro/853769)|L.フライ|-|-
-20|[亀田 和毅](https://boxrec.com/en/box-pro/472942)|フェザー|-|-
-21|[増田 陸](https://boxrec.com/en/box-pro/1096530)|バンタム|-|-
-22|[坪井 智也](https://boxrec.com/en/box-pro/868148)|S.フライ, バンタム|-|-
-23|[健文 トーレス](https://boxrec.com/en/box-pro/233323)|S.フライ, バンタム|-|-
-24|[佐々木 尽](https://boxrec.com/en/box-pro/847229)|ウェルター|-|-
-25|[尾川 堅一](https://boxrec.com/en/box-pro/535757)|S.フェザー|-|-
-26|[桑原 拓](https://boxrec.com/en/box-pro/836764)|フライ|-|-
-27|[セムジュ・デビッド](https://boxrec.com/en/box-pro/898239)|ウェルター|-|-
-28|[京口 紘人](https://boxrec.com/en/box-pro/752878)|フライ|-|-
-29|[阿部 麗也](https://boxrec.com/en/box-pro/654234)|フェザー|-|-
-30|[重岡 優大](https://boxrec.com/en/box-pro/900843)|ミニマム|-|-
-31|[横山 葵海](https://boxrec.com/en/box-pro/1182099)|S.フライ|-|-
+13|[武居 由樹](https://boxrec.com/en/box-pro/990774)|バンタム|-|-
+14|[比嘉 大吾](https://boxrec.com/en/box-pro/691593)|バンタム|7/30|アントニオ・バルガス (WBA 暫定王者)
+15|[A オラスクアガ](https://boxrec.com/en/box-pro/904246)|フライ|-|-
+16|[那須川 天心](https://boxrec.com/en/box-pro/853210)|バンタム|-|-
+17|[吉野 修一郎](https://boxrec.com/en/box-pro/737760)|ライト|-|-
+18|[岩田 翔吉](https://boxrec.com/en/box-pro/853769)|L.フライ|-|-
+19|[亀田 和毅](https://boxrec.com/en/box-pro/472942)|フェザー|-|-
+20|[増田 陸](https://boxrec.com/en/box-pro/1096530)|バンタム|-|-
+21|[坪井 智也](https://boxrec.com/en/box-pro/868148)|S.フライ, バンタム|-|-
+22|[健文 トーレス](https://boxrec.com/en/box-pro/233323)|S.フライ, バンタム|-|-
+23|[佐々木 尽](https://boxrec.com/en/box-pro/847229)|ウェルター|-|-
+24|[尾川 堅一](https://boxrec.com/en/box-pro/535757)|S.フェザー|-|-
+25|[桑原 拓](https://boxrec.com/en/box-pro/836764)|フライ|-|-
+26|[セムジュ・デビッド](https://boxrec.com/en/box-pro/898239)|ウェルター|8/21|野上 昂生 (日本 13 位)
+27|[京口 紘人](https://boxrec.com/en/box-pro/752878)|フライ|-|-
+28|[阿部 麗也](https://boxrec.com/en/box-pro/654234)|フェザー|-|-
+29|[重岡 優大](https://boxrec.com/en/box-pro/900843)|ミニマム|-|-
+30|[高見 亨介](https://boxrec.com/en/box-pro/1096525)|L.フライ|7/30|エリック・ロサ (WBA 王者)
+31|[横山 葵海](https://boxrec.com/en/box-pro/1182099)|S.フライ|8/19|馬場 龍成 (日本 6 位)
 32|[吉良 大弥](https://boxrec.com/en/box-pro/1071015)|L.フライ|-|-
 33|[清水 聡](https://boxrec.com/en/box-pro/767358)|フェザー|-|-
 34|[谷口 将隆](https://boxrec.com/en/box-pro/747308)|L.フライ|-|-
 35|[三代 大訓](https://boxrec.com/en/box-pro/794104)|ライト|-|-
 36|[中嶋 一輝](https://boxrec.com/en/box-pro/799358)|S.バンタム|-|-
-37|[波田 大和](https://boxrec.com/en/box-pro/731145)|S.フェザー|-|-
+37|[波田 大和](https://boxrec.com/en/box-pro/731145)|S.フェザー|8/2|Shigetoshi Kotari
 38|[宇津木 秀](https://boxrec.com/en/box-pro/829717)|ライト|-|-
 39|[松本 圭佑](https://boxrec.com/en/box-pro/944445)|フェザー|-|-
 40|[中野 幹士](https://boxrec.com/en/box-pro/853415)|フェザー|-|-
@@ -59,4 +59,4 @@ image: "/images/headers/boxing.jpg"
 47|[小國 以載](https://boxrec.com/en/box-pro/518213)|S.バンタム|-|-
 48|[今永 虎雅](https://boxrec.com/en/box-pro/889835)|ライト|-|-
 49|[仲里 周磨](https://boxrec.com/en/box-pro/716694)|ライト|-|-
-50|[坂井 優太](https://boxrec.com/en/box-pro/1130028)|バンタム|-|-
+50|[坂井 優太](https://boxrec.com/en/box-pro/1130028)|バンタム|8/21|Chunhua Yang
