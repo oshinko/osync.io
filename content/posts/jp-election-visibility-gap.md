@@ -1,6 +1,6 @@
 ---
-date: "2025-07-26T13:00:00+09:00"
-draft: true
+date: "2025-07-26T14:00:00+09:00"
+draft: false
 title: "選挙ポスターが貼れない候補者"
 tags: [日本, 選挙]
 image: /images/headers/local-gov.jpg
