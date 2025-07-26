@@ -31,7 +31,7 @@ image: "/images/headers/boxing.jpg"
 19|[亀田 和毅](https://boxrec.com/en/box-pro/472942)|フェザー|-|-
 20|[増田 陸](https://boxrec.com/en/box-pro/1096530)|バンタム|-|-
 21|[坪井 智也](https://boxrec.com/en/box-pro/868148)|S.フライ, バンタム|-|-
-22|[健文 トーレス](https://boxrec.com/en/box-pro/233323)|S.フライ|7/20|デビッド・ヒメネス (WBA 暫定王者)
+22|[健文 トーレス](https://boxrec.com/en/box-pro/233323)|S.フライ|-|-
 23|[佐々木 尽](https://boxrec.com/en/box-pro/847229)|ウェルター|-|-
 24|[尾川 堅一](https://boxrec.com/en/box-pro/535757)|S.フェザー|-|-
 25|[桑原 拓](https://boxrec.com/en/box-pro/836764)|フライ|-|-
