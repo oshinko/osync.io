@@ -1,7 +1,7 @@
 ---
 date: "2025-07-26T14:00:00+09:00"
 draft: false
-title: "選挙ポスターが貼れない候補者"
+title: "選挙ポスターを貼りきれない候補者が取るべき戦略"
 tags: [日本, 選挙]
 image: /images/headers/local-gov.jpg
 ---
@@ -123,7 +123,7 @@ ChatGPT:
 参院選2025において「チームみらい」は、ゲーミフィケーションや CivicTech を活用し、以下のような支援者参加型の可視化支援を実践した。
 
 <div style="margin-block: 1em; max-width: 100%; max-height: 320px; overflow: auto;">
-  <ul>
+  <ul style="margin: 0;">
     <li>チームみらいマニフェストでAIとチャットしよう</li>
     <li>チームみらいの公式Xをフォローしよう</li>
     <li>動画を切り抜いてショート動画を作ろう</li>
