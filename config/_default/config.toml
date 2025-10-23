@@ -38,11 +38,6 @@ googleAnalytics = "G-JQCHZM9PGG"
     weight = 2
 
   [[menu.footer]]
-    name = "X.com"
-    url = "https://x.com/Osynco"
-    weight = 4
-
-  [[menu.footer]]
     name = "Bluesky"
     url = "https://bsky.app/profile/osync.io"
     weight = 5
